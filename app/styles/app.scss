@@ -1,5 +1,5 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 @import 'global/application';
-
-@import "ember-mobile-menu";
+@import 'ember-mobile-menu';
+@import 'global/ember-mobile-menu-overrides/emm';
