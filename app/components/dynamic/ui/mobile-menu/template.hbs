@@ -1,5 +1,3 @@
-
-{{#if (media 'isSmall')}}
   <MobileMenuWrapper as |mmw|>
     <mmw.MobileMenu as |mm|>
       <mm.LinkTo @route="index">Home</mm.LinkTo>
@@ -12,9 +10,3 @@
       <mmw.Toggle>Menu</mmw.Toggle>
     </mmw.Content>
   </MobileMenuWrapper>
-{{/if}}
-{{#if (or (media 'isMedium') (media 'isLarge') (media 'isWide'))}}
-  <Structural::Header />
-{{/if}}
-
-Hello.  I am content.
