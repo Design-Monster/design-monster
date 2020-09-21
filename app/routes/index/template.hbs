@@ -1,1 +1,6 @@
-<Structural::Routes::Home />
+
+{{#if (or (media 'isSmall') (media 'isMedium'))}}
+  <Structural::Routes::Home::Mobile />
+{{else if (or (media 'isLarge') (media 'isWide'))}}
+  <Structural::Routes::Home::Desktop />
+{{/if}}

@@ -1,8 +1,8 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.tiny_circle_outer {
-    display: flex;
+.icon_circle_outer {
+  display: flex;
 	width: 4rem;
 	height: 4rem;
 	margin: 0.25rem;
@@ -16,7 +16,7 @@
     transform: scale(1.1);
   }
 
-	.tiny_circle_inner {
+	.icon_circle_inner {
 		display: flex;
 		width: 3rem;
 		height: 3rem;

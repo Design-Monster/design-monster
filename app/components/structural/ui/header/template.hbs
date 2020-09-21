@@ -1,9 +1,16 @@
-
-{{#if (media 'isSmall')}}
-  <Dynamic::Ui::MobileMenu />
-{{/if}}
-{{#if (or (media 'isMedium') (media 'isLarge') (media 'isWide'))}}
-  <Dynamic::Ui::DesktopMenu />
-{{/if}}
+<div local-class="header">
+  <div local-class="header_content">
+    <XToggle
+      @onLabel='React'
+      @offLabel='Octane'
+      @showLabels={{true}}
+      @theme='material'
+      @value={{this.toggledValue}}
+      @onToggle={{this.toggleValue}} />
+  </div>
+  <div local-class="header_content right">
+    This is my portfolio.   Would you like to see it in Octane or React?
+  </div>
+</div>
 
 

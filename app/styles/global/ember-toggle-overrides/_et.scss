@@ -1,0 +1,15 @@
+.x-toggle-material.x-toggle-btn::before {
+  background-color: $color_purple;
+}
+
+.x-toggle-material.x-toggle-btn::after {
+  background-color: $color_purple;
+}
+
+.x-toggle:checked + label > .x-toggle-material.x-toggle-btn::before {
+  background-color: $color_orange;
+}
+
+.x-toggle:checked + label > .x-toggle-material.x-toggle-btn::after {
+  background-color: $color_orange;
+}
