@@ -2,21 +2,23 @@
     <MobileMenuWrapper as |mmw|>
       <mmw.MobileMenu as |mm|>
         <div local-class="menu_container">
-          <div local-class="title">
-            Design Monster
+          <div local-class="title_container">
+            <div local-class="title">
+              Design Monster
+            </div>
           </div>
-          <div local-class="navigation">
+          <div local-class="navigation_container">
             <div local-class="nav_item_container">
               <mm.LinkTo @route="index">Home</mm.LinkTo>
             </div>
             <div local-class="nav_item_container">
-              <mm.LinkTo @route="index">Home</mm.LinkTo>
+              <mm.LinkTo @route={{@portfolioRoute}}>Portfolio</mm.LinkTo>
             </div>
             <div local-class="nav_item_container">
-              <mm.LinkTo @route="index">Home</mm.LinkTo>
+              <mm.LinkTo @route={{@resumeRoute}}>Resume</mm.LinkTo>
             </div>
             <div local-class="nav_item_container">
-              <mm.LinkTo @route="index">Home</mm.LinkTo>
+              <mm.LinkTo @route={{@ryanRoute}}>Ryan</mm.LinkTo>
             </div>
           </div>
           <div local-class="some_other_section">

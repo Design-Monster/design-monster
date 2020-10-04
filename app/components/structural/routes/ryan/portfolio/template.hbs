@@ -1,0 +1,80 @@
+
+<div local-class="portfolio_component_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="portfolio_side_bar_container">
+      <nav>
+        <Structural::Ui::SideBar 
+          @portfolioRoute={{this.portfolioRoute}}
+          @resumeRoute={{this.resumeRoute}}
+          @ryanRoute={{this.ryanRoute}} />
+      </nav>
+    </section>
+  {{/if}}
+  <section local-class="portfolio_content_container">
+    <div local-class="portfolio_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="portfolio_section_container">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="portfolio_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="portfolio_section_container">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="portfolio_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+  </section>
+</div>

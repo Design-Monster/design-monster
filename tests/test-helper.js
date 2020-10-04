@@ -1,5 +1,5 @@
-import Application from 'portfolio/app';
-import config from 'portfolio/config/environment';
+import Application from 'design-monster/app';
+import config from 'design-monster/config/environment';
 import { setApplication } from '@ember/test-helpers';
 import { start } from 'ember-qunit';
 

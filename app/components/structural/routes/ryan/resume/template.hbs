@@ -1,14 +1,17 @@
 
-<div local-class="home_component_container">
-  <section local-class="home_side_bar_container">
+<div local-class="resume_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <nav>
-      <Structural::Ui::SideBar />
-    </nav>
+    <section local-class="resume_side_bar_container">
+      <nav>
+        <Structural::Ui::SideBar 
+          @portfolioRoute={{this.portfolioRoute}}
+          @resumeRoute={{this.resumeRoute}}
+          @ryanRoute={{this.ryanRoute}} />
+      </nav>
+    </section>
   {{/if}}
-  </section>
-  <section local-class="home_content_container">
-    <div local-class="home_section_container grey">
+  <section local-class="resume_content_container">
+    <div local-class="resume_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -21,18 +24,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <Dynamic::Ui::ContentSection>
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-    </Dynamic::Ui::ContentSection>
-    <div local-class="home_section_container grey">
+    <div local-class="resume_section_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -45,18 +37,33 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <Dynamic::Ui::ContentSection>
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-    </Dynamic::Ui::ContentSection>
-    <div local-class="home_section_container grey">
+    <div local-class="resume_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="resume_section_container">
+      <Dynamic::Ui::ContentSection>
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
+      </Dynamic::Ui::ContentSection>
+    </div>
+    <div local-class="resume_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />

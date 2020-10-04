@@ -1,0 +1,20 @@
+
+<div local-class="ryan_home_component_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="ryan_home_side_bar_container">
+      <nav>
+        <Structural::Ui::SideBar 
+          @portfolioRoute={{this.portfolioRoute}}
+          @resumeRoute={{this.resumeRoute}}
+          @ryanRoute={{this.ryanRoute}} />
+      </nav>
+    </section>
+  {{/if}}
+  <section local-class="ryan_home_content_container">
+    <div local-class="ryan_home_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        About Me
+      </Dynamic::Ui::ContentSection>
+    </div>
+  </section>
+</div>
