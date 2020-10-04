@@ -47,25 +47,5 @@
     flex: 1;
     flex-direction: column;
     overflow: scroll;
-
-    .home_content_row {
-      display: flex;
-      min-height: 200px;
-      flex: 1;
-      flex-direction: column;
-
-      &.top {
-        margin: $margin_extra_small $margin_extra_small 0;
-        background-color: $color_grey;
-      }
-
-      &.bottom {
-        margin: 0 $margin_extra_small $margin_extra_small;
-      }
-
-      .home_content {
-        
-      }
-    }
   }
 }

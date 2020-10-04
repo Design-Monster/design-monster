@@ -1,0 +1,25 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.content_section {
+  display: flex;
+  min-height: 200px;
+  flex: 1;
+  flex-direction: column;
+
+  &.grey {
+    background-color: $color_grey;
+  }
+
+  .content_item {
+    
+
+    .content_image {
+      
+    }
+
+    .content_text {
+      
+    }
+  }
+}
