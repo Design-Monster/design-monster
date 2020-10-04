@@ -1,35 +1,34 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.flex {
+.menu_container {
   display: flex;
   min-height: 100%;
   flex: 1;
   flex-direction: column;
+  background-color: $color_stone_blue;
 
   .title {
     height: $height_large;
     min-height: $height_medium;
   }
 
-  .flex_section {
+  .navigation {
     display: flex;
     flex-direction: column;
 
-    &.top {
-      background-color: $color_orange;
-    } 
-
-    &.bottom {
-      flex: 1;
-      background-color: $color_purple;
-    }
-
-    .flex_container {
+    .nav_item_container {
       display: flex;
       min-height: $size_medium;
       flex: 1;
     }
+  }
+
+  .some_other_section {
+    display: flex;
+    min-height: 50px;
+    margin: 5px 0 0;
+    background-color: $color_orange;
   }
 }
 
@@ -41,7 +40,7 @@
   background-color: $color_blue;
   align-items: center;
 
-.button_container {
+.toggle_container {
   margin: 0 0 0 $margin_extra_small;
 
     button {
@@ -50,10 +49,9 @@
     }
   }
 
-  .other_container {
+  .some_other_container {
     flex: 1;
     color: $color_white;
     text-align: center;
   }
 }
-
