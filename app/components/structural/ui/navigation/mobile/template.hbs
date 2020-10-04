@@ -28,12 +28,16 @@
       </mmw.MobileMenu>
 
       <mmw.Content>
-        <div local-class="button_container">
-          <mmw.Toggle>
-            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-          </mmw.Toggle>
+        <div local-class="header">
+          <div local-class="button_container">
+            <mmw.Toggle>
+              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+            </mmw.Toggle>
+          </div>
+          <div local-class="other_container">
+            This is where other stuff goes
+          </div>
         </div>
-
         {{yield}}
       </mmw.Content>
     </MobileMenuWrapper>

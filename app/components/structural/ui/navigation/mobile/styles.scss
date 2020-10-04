@@ -33,12 +33,26 @@
   }
 }
 
-.button_container {
+.header {
+  display: flex;
+  height: $height_large;
+  min-height: $height_medium;
+  flex: 1;
   background-color: $color_blue;
+  align-items: center;
 
-  button {
-    outline: none;
-    border: 0;
+.button_container {
+  margin: 0 0 0 $margin_extra_small;
+
+    button {
+      border: 0;
+      outline: none;
+    }
+  }
+
+  .other_container {
+    flex: 1;
+    text-align: center;
   }
 }
 
