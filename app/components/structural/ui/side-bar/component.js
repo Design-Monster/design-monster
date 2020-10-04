@@ -13,9 +13,9 @@ export default class StructuralUiHeaderComponent extends Component {
         let currentURL = this.router.currentURL;
         switch (currentURL) {
             case '/':
-                console.log('you are in switch statement - this is where you would put the logic to switch urls');
-                window.location.href='http://www.google.com/';
-                this.toggledValue = false;
+                console.log('you are in switch statement - this is where you would put the logic to switch urls - this is the / route');
+                // window.location.href='http://www.google.com/';
+                // this.toggledValue = false;
                 break;
             case 'http://www.google.com/something':
                 console.log('you are in switch statement - this is where you would put the logic to switch urls');

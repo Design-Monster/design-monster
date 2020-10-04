@@ -1,0 +1,45 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.flex {
+  display: flex;
+  min-height: 100%;
+  flex: 1;
+  flex-direction: column;
+
+  .title {
+    height: $height_large;
+    min-height: $height_medium;
+  }
+
+  .flex_section {
+    display: flex;
+    flex-direction: column;
+
+    &.top {
+      background-color: $color_orange;
+    } 
+
+    &.bottom {
+      flex: 1;
+      background-color: $color_purple;
+    }
+
+    .flex_container {
+      display: flex;
+      min-height: $size_medium;
+      flex: 1;
+      // background-color: $color_blue;
+    }
+  }
+}
+
+.button_container {
+  background-color: $color_blue;
+
+  button {
+    outline: none;
+    border: 0;
+  }
+}
+

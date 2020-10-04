@@ -1,2 +1,10 @@
 
-{{outlet}}
+<LinkTo class="skip_link" @route="index" aria-label="Skip Link.">Skip to main</LinkTo>
+
+{{#if (or (media 'isSmall') (media 'isMedium'))}}
+  <Structural::Ui::Navigation::Mobile>
+    {{outlet}}
+  </Structural::Ui::Navigation::Mobile>
+{{else}}
+  {{outlet}}
+{{/if}}

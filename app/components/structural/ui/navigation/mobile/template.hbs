@@ -1,12 +1,40 @@
-  <MobileMenuWrapper as |mmw|>
-    <mmw.MobileMenu as |mm|>
-      <mm.LinkTo @route="index">{{@navLabelOne}}</mm.LinkTo>
-      <mm.LinkTo @route="index">{{@navLabelTwo}}</mm.LinkTo>
-      <mm.LinkTo @route="index">{{@navLabelThree}}</mm.LinkTo>
-      <mm.LinkTo @route="index">{{@navLabelFour}}</mm.LinkTo>
-    </mmw.MobileMenu>
+  <nav>
+    <MobileMenuWrapper as |mmw|>
+      <mmw.MobileMenu as |mm|>
 
-    <mmw.Content>
-      <mmw.Toggle>Menu</mmw.Toggle>
-    </mmw.Content>
-  </MobileMenuWrapper>
+        <div local-class="flex">
+          <div local-class="title">
+            Roderick Developers
+          </div>
+          <div local-class="flex_section top">
+            <div local-class="flex_container">
+              <mm.LinkTo @route="index">Home</mm.LinkTo>
+            </div>
+            <div local-class="flex_container">
+              <mm.LinkTo @route="index">Home</mm.LinkTo>
+            </div>
+            <div local-class="flex_container">
+              <mm.LinkTo @route="index">Home</mm.LinkTo>
+            </div>
+            <div local-class="flex_container">
+              <mm.LinkTo @route="index">Home</mm.LinkTo>
+            </div>
+          </div>
+          <div local-class="flex_section bottom">
+
+          </div>
+        </div>
+
+      </mmw.MobileMenu>
+
+      <mmw.Content>
+        <div local-class="button_container">
+          <mmw.Toggle>
+            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+          </mmw.Toggle>
+        </div>
+
+        {{yield}}
+      </mmw.Content>
+    </MobileMenuWrapper>
+  </nav>
