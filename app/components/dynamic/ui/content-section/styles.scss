@@ -3,23 +3,9 @@
 
 .content_section {
   display: flex;
-  min-height: 200px;
+  min-height: 300px;
   flex: 1;
-  flex-direction: column;
-
-  &.grey {
-    background-color: $color_grey;
-  }
-
-  .content_item {
-    
-
-    .content_image {
-      
-    }
-
-    .content_text {
-      
-    }
-  }
+  margin: 0 $margin_extra_small 0 0;
+  overflow-x: scroll;
+  align-items: center;
 }

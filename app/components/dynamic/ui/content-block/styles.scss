@@ -1,0 +1,24 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.content_item {
+  display: flex;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  flex-direction: column;
+  margin: $margin_extra_small;
+  background-color: $color_orange;
+  border: $border_base;
+  justify-content: center;
+  align-items: center;
+
+  .content_image {
+    flex: 1;
+  }
+
+  .content_text {
+    flex: 1;
+  }
+}
