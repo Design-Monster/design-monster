@@ -1,6 +1,4 @@
-
-<LinkTo class="skip_link" @route="index" aria-label="Skip Link.">Skip to main</LinkTo>
-
+<Utilities::SkipLink />
 {{#if (or (media 'isSmall') (media 'isMedium'))}}
   <Structural::Ui::Navigation::Mobile>
     {{outlet}}

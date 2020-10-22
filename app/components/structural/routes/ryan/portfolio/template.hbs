@@ -3,7 +3,7 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="portfolio_side_bar_container">
       <nav>
-        <Structural::Ui::SideBar 
+        <Structural::Ui::Navigation::Desktop 
           @portfolioRoute={{this.portfolioRoute}}
           @resumeRoute={{this.resumeRoute}}
           @ryanRoute={{this.ryanRoute}} />
