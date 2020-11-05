@@ -1,60 +1,98 @@
+<MobileMenuWrapper as |mmw|>
   <nav>
-    <MobileMenuWrapper as |mmw|>
-      <mmw.MobileMenu as |mm|>
-        <div local-class="menu_container">
-          <div local-class="title_container">
-            <div local-class="title">
+    <mmw.MobileMenu as |mm|>
+      <div local-class="menu_container">
+        <div local-class="title_container">
+          <div local-class="title">
+            <LinkTo @route="index">
               Design Monster
-            </div>
-          </div>
-          <div local-class="navigation_container">
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route="index">Home</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route={{@portfolioRoute}}>Portfolio</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route={{@resumeRoute}}>Resume</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route={{@ryanRoute}}>Ryan</mm.LinkTo>
-            </div>
-          </div>
-          <div local-class="some_other_section">
-            some other section one <br>
-            you can add as many sections as you need
-          </div>
-          <div local-class="some_other_section">
-            some other section two <br>
-            and it will scroll automatically for you, based on the content
-          </div>
-          <div local-class="some_other_section">
-            some other section three
-          </div>
-          <div local-class="some_other_section">
-            some other section four
-          </div>
-          <div local-class="some_other_section">
-            some other section five
-          </div>
-          <div local-class="some_other_section">
-            some other section six
+            </LinkTo>
           </div>
         </div>
-      </mmw.MobileMenu>
-      <mmw.Content>
-        <div local-class="header">
-          <div local-class="toggle_container">
-            <mmw.Toggle>
-              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-            </mmw.Toggle>
-          </div>
-          <div local-class="some_other_container">
-            This is where other stuff goes
-          </div>
+        <div local-class="navigation_container">
+          <mm.LinkTo @route={{@routeOne}}>
+            <div local-class="nav_item_container">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+                </div>
+                <div local-class="nav_item_text">
+                  {{@routeLabelOne}}
+                </div>
+              </div>
+            </div>
+          </mm.LinkTo>
+          <mm.LinkTo @route={{@routeTwo}}>
+            <div local-class="nav_item_container">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+                </div>
+                <div local-class="nav_item_text">
+                  {{@routeLabelTwo}}
+                </div>
+              </div>
+            </div>
+          </mm.LinkTo>
+          <mm.LinkTo @route={{@routeThree}}>
+            <div local-class="nav_item_container">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+                </div>
+                <div local-class="nav_item_text">
+                  {{@routeLabelThree}}
+                </div>
+              </div>
+            </div>            
+          </mm.LinkTo>
+          <mm.LinkTo @route={{@routeFour}}>
+            <div local-class="nav_item_container">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+                </div>
+                <div local-class="nav_item_text">
+                  {{@routeLabelFour}}
+                </div>
+              </div>
+            </div>            
+          </mm.LinkTo>
         </div>
-        {{yield}}
-      </mmw.Content>
-    </MobileMenuWrapper>
+        <div local-class="some_other_section">
+          some other section one <br>
+          you can add as many sections as you need
+        </div>
+        <div local-class="some_other_section">
+          some other section two <br>
+          and it will scroll automatically for you, based on the content
+        </div>
+        <div local-class="some_other_section">
+          some other section three
+        </div>
+        <div local-class="some_other_section">
+          some other section four
+        </div>
+        <div local-class="some_other_section">
+          some other section five
+        </div>
+        <div local-class="some_other_section">
+          some other section six
+        </div>
+      </div>
+    </mmw.MobileMenu>
+    <mmw.Content>
+      <div local-class="header">
+        <div local-class="toggle_container">
+          <mmw.Toggle>
+            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+          </mmw.Toggle>
+        </div>
+        <div local-class="some_other_container">
+          This is where other stuff goes
+        </div>
+      </div>
+      {{yield}}
+    </mmw.Content>
   </nav>
+</MobileMenuWrapper>

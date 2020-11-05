@@ -1,0 +1,21 @@
+
+<div local-class="home_index_component_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="home_index_side_bar_container">
+      <Structural::Ui::Navigation::Desktop 
+        @routeSlotOne={{this.routeSlotOne}}
+        @routeSlotTwo={{this.routeSlotTwo}}
+        @routeSlotThree={{this.routeSlotThree}}
+        @routeLabelSlotOne={{this.routeLabelSlotOne}}
+        @routeLabelSlotTwo={{this.routeLabelSlotTwo}}
+        @routeLabelSlotThree={{this.routeLabelSlotThree}} />
+    </section>
+  {{/if}}
+  <section local-class="home_index_content_container">
+    <div local-class="home_index_section_container grey">
+      <Dynamic::Ui::ContentSection>
+        About Me
+      </Dynamic::Ui::ContentSection>
+    </div>
+  </section>
+</div>

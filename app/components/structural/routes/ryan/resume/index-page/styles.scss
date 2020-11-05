@@ -1,0 +1,47 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.resume_component_container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  @include breakpoint(large) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(wide) {
+    flex-direction: row;
+  }
+
+  .resume_side_bar_container {
+    display: flex;
+    min-width: 17.1875rem;
+    max-width: 17.1875rem;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: $color_stone_blue;
+    justify-content: center;
+
+      nav {
+        height: 100vh;
+      }
+    }
+
+  .resume_content_container {
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .resume_section_container {
+      justify-content: center;
+      align-items: center;
+
+      &.grey {
+        background-color: $color_grey;
+      }
+    }
+  }
+}

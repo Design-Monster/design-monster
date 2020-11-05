@@ -1,84 +1,85 @@
-<div local-class="menu_container">
-  <div local-class="title_container">
-    <div local-class="title">
-      <LinkTo @route="index">
-        Design Monster
+<nav>
+  <div local-class="menu_container">
+    <div local-class="title_container">
+      <div local-class="title">
+        <LinkTo @route="index">
+          Design Monster
+        </LinkTo>
+      </div>
+    </div>
+    <div local-class="navigation_container">
+      <LinkTo @route={{@ryanRoute}}>
+        <div local-class="nav_item_container">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+            </div>
+            <div local-class="nav_item_text">
+              Ryan
+            </div>
+          </div>
+        </div>
       </LinkTo>
-    </div>
-  </div>
-  <div local-class="navigation_container">
-    <LinkTo @route={{@ryanRoute}}>
-      <div local-class="nav_item_container">
-        <div local-class="nav_item">
-          <div local-class="nav_item_icon">
-            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-          </div>
-          <div local-class="nav_item_text">
-            Ryan
+      <LinkTo @route={{@ryanRoute}}>
+        <div local-class="nav_item_container">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+            </div>
+            <div local-class="nav_item_text">
+              Amina
+            </div>
           </div>
         </div>
-      </div>
-    </LinkTo>
-    <LinkTo @route={{@ryanRoute}}>
-      <div local-class="nav_item_container">
-        <div local-class="nav_item">
-          <div local-class="nav_item_icon">
-            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-          </div>
-          <div local-class="nav_item_text">
-            Amina
-          </div>
-        </div>
-      </div>
-    </LinkTo>
-    {{!-- {{if route === ryan || amina }} --}}
-    <LinkTo @route={{@portfolioRoute}}>
-      <div local-class="nav_item_container">
-        <div local-class="nav_item">
-          <div local-class="nav_item_icon">
-            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-          </div>
-          <div local-class="nav_item_text">
-            Portfolio
+      </LinkTo>
+      {{!-- {{if route === ryan || amina }} --}}
+      <LinkTo @route={{@portfolioRoute}}>
+        <div local-class="nav_item_container">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+            </div>
+            <div local-class="nav_item_text">
+              Portfolio
+            </div>
           </div>
         </div>
+      </LinkTo>
+      {{!-- {{/if}} --}}
+    </div>
+    <div local-class="icon_section">
+      <div local-class="icon">
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
       </div>
-    </LinkTo>
-    {{!-- {{/if}} --}}
-  </div>
-  <div local-class="icon_section">
-    <div local-class="icon">
-      <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      <div local-class="icon">
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      </div>
+      <div local-class="icon">
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      </div>
+      <div local-class="icon">
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      </div>
+      <div local-class="icon">
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      </div>
     </div>
-    <div local-class="icon">
-      <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+    <div local-class="some_other_section">
+      some other section two <br>
+      and it will scroll automatically for you, based on the content
     </div>
-    <div local-class="icon">
-      <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+    <div local-class="some_other_section">
+      some other section three
     </div>
-    <div local-class="icon">
-      <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+    <div local-class="some_other_section">
+      some other section four
     </div>
-    <div local-class="icon">
-      <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+    <div local-class="some_other_section">
+      some other section five
+    </div>
+    <div local-class="some_other_section">
+      some other section six
     </div>
   </div>
-  <div local-class="some_other_section">
-    some other section two <br>
-    and it will scroll automatically for you, based on the content
-  </div>
-  <div local-class="some_other_section">
-    some other section three
-  </div>
-  <div local-class="some_other_section">
-    some other section four
-  </div>
-  <div local-class="some_other_section">
-    some other section five
-  </div>
-  <div local-class="some_other_section">
-    some other section six
-  </div>
-</div>
-
+</nav>
 

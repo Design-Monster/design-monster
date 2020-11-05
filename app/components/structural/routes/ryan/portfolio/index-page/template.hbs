@@ -1,17 +1,18 @@
 
-<div local-class="resume_component_container">
+<div local-class="portfolio_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="resume_side_bar_container">
-      <nav>
-        <Structural::Ui::Navigation::Desktop 
-          @portfolioRoute={{this.portfolioRoute}}
-          @resumeRoute={{this.resumeRoute}}
-          @ryanRoute={{this.ryanRoute}} />
-      </nav>
+    <section local-class="portfolio_side_bar_container">
+      <Structural::Ui::Navigation::Desktop 
+        @routeSlotOne={{this.routeSlotOne}}
+        @routeSlotTwo={{this.routeSlotTwo}}
+        @routeSlotThree={{this.routeSlotThree}}
+        @routeLabelSlotOne={{this.routeLabelSlotOne}}
+        @routeLabelSlotTwo={{this.routeLabelSlotTwo}}
+        @routeLabelSlotThree={{this.routeLabelSlotThree}} />
     </section>
   {{/if}}
-  <section local-class="resume_content_container">
-    <div local-class="resume_section_container grey">
+  <section local-class="portfolio_content_container">
+    <div local-class="portfolio_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -24,7 +25,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="resume_section_container">
+    <div local-class="portfolio_section_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -37,7 +38,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="resume_section_container grey">
+    <div local-class="portfolio_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -50,7 +51,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="resume_section_container">
+    <div local-class="portfolio_section_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -63,7 +64,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="resume_section_container grey">
+    <div local-class="portfolio_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />

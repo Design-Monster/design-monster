@@ -1,0 +1,19 @@
+
+<div local-class="blog_component_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="blog_side_bar_container">
+      <nav>
+        <Structural::Ui::Navigation::Desktop 
+          @routeSlotOne={{this.routeSlotOne}}
+          @routeSlotTwo={{this.routeSlotTwo}}
+          @routeSlotThree={{this.routeSlotThree}}
+          @routeLabelSlotOne={{this.routeLabelSlotOne}}
+          @routeLabelSlotTwo={{this.routeLabelSlotTwo}}
+          @routeLabelSlotThree={{this.routeLabelSlotThree}} />
+      </nav>
+    </section>
+  {{/if}}
+  <section local-class="blog_content_container">
+    This is where the article component goes
+  </section>
+</div>
