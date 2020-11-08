@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
 
-export default class StructuralUiNavigationSideBarComponent extends Component {
+export default class StructuralUiNavigationDesktopComponent extends Component {
 
 }
