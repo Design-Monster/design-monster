@@ -1,84 +1,125 @@
 <nav>
   <div local-class="menu_container">
-    <div local-class="title_container">
-      <div local-class="title">
-        <LinkTo @route="index">
-          Design Monster
-        </LinkTo>
+    <div local-class="about_container">
+      <div local-class="about_social_container">
+        <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link one">
+          <div local-class="about_social_icon">
+            <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+          <div local-class="about_social_item">
+            <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
+          </div>
+        </a>
+      </div>
+      <div local-class="about_image_container">
+        <div local-class="about_image">
+          <img src={{@avatarImage}} alt="avatar" />
+        </div>
       </div>
     </div>
     <div local-class="navigation_container">
-      <LinkTo @route={{@ryanRoute}}>
-        <div local-class="nav_item_container">
+      <div local-class="nav_item_container">
+        <LinkTo @route={{@routeSlotOne}} local-class="nav_link">
           <div local-class="nav_item">
             <div local-class="nav_item_icon">
-              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+              <FaIcon @icon="user" @prefix="fas" />
             </div>
             <div local-class="nav_item_text">
-              Ryan
+              About Me
             </div>
           </div>
-        </div>
-      </LinkTo>
-      <LinkTo @route={{@ryanRoute}}>
-        <div local-class="nav_item_container">
+        </LinkTo>
+      </div>
+      <div local-class="nav_item_container">
+        <LinkTo @route={{@routeSlotTwo}} local-class="nav_link">
           <div local-class="nav_item">
             <div local-class="nav_item_icon">
-              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-            </div>
-            <div local-class="nav_item_text">
-              Amina
-            </div>
-          </div>
-        </div>
-      </LinkTo>
-      {{!-- {{if route === ryan || amina }} --}}
-      <LinkTo @route={{@portfolioRoute}}>
-        <div local-class="nav_item_container">
-          <div local-class="nav_item">
-            <div local-class="nav_item_icon">
-              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+              <FaIcon @icon="code" @prefix="fas" />
             </div>
             <div local-class="nav_item_text">
               Portfolio
             </div>
           </div>
+        </LinkTo>
+      </div>
+      <div local-class="nav_item_container">
+        <LinkTo @route={{@routeSlotThree}} local-class="nav_link">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="blog" @prefix="fas" />
+            </div>
+            <div local-class="nav_item_text">
+              Blog
+            </div>
+          </div>
+        </LinkTo>
+      </div>
+      <div local-class="nav_item_container">
+        <LinkTo @route={{@routeSlotFour}} local-class="nav_link">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="envelope-open-text" @prefix="fas" />
+            </div>
+            <div local-class="nav_item_text">
+              Resume
+            </div>
+          </div>
+        </LinkTo>
+      </div>
+      {{!-- <div local-class="nav_item_container">
+        <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="linkedin" @prefix="fab" />
+            </div>
+            <div local-class="nav_item_text">
+              LinkedIn
+            </div>
+          </div>
+        </a>
+      </div>       
+      <div local-class="nav_item_container">
+        <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link"> 
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="github-alt" @prefix="fab" />
+            </div>
+            <div local-class="nav_item_text">
+              Github
+            </div>
+          </div>
+        </a>
+      </div> --}}
+      {{!-- <div local-class="nav_item_container">
+        <LinkTo @route={{@routeSlotFive}} local-class="nav_link">
+          <div local-class="nav_item">
+            <div local-class="nav_item_icon">
+              <FaIcon @icon="paper-plane" @prefix="far" />
+            </div>
+            <div local-class="nav_item_text">
+              Hire Me!
+            </div>
+          </div>
+        </LinkTo>
+      </div> --}}
+    </div>
+    <div local-class="company_title_container">
+      <LinkTo @route="index">
+        <div local-class="company_title">
+            DESIGN MONSTER
         </div>
       </LinkTo>
-      {{!-- {{/if}} --}}
     </div>
-    <div local-class="icon_section">
-      <div local-class="icon">
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+    <div local-class="fine_print_container">
+      <div local-class="built_by_container">
+        Designed & Built by <br /> DesignMonster LLC
       </div>
-      <div local-class="icon">
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+      <div local-class="copyright_container">
+        <FaIcon @icon="copyright" @prefix="far" />
+        2020
       </div>
-      <div local-class="icon">
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-      </div>
-      <div local-class="icon">
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-      </div>
-      <div local-class="icon">
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-      </div>
-    </div>
-    <div local-class="some_other_section">
-      some other section two <br>
-      and it will scroll automatically for you, based on the content
-    </div>
-    <div local-class="some_other_section">
-      some other section three
-    </div>
-    <div local-class="some_other_section">
-      some other section four
-    </div>
-    <div local-class="some_other_section">
-      some other section five
-    </div>
-    <div local-class="some_other_section">
-      some other section six
     </div>
   </div>
 </nav>

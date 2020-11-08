@@ -1,7 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.home_index_component_container {
+.ryan_index_page_component_container {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -14,33 +14,29 @@
     flex-direction: row;
   }
 
-  .home_index_side_bar_container {
+  .ryan_index_page_side_bar_container {
     display: flex;
     min-width: 17.1875rem;
     max-width: 17.1875rem;
     flex-direction: column;
     overflow-y: scroll;
-    background-color: $color_stone_blue;
+    // background-color: $color_stone_blue;
     justify-content: center;
+  }
 
-      nav {
-        height: 100vh;
-      }
-    }
-
-  .home_index_content_container {
+  .ryan_index_page_content_container {
     display: flex;
     height: 100vh;
     flex: 1;
     flex-direction: column;
     overflow-y: scroll;
 
-    .home_index_section_container {
+    .ryan_index_page_section_container {
       justify-content: center;
       align-items: center;
 
       &.grey {
-        background-color: $color_grey;
+        background-color: $color_light_grey;
       }
     }
   }
