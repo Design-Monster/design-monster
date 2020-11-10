@@ -1,77 +1,32 @@
 
-<div local-class="blog_component_container">
+<div local-class="ryan_blog_index_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="blog_side_bar_container">
-      <Structural::Ui::Navigation::Desktop 
-        @routeSlotOne={{this.routeSlotOne}}
-        @routeSlotTwo={{this.routeSlotTwo}}
-        @routeSlotThree={{this.routeSlotThree}}
-        @routeLabelSlotOne={{this.routeLabelSlotOne}}
-        @routeLabelSlotTwo={{this.routeLabelSlotTwo}}
-        @routeLabelSlotThree={{this.routeLabelSlotThree}} />
+    <section local-class="ryan_blog_index_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotThree={{this.blogRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
     </section>
   {{/if}}
-  <section local-class="blog_content_container">
-    <div local-class="blog_section_container grey">
+  <section local-class="ryan_blog_index_page_content_container">
+    <Dynamic::Ui::Header 
+      @headerName={{this.headerName}}
+      @headerTitle={{this.headerTitle}}
+      @headerButtonLabel={{this.headerButtonLabel}}
+      @headerButtonRoute={{this.contactRoute}}
+    />
+    <div local-class="ryan_blog_index_page_section_container">
       <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="blog_section_container">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="blog_section_container grey">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="blog_section_container">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="blog_section_container grey">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -79,3 +34,4 @@
     </div>
   </section>
 </div>
+  

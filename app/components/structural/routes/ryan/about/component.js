@@ -8,15 +8,13 @@ export default class StructuralRoutesRyanIndexPageComponent extends Component {
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
   avatarImage = '/assets/images/RyanHeadShot.png';
-  aboutMeRoute = 'ryan';
+  aboutMeRoute = 'ryan.about';
   portfolioRoute = 'ryan.portfolio';
   blogRoute = 'ryan.blog';
   resumeRoute = 'ryan.resume';
   contactRoute = 'ryan.contact';
   headerName = 'Ryan Roderick';
-  headerButtonText = 'Hire Me!';
+  headerTitle = 'Web Developer';
+  headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'ryan.contact';
-  headerButtonIcon = 'laugh-beam';
-  headerButtonIconPrefix = 'far';
-  headerButtonIconSize = '2x';
 }

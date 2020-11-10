@@ -1,0 +1,44 @@
+
+<div local-class="ryan_contact_page_component_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="ryan_contact_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotThree={{this.blogRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
+    </section>
+  {{/if}}
+  <section local-class="ryan_contact_page_content_container">
+    <div local-class="ryan_contact_page_header_container">
+      <Dynamic::Ui::Header 
+        @headerName={{this.headerName}}
+        @headerTitle={{this.headerTitle}}
+        @headerButtonLabel={{this.headerButtonLabel}}
+        @headerButtonRoute={{this.contactRoute}}
+      />
+    </div>
+    <div local-class="ryan_contact_page_content_section_container">
+      <div local-class="ryan_contact_page_content_header">
+        Contact
+      </div>
+      <div local-class="ryan_contact_page_content">
+        <p>
+          ryan@DesignMonster.com
+        </p>
+        <p>
+          I'm looking to join a team as a more-than-junior-but-less-than-senior entry level position working remotely.  I have more knowledge than a junior developer, but less professional experience than a senior level developer.  I don't have imposter syndrome, though I certainly did when I started, but I can say with all confidence, I AM A DEVELOPER.  I'm well organized, focused, a self starter and most of all, I can code! I know CSS & SCSS, HTML, JS, Rails, SQL, Ember, React, NPM, Yarn-the list goes on and is ALWAYS expanding.  If you would like to see some examples of my work and how I might fit into your needs, please check out the Portfolio section of this site or simply send me an email.  Thanks for looking!          
+        </p>
+      </div>      
+    </div>
+  </section>
+</div>
