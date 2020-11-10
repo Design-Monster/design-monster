@@ -1,7 +1,7 @@
 
-<div local-class="ryan_resume_page_component_container">
+<div local-class="resume_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="ryan_resume_page_side_bar_container">
+    <section local-class="resume_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -18,8 +18,8 @@
         />
     </section>
   {{/if}}
-  <section local-class="ryan_resume_page_content_container">
-    <div local-class="ryan_resume_page_header_container">
+  <section local-class="resume_page_content_container">
+    <div local-class="resume_page_header_container">
       <Dynamic::Ui::Header 
         @headerName={{this.headerName}}
         @headerTitle={{this.headerTitle}}
@@ -27,14 +27,250 @@
         @headerButtonRoute={{this.contactRoute}}
       />
     </div>
-    <div local-class="ryan_resume_page_content_section_container">
-      <div local-class="ryan_resume_page_content_header">
-        Print or Download as PDF
+    <div local-class="resume_page_content_section_container">
+      <div local-class="resume_page_content_header">
+        <a href="/assets/files/ryan-roderick-resume.pdf" download>
+          <div local-class="resume_page_button first" role="button">
+            Download
+          </div>
+        </a>
       </div>
-      <div local-class="ryan_resume_page_content">
-        <div local-class="ryan_resume_page_resume">
-          Resume HERE
+      <div local-class="resume_page_content">
+        <div local-class="resume_page_resume first">
+          <div local-class="resume_page_resume_header_container">
+            <div local-class="resume_page_resume_header_subject">
+              <div local-class="resume_page_resume_header_name">
+                Ryan Roderick
+              </div>
+              <div local-class="resume_page_resume_header_title">
+                Web Developer
+              </div>
+            </div>
+            <div local-class="resume_page_resume_header_contact">
+              <div local-class="resume_page_resume_header_email">
+                ryan@DesignMonster.com
+              </div>
+              <div local-class="resume_page_resume_header_other">
+                www.DesignMonster.com
+              </div>
+            </div>
+          </div>
+          <div local-class="resume_page_resume_title_block">
+            <p>
+              About Me
+            </p>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <p>
+              I am a web developer with a history in metal fabrication, forging, and engineering. In 2016 I pursued my  goal to work in the field of Technology. Web Development allows me to bring the skills I’ve learned throughout my fabrication career into a new and exciting territory. My passion for building things and my desire to create has always fueled my choices, and it’s this same passion that led me to Development.  I have spent the last three years teaching myself how to be a web developer, building side projects, completing an internship, and contributing to open source.
+            </p>
+          </div>
+          <div local-class="resume_page_resume_title_block">
+            <p>Coding Skills</p>
+          </div>
+          <div local-class="resume_page_text_block">
+            <ul>
+              <li>JavaScript, HTML, CSS/SCSS</li>
+              <li>Ember including Octane, React, Vue</li>
+              <li>Rails, Node, SQL, MONGO</li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_title_block">
+            <p>Work Experience</p>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Web Developer <br />
+              <span local-class="dates_employed">02/2017 - Present</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Design Monster LLC
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Camden, ME
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <ul>
+              <li>
+                Work with small businesses and entrepreneurs to make their vision a reality
+              </li>
+              <li>
+                Specializes in Ember.js
+              </li>
+              <li>
+                Turn ideas into functional products that do exactly what they were designed to do
+              </li>
+              <li>
+                Collaborate with stakeholders to solve problems throughout design and development 
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Web Developer Internship <br />
+              <span local-class="dates_employed">06/2017 - 11/2017</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              TenLegs
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <ul>
+              <li>
+                Worked remotely in a collaborative environment with other developers, front and back end, and UX/UI leaders  to complete sprints on time and with best coding practices
+              </li>
+              <li>
+                Learned best practices in a team environment utilizing such tools as JIRA, KANBAN, GIT (with GitLab), and attended morning meetings (remotely) using AGILE structure
+              </li>
+              <li>
+                Strengthened CSS3, SASS, SCSS, HTML, HBS and JS skills through various tasks
+              </li>
+              <li>
+                Focused on Ember.js and front-end responsiveness.  Tasks included refactoring components to fit specific client needs, building all new functionality when needed, and restructuring the entire application from a block system to Flexbox 
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Web Developer In-training <br />
+              <span local-class="dates_employed">10/2016 - 01/2017</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              General Assembly
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Boston, MA
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block last">
+            <ul>
+              <li>
+                Designed, planned, documented, and executed four projects from start to finish
+              </li>
+              <li>
+                Developed User Stories and implemented UI and UX solutions
+              </li>
+              <li>
+                Reviewed different methodologies of programming, such as Object Oriented Design and Agile Development
+              </li>
+              <li>
+                Covered basic IT and CS concepts, along with general software concepts like security, database relationships, and layering
+              </li>
+              <li>
+                Worked in Bash shell, utilized node.js, npm and bower packages, and learned best practices of Git and GitHub
+              </li>
+            </ul>
+          </div>
         </div>
+        <div local-class="resume_page_resume second">
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Shipfitter Metal Fabrication <br />
+              <span local-class="dates_employed">02/2014 - 09/2016</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Portsmouth Naval Shipyard
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Kittery, ME
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <ul>
+              <li>
+                Active member of teams responsible for the on-time redeployment of Nuclear Powered Submarines; duties included engineering, fabrication, and deployment of structural components with teams across every trade
+              </li>
+              <li>
+                Successfully completed various duties, tasks, and projects on board U.S. Nuclear Submarines, including but not limited to:  fabrication, weld preparation, use of all manner of machinery and design
+              </li>
+              <li>
+                Working at the Portsmouth Naval Shipyard introduced me to working on large projects while interacting with numerous smaller groups, each tasked with completing their own parts of a much larger picture. The day to day details of my work varied greatly, ranging from completing small tasks or even just parts of small tasks, to putting the finishing touches on whole projects and signing off on their completion
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_title_block">
+            <p>Education</p>
+          </div>
+            <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Data Visualization Certification (In Progress) <br />
+              <span>11/2020 - Present</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              FreeCodeCamp
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Front End Libraries Certification <br />
+              <span>07/2020 - 10/2020</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              FreeCodeCamp
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              JS Algorithms & Data Structures Certification <br />
+              <span>04/2020 - 07/2020</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              FreeCodeCamp
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Responsive Web Design Certification <br />
+              <span>01/2020 - 04/2020</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              FreeCodeCamp
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Web Developer Internship <br />
+              <span>06/2017 - 11/2017</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              TenLegs
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Remotely
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Web Developer Bootcamp <br />
+              <span>10/2016 - 01/2017</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              General Assembly
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Boston, MA
+            </div>
+          </div>
+        
+  
+        </div>
+
       </div>      
     </div>
   </section>

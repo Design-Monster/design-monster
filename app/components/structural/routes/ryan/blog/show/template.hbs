@@ -3,7 +3,7 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="blog_side_bar_container">
       <nav>
-        <Structural::Ui::Navigation::Desktop 
+        <Dynamic::Ui::Navigation::Desktop 
           @routeSlotOne={{this.routeSlotOne}}
           @routeSlotTwo={{this.routeSlotTwo}}
           @routeSlotThree={{this.routeSlotThree}}
