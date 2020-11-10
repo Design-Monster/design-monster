@@ -5,12 +5,13 @@ $size_medium: 1.5625rem; //25px
 $size_half_of_extra_large: 2.34375rem;
 $size_large: 3.125rem; //50px
 $size_extra_large: 4.6875rem; //75px
-$size_extra_extra_large: 6.25rem;
+$size_extra_extra_large: 6.25rem; //100px
 
 //Colors
 $color_white: #ffffff;
 $color_almost_white: #fafafa;
 $color_light_grey: #f0f0f0;
+$color_dark_grey: darken($color_light_grey, 50%);
 $color_black: #000000;
 $color_orange: #ff4f00;
 $color_blue: #05386b;
@@ -36,6 +37,8 @@ $border_radius_medium: 8px;
 $button_height_base: 2.75;
 $button_height_base_mini: 2;
 $button_padding_base: 0;
+$button_height_standard: $size_large;
+$button_width_standard: $size_extra_extra_large;
 
 //Margins
 $margin_extra_small: $size_extra_small; //base margin for spacing between edges

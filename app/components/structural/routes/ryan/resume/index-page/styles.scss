@@ -1,7 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.ryan_resume_page_component_container {
+.resume_page_component_container {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -14,7 +14,7 @@
     flex-direction: row;
   }
 
-  .ryan_resume_page_side_bar_container {
+  .resume_page_side_bar_container {
     display: flex;
     min-width: 17.1875rem;
     max-width: 17.1875rem;
@@ -23,33 +23,143 @@
     justify-content: center;
   }
 
-  .ryan_resume_page_content_container {
+  .resume_page_content_container {
     display: flex;
     height: 100vh;
     flex: 1;
     flex-direction: column;
     overflow-y: scroll;
 
-    .ryan_resume_page_header_container {
+    .resume_page_header_container {
       margin: 0 0 $margin_large;
     }
 
-    .ryan_resume_page_content_section_container {
+    .resume_page_content_section_container {
       display: flex;
       flex-direction: column;
 
-      .ryan_resume_page_content_header {
+      .resume_page_content_header {
+        display: flex;
         margin: 0 $margin_small;
-        font-size: 2em;
-        font-weight: 600;
+
+        a {
+          text-decoration: none;
+        }
+
+        .resume_page_button {
+          width: $button_width_standard;
+          height: $button_height_standard;
+          margin: 0 0 0 $margin_small;
+          line-height: $size_large;
+          color: $color_stone_blue;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          border-radius: 8px;
+          box-shadow: 0 2px 12px $color_stone_blue;
+
+          &.first {
+            margin: 0 $margin_small 0 0;
+          }
+
+          &:hover {
+            color: $color_white;
+            cursor: pointer;
+            background-color: $color_stone_blue;
+            box-shadow: 0 5px 12px $color_stone_blue;
+          }
+        }
       }
 
-      .ryan_resume_page_content {
-        margin: 0 $margin_small;
+      .resume_page_content {
+        display: flex;
+        flex-direction: column;
+        margin: $margin_large $margin_large $margin_large $margin_small;
         font-size: 1.25em;
+        box-shadow: 0 5px 12px $color_stone_blue;
+        align-items: center;
+        justify-content: center;
 
-        .ryan_resume_page_resume {
-          
+        .resume_page_resume {
+          margin: $margin_extra_large $margin_large;
+
+          &.first {
+            box-shadow: 0 5px 12px -12px $color_stone_blue;
+          }
+
+          &.second {
+            margin-top: 0;
+          }
+
+          .resume_page_resume_header_container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+
+            .resume_page_resume_header_subject {
+              display: flex;
+              flex: 1;
+
+              .resume_page_resume_header_name {
+                flex: 1;
+                font-size: 2em;
+              }
+
+              .resume_page_resume_header_title {
+                font-size: 2em;
+                text-align: end;
+              }
+            }
+
+            .resume_page_resume_header_contact {
+              display: flex;
+              flex: 1;
+
+              .resume_page_resume_header_email {
+                flex: 1;
+                color: $color_stone_blue;
+              }
+
+              .resume_page_resume_header_other {
+                color: $color_stone_blue;
+                text-align: end;
+              }
+            }
+          }
+
+          .resume_page_resume_title_block {
+            font-size: 2em;
+            color: $color_dark_grey;
+          }
+
+          .resume_page_resume_sub_title_container {
+            display: flex;
+            flex: 1;
+
+            .resume_page_resume_sub_title_container_block_one {
+              flex: 2;
+
+              .dates_employed {
+                color: $color_stone_blue;
+              }
+            }
+
+            .resume_page_resume_block_two {
+              flex: 1;
+            }
+
+            .resume_page_resume_block_three {
+              flex: 1;
+              text-align: end;
+            }
+          }
+
+          .resume_page_resume_text_block {
+
+            &.last {
+              margin: 0 0 $margin_extra_large;
+            }
+          }
         }
       }
     }

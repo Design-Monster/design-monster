@@ -1,8 +1,8 @@
 <Utilities::SkipLink />
 {{#if (or (media 'isSmall') (media 'isMedium'))}}
-  <Structural::Ui::Navigation::Mobile>
+  <Dynamic::Ui::Navigation::Mobile>
     {{outlet}}
-  </Structural::Ui::Navigation::Mobile>
+  </Dynamic::Ui::Navigation::Mobile>
 {{else}}
   {{outlet}}
 {{/if}}
