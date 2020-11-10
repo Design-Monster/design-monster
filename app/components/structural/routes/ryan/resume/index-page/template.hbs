@@ -1,81 +1,41 @@
 
-<div local-class="resume_component_container">
+<div local-class="ryan_resume_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="resume_side_bar_container">
-      <Structural::Ui::Navigation::Desktop 
-        @routeSlotOne={{this.routeSlotOne}}
-        @routeSlotTwo={{this.routeSlotTwo}}
-        @routeSlotThree={{this.routeSlotThree}}
-        @routeLabelSlotOne={{this.routeLabelSlotOne}}
-        @routeLabelSlotTwo={{this.routeLabelSlotTwo}}
-        @routeLabelSlotThree={{this.routeLabelSlotThree}} />
+    <section local-class="ryan_resume_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotThree={{this.blogRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
     </section>
   {{/if}}
-  <section local-class="resume_content_container">
-    <div local-class="resume_section_container grey">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
+  <section local-class="ryan_resume_page_content_container">
+    <div local-class="ryan_resume_page_header_container">
+      <Dynamic::Ui::Header 
+        @headerName={{this.headerName}}
+        @headerTitle={{this.headerTitle}}
+        @headerButtonLabel={{this.headerButtonLabel}}
+        @headerButtonRoute={{this.contactRoute}}
+      />
     </div>
-    <div local-class="resume_section_container">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="resume_section_container grey">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="resume_section_container">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
-    </div>
-    <div local-class="resume_section_container grey">
-      <Dynamic::Ui::ContentSection>
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-        <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
-      </Dynamic::Ui::ContentSection>
+    <div local-class="ryan_resume_page_content_section_container">
+      <div local-class="ryan_resume_page_content_header">
+        Print or Download as PDF
+      </div>
+      <div local-class="ryan_resume_page_content">
+        <div local-class="ryan_resume_page_resume">
+          Resume HERE
+        </div>
+      </div>      
     </div>
   </section>
 </div>

@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 
-export default class StructuralRoutesRyanResumeIndexPageComponent extends Component {
+export default class StructuralRoutesRyanContactIndexPageComponent extends Component {
   githubIcon = 'github-alt';
   githubPrefix = 'fab';
   githubSize = '2x';

@@ -1,14 +1,17 @@
 <div local-class="header_container">
   <div local-class="header_text_container">
-    {{@name}}
+    <div local-class="header_name_container">
+      {{@headerName}}
+    </div>
+    <div local-class="header_title_container">
+      {{@headerTitle}}
+    </div>
   </div>
-  <div local-class="header_action_container">
     <div local-class="header_button_container">
-      <LinkTo @route={{@headerButtonRoute}}>
+      <LinkTo @route={{@headerButtonRoute}} local-class="nav_link" @tagName='div'>
         <div local-class="header_button" role="button">
-            Hire Me!
+            {{@headerButtonLabel}}
         </div>
       </LinkTo>
     </div>
-  </div>
 </div>

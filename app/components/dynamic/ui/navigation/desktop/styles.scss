@@ -14,13 +14,13 @@ nav {
     .about_container {
       display: flex;
       flex-direction: column;
-      margin: $margin_medium 0;
+      margin: calc(#{$margin_medium} + 2.5px) 0 $margin_medium;
 
       a {
         color: $color_blue;
         text-decoration: none;
 
-        &visited {
+        &:visited {
         color: $color_blue;
         }
       }

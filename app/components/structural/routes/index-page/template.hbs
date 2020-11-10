@@ -1,16 +1,33 @@
-<div local-class="home_component_container">
+
+<div local-class="ryan_about_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="home_side_bar_container">
-      <Structural::Ui::Navigation::Desktop 
-        @portfolioRoute={{this.portfolioRoute}}
-        @resumeRoute={{this.resumeRoute}}
-        @ryanRoute={{this.ryanRoute}} />
+    <section local-class="ryan_about_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotThree={{this.blogRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
     </section>
   {{/if}}
-  <section local-class="home_content_container">
-    <div local-class="home_section_container grey">
+  <section local-class="ryan_about_page_content_container">
+    <Dynamic::Ui::Header 
+      @headerName={{this.headerName}}
+      @headerTitle={{this.headerTitle}}
+      @headerButtonLabel={{this.headerButtonLabel}}
+      @headerButtonRoute={{this.contactRoute}}
+    />
+    <div local-class="ryan_about_page_section_container">
       <Dynamic::Ui::ContentSection>
-        About Me
+        This is all getting erased.  Need new Design Monster Landing Page which will direct to Amina or Ryan      
       </Dynamic::Ui::ContentSection>
     </div>
   </section>
