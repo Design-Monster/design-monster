@@ -1,0 +1,16 @@
+<div local-class="component_dashboard_block_container">
+  <div local-class="component_dashboard_block_title">
+    {{@title}}
+  </div>
+  <div local-class="component_dashboard_block_date">
+    {{@date}}
+  </div>
+  <div local-class="component_dashboard_block_description">
+    {{@description}}
+  </div>
+  <LinkTo @route={{@buttonRoute}}>
+    <div local-class="component_dashboard_block_button" role="button">
+      {{@buttonLabel}}
+    </div>
+  </LinkTo>
+</div>

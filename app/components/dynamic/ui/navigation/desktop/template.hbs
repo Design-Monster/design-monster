@@ -1,18 +1,6 @@
 <nav>
   <div local-class="menu_container">
     <div local-class="about_container">
-      <div local-class="about_social_container">
-        <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link one">
-          <div local-class="about_social_icon">
-            <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
-          <div local-class="about_social_icon">
-            <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
-          </div>
-        </a>
-      </div>
       <div local-class="about_image_container">
         <div local-class="about_image">
           <img src={{@avatarImage}} alt="avatar" />
@@ -69,16 +57,30 @@
         </LinkTo>
       </div>
     </div>
-    <div local-class="company_title_container">
-      <LinkTo @route="index">
+    <div local-class="about_social_container">
+      <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link first">
+        <div local-class="about_social_icon">
+          <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+        <div local-class="about_social_icon">
+          <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
+        </div>
+      </a>
+    </div>
+    {{!-- <div local-class="company_title_container"> --}}
+      {{!-- <LinkTo @route="index">
         <div local-class="company_title">
             DESIGN MONSTER
         </div>
-      </LinkTo>
-    </div>
+      </LinkTo> --}}
+    {{!-- </div> --}}
     <div local-class="fine_print_container">
       <div local-class="built_by_container">
-        Designed & Built by <br /> DesignMonster LLC
+        <p>
+          designed & built by DESIGNMONSTER LLC
+        </p>
       </div>
       <div local-class="copyright_container">
         <FaIcon @icon="copyright" @prefix="far" />

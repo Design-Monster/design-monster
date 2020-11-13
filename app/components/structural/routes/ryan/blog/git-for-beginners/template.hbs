@@ -1,7 +1,6 @@
-
-<div local-class="about_page_component_container">
+<div local-class="blog_show_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="about_page_side_bar_container">
+    <section local-class="blog_show_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -18,17 +17,21 @@
         />
     </section>
   {{/if}}
-  <section local-class="about_page_body_container">
+  <section local-class="blog_show_page_body_container">
     <Dynamic::Ui::Header 
       @headerName={{this.headerName}}
       @headerTitle={{this.headerTitle}}
       @headerButtonLabel={{this.headerButtonLabel}}
       @headerButtonRoute={{this.contactRoute}}
     />
-    <div local-class="about_page_content_container">
-      <Dynamic::Ui::ContentSection>
-        This is all getting erased.  Need new Design Monster Landing Page which will direct to Amina or Ryan      
-      </Dynamic::Ui::ContentSection>
+    <div local-class="blog_show_page_content_container">
+      <Dynamic::Article
+        @paragraphOne={{this.paragraphOne}}
+        @paragraphTwo={{this.paragraphTwo}}
+        @paragraphThree={{this.paragraphThree}}
+        @paragraphFour={{this.paragraphFour}}
+        @imageOne={{this.imageOne}} />
     </div>
   </section>
 </div>
+  

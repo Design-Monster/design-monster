@@ -13,6 +13,8 @@ Router.map(function() {
     this.route('portfolio', function() {
     });
     this.route('blog', function() {
+      this.route('ember-mobile-menu');
+      this.route('git-for-beginners');
     });
     this.route('resume', function() {
     });
