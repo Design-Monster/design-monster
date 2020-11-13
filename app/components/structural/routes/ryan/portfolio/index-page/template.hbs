@@ -1,6 +1,6 @@
-<div local-class="ryan_portfolio_page_component_container">
+<div local-class="portfolio_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="ryan_portfolio_page_side_bar_container">
+    <section local-class="portfolio_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -17,14 +17,14 @@
         />
     </section>
   {{/if}}
-  <section local-class="ryan_portfolio_page_content_container">
+  <section local-class="portfolio_page_body_container">
     <Dynamic::Ui::Header 
       @headerName={{this.headerName}}
       @headerTitle={{this.headerTitle}}
       @headerButtonLabel={{this.headerButtonLabel}}
       @headerButtonRoute={{this.contactRoute}}
     />
-    <div local-class="ryan_portfolio_page_section_container">
+    <div local-class="portfolio_page_content_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -37,7 +37,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="ryan_portfolio_page_section_container grey">
+    <div local-class="portfolio_page_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -50,7 +50,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="ryan_portfolio_page_section_container">
+    <div local-class="portfolio_page_section_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -63,7 +63,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="ryan_portfolio_page_section_container grey">
+    <div local-class="portfolio_page_section_container grey">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
@@ -76,7 +76,7 @@
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
       </Dynamic::Ui::ContentSection>
     </div>
-    <div local-class="ryan_portfolio_page_section_container">
+    <div local-class="portfolio_page_section_container">
       <Dynamic::Ui::ContentSection>
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />
         <Dynamic::Ui::ContentBlock @contentImage="IMAGE" @contentText="TEXT" />

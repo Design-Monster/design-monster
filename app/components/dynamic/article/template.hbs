@@ -1,17 +1,101 @@
-<div local-class="article_container">
-  <div local-class="article_paragraph">
-    {{@paragraphOne}}
-  </div>
-  <div local-class="article_paragraph">
-    {{@paragraphTwo}}
-  </div>
-  <div local-class="article_image_container">
-    <img src="{{@imageOne}}" alt={{@imageAltOne}}>
-  </div>
-  <div local-class="article_paragraph">
-    {{@paragraphThree}}
-  </div>
-  <div local-class="article_paragraph">
-    {{@paragraphFour}}
-  </div>
+<div local-class="article_component_container">
+  {{#if @title}}
+    <div local-class="article_component_title">
+      {{@title}}
+    </div>
+  {{/if}}
+  {{#if @author}}
+    <div local-class="article_component_author">
+      Written By: {{@author}}
+    </div>
+  {{/if}}
+  {{#if @url}}
+    <div local-class="article_component_url">
+      Find it HERE: {{@url}}
+    </div>
+  {{/if}}
+  {{#if @creator}}
+    <div local-class="article_component_creator">
+      Creator: {{@creator}}
+    </div>
+  {{/if}}
+  {{#if @paragraphOneTitle}}
+    <div local-class="article_component_paragraph_title">
+      {{@paragraphOneTitle}}
+    </div>
+  {{/if}}
+  {{#if @paragraphOne}}
+    <div local-class="article_component_paragraph">
+      {{@paragraphOne}}
+    </div>
+  {{/if}}
+  {{#if @paragraphOneCodeBlockOne}}
+    <div local-class="article_component_paragraph_code_block_container">
+      <div local-class="article_component_paragraph_code_block">
+      {{@paragraphOneCodeBlockOne}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoCodeBlockTwo}}
+    <div local-class="article_component_paragraph_code_block_container">
+      <div local-class="article_component_paragraph_code_block">
+        {{@paragraphTwoCodeBlockTwo}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if @paragraphOneImageOne}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphOneImageOne}}" alt={{@paragraphOneImageOneAlt}}>
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoImageTwo}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphTwoImageTwo}}" alt={{@paragraphTwoImageTwoAlt}}>
+    </div>
+  {{/if}}
+  {{#if @paragraphThreeImageThree}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphThreeImageThree}}" alt={{@paragraphThreeImageThreeAlt}}>
+    </div>
+  {{/if}}
+  
+
+
+
+  {{#if @paragraphTwo}}
+    <div local-class="article_component_paragraph">
+      {{@paragraphTwo}}
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoCodeBlockOne}}
+    <div local-class="article_component_paragraph_code_block_container">
+      <div local-class="article_component_paragraph_code_block">
+      {{@paragraphTwoCodeBlockOne}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoCodeBlockOne}}
+    <div local-class="article_component_paragraph_code_block_container">
+      <div local-class="article_component_paragraph_code_block">
+        {{@paragraphTwoCodeBlockOne}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoImageOne}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphOneImageOne}}" alt={{@paragraphTwoImageOneAlt}}>
+    </div>
+  {{/if}}
+  {{#if @paragraphTwoImageTwo}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphTwoImageTwo}}" alt={{@paragraphTwoImageTwoAlt}}>
+    </div>
+  {{/if}}
+  {{#if @paragraphThreeImageThree}}
+    <div local-class="article_component_image_container">
+      <img src="{{@paragraphThreeImageThree}}" alt={{@paragraphThreeImageThreeAlt}}>
+    </div>
+  {{/if}}
+  
+
 </div>

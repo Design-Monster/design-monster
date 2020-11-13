@@ -1,7 +1,7 @@
 
-<div local-class="ryan_about_page_component_container">
+<div local-class="about_page_component_container">
   {{#if (or (media 'isLarge') (media 'isWide'))}}
-    <section local-class="ryan_about_page_side_bar_container">
+    <section local-class="about_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -18,8 +18,8 @@
         />
     </section>
   {{/if}}
-  <section local-class="ryan_about_page_content_container">
-    <div local-class="ryan_about_page_header_container">
+  <section local-class="about_page_body_container">
+    <div local-class="about_page_header_container">
       <Dynamic::Ui::Header 
         @headerName={{this.headerName}}
         @headerTitle={{this.headerTitle}}
@@ -27,22 +27,26 @@
         @headerButtonRoute={{this.contactRoute}}
       />
     </div>
-    <div local-class="ryan_about_page_content_section_container">
-      <div local-class="ryan_about_page_content_header">
+    <div local-class="about_page_content_container">
+      <div local-class="about_page_content_header">
         Full Stack Developer / Front End Developer
       </div>
-      <div local-class="ryan_about_page_content">
+      <div local-class="about_page_content">
         <p>
+          <br />
+          MAKE SHORTER - BULLET POINTS 
+          <br />
+          <br />
           I am a Web Developer who loves Ember.js, especially the newest Octane Edition.  If you haven't checked it out because you thought "Eww Ember", I urge you to give it a try.  You'll be glad you did. I have also recently built several projects in React.js and am beginning a Vue.js project now.  I spend my days diving deeper into things like Flex and Grid, JavaScript, backend technologies and more. I read everything that I come across.  I have spent 3+ years teaching myself how to code.  I've built dozens of side projects, some of which I showcase on the Portfolio section of this site, and completed an internship with a great company called TenLegs, in Brooklyn, now known as _________. I am now looking for an entry-level position with a great team!
         </p>
         <p>
           I've also been mentoring my brother, Matt, of <a href="https://roderickdevelopers.com">Roderick Developers</a>.  He's a fast learner and you should check out his portfolio.  The thought of teaching someone seemed overwhelming at first.  I have since come to the realization that all new developers should become mentors.  It makes you better.  It just does.  And it's enjoyable to share the things you've learned and watch someone else grow. I found it so rewarding that I will definitely do it again in the future.
         </p>
       </div>
-      <div local-class="ryan_about_page_content_header">
+      <div local-class="about_page_content_header">
         What I'm Doing Now
       </div>
-      <div local-class="ryan_about_page_content">
+      <div local-class="about_page_content">
         <p>
           I am very comfortable with Ember.js.  I'm also fairly comfortable with Rails and SQL.  So, I thought it was time to break out of that comfort zone and expand my stack skills.  Currently I am teaching myself React.js.  I have a custom file structure that I've honed over the years with Ember.js, and I really like the way it's set up, so I decided to build a React.js boilerplate that matches my Ember.js boilerplate, figuring that I could learn the ins and outs of React.js as I did.  You can check out both in the Portfolio section of this site, if you're interested.  Both are free to clone and use.       
         </p>
