@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 
-export default class StructuralRoutesRyanBlogGitForBeginnersComponent extends Component {
+export default class StructuralRoutesRyanBlogEmberMobileMenuComponent extends Component {
   githubIcon = 'github-alt';
   githubPrefix = 'fab';
   githubSize = '2x';
@@ -17,8 +17,4 @@ export default class StructuralRoutesRyanBlogGitForBeginnersComponent extends Co
   headerTitle = 'Web Developer';
   headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'ryan.contact';
-  paragraphOne = 'This is Paragraph ONE';
-  paragraphTwo = 'This is Paragraph TWO';
-  paragraphThree = 'This is Paragraph THREE';
-  paragraphFour = 'This is Paragraph FOUR';
 }

@@ -23,12 +23,14 @@
   }
 
   .article_component_paragraph_title {
+    margin: $margin_small 0 0;
     font-size: 2em;
     color: $color_dark_grey;
   }
 
   .article_component_paragraph {
     margin: $margin_small 0 0;
+    font-size: 1.25em;
   }
 
   .article_component_paragraph_code_block_container {
@@ -39,7 +41,6 @@
     margin: $margin_small 0 0;
     color: $color_white;
     background-color: $color_black;
-    align-self: center;
     align-items: center;
 
     @include breakpoint(medium) {
