@@ -17,4 +17,25 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   headerTitle = 'Web Developer';
   headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'ryan.contact';
+  projectTitle = 'Project 1';
+  iconOne = '';
+  iconTwo = '';
+  iconThree = '';
+  blockOneLabel = 'Stack';
+  blockTwoText = 'This is where a short description will go';
+  blockTwoLabel = 'Description';
+  blockThreeTextOne = '1 - This is where a short description of Challenges will go';
+  blockThreeTextTwo = '2 - This is where a short description of Challenges will go';
+  blockThreeTextThree = '3 - This is where a short description of Challenges will go';
+  blockThreeLabel = 'Challenges';
+  blockFourTextOne = '1 - This is where a short description of solutions goes';
+  blockFourTextTwo = '2 - This is where a short description of solutions goes';
+  blockFourTextThree = '3 - This is where a short description of solutions goes';
+  blockFourTextFour = '4 - This is where a short description of solutions goes';
+  blockFourTextFive = '5 - This is where a short description of solutions goes';
+  blockFourLabel = 'Solutions';
+  blockFiveText = 'Repo';
+  blockFiveLabel = 'See the Code';
+  blockSixText = 'Live Site';
+  blockSixLabel = 'See it in Action';
 }
