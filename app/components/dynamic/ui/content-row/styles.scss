@@ -9,6 +9,10 @@
     font-size: $font_size_large;
     font-weight: 600;
   }
+
+  .portfolio_page_content_row_header_description {
+    font-size: $font_size_regular;
+  }
 }
 
 .portfolio_page_content_container_row_container {
@@ -23,10 +27,11 @@
 
     .portfolio_page_content_block {
       display: flex;
-      min-width: 300px;
-      max-width: 300px;
+      // min-width: 300px;
+      // max-width: 300px;
       min-height: 300px;
       max-height: 300px;
+      flex: 0 0 33%;
       flex-direction: column;
       margin: $margin_extra_small $margin_extra_small $margin_extra_small 0;
       background-color: $color_white;
@@ -60,8 +65,19 @@
         display: flex;
         flex: 1;
         margin: $margin_small;
-        // text-align: center;
-        // align-items: center;
+      }
+
+      .portfolio_page_content_block_image {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+        }
       }
 
       .portfolio_page_content_block_label {

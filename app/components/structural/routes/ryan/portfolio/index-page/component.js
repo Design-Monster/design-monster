@@ -18,12 +18,12 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'ryan.contact';
   projectTitle = 'Project 1';
+  projectDescription = 'Description Goes Here!!';
+  blockOneImage = '/assets/images/RyanHeadShot.png';
   iconOne = '';
   iconTwo = '';
   iconThree = '';
-  blockOneLabel = 'Stack';
-  blockTwoText = 'This is where a short description will go';
-  blockTwoLabel = 'Description';
+  blockTwoLabel = 'Stack';
   blockThreeTextOne = '1 - This is where a short description of Challenges will go';
   blockThreeTextTwo = '2 - This is where a short description of Challenges will go';
   blockThreeTextThree = '3 - This is where a short description of Challenges will go';
