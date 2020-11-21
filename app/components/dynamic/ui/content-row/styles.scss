@@ -1,0 +1,100 @@
+.portfolio_page_content_row_header {
+  margin: $margin_small;
+
+  &.first {
+    margin-top: $margin_large;
+  }
+
+  .portfolio_page_content_row_header_title {
+    font-size: $font_size_large;
+    font-weight: 600;
+  }
+
+  .portfolio_page_content_row_header_description {
+    font-size: $font_size_regular;
+  }
+}
+
+.portfolio_page_content_container_row_container {
+  display: flex;
+  margin: 0 $margin_large 0 0;
+
+  .portfolio_page_content_container_row {
+    display: flex;
+    margin: $margin_small;
+    overflow-x: scroll;
+    align-items: center;
+
+    .portfolio_page_content_block {
+      display: flex;
+      // min-width: 300px;
+      // max-width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      flex: 0 0 33%;
+      flex-direction: column;
+      margin: $margin_extra_small $margin_extra_small $margin_extra_small 0;
+      background-color: $color_white;
+      border: $border_two;
+      border-radius: $border_radius_small;
+      justify-content: center;
+      align-items: center;
+
+      .portfolio_page_content_block_icon_container {
+        display: flex;
+        flex: 1;
+        margin: $margin_extra_small;
+        align-items: center;
+
+        .portfolio_page_content_block_icon {
+          min-width: $size_large;
+          max-width: $size_large;
+          min-height: $height_large;
+          max-height: $height_large;
+          margin: $margin_extra_small;
+          border: $border_two;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .portfolio_page_content_block_text {
+        display: flex;
+        flex: 1;
+        margin: $margin_small;
+      }
+
+      .portfolio_page_content_block_image {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+        }
+      }
+
+      .portfolio_page_content_block_label {
+        margin: $margin_extra_small;
+        font-size: $font_size_extra_large;
+        font-weight: 600;
+        color: $color_dark_grey;
+      }
+    }
+  }
+
+  .arrow {
+    width: 50px;
+    max-height: 305px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 305px;
+    border: $border_two;
+  }
+}

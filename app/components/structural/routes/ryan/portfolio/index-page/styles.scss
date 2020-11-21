@@ -29,14 +29,5 @@
     flex: 1;
     flex-direction: column;
     overflow-y: scroll;
-
-    .portfolio_page_content_container {
-      justify-content: center;
-      align-items: center;
-
-      &.grey {
-        background-color: $color_light_grey;
-      }
-    }
   }
 }

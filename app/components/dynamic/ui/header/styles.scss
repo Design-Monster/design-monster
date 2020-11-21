@@ -12,18 +12,19 @@
 
   .header_text_container {
     display: flex;
-    margin: 0 0 0 $margin_large;
+    margin: 0 0 0 $margin_small;
     align-self: flex-end;
     align-items: baseline;
 
     .header_name_container {
       margin: 0 $margin_medium 0 0;
-      font-size: 2em;
+      font-size: $font_size_extra_extra_large;
+      font-weight: 600;
       color: $color_stone_blue;
     }
 
     .header_title_container {
-      font-size: 1.5em;
+      font-size: $font_size_extra_large;
     }
   }
 
