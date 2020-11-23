@@ -1,41 +1,86 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.about_page_component_container {
+.index_page_component_container {
   display: flex;
   flex: 1;
-  flex-direction: column;
 
-  @include breakpoint(large) {
-    flex-direction: row;
-  }
-
-  @include breakpoint(wide) {
-    flex-direction: row;
-  }
-
-  .about_page_side_bar_container {
+  .index_page_body_container {
     display: flex;
-    min-width: 17.1875rem;
-    max-width: 17.1875rem;
-    flex-direction: column;
-    overflow-y: scroll;
-    justify-content: center;
-  }
-
-  .about_page_body_container {
-    display: flex;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     flex: 1;
     flex-direction: column;
-    overflow-y: scroll;
 
-    .about_page_content_container {
+    .index_page_header_container {
+      display: flex;
+      min-height: 6.25rem;
+      max-height: 6.25rem;
+      margin: 0 0 $margin_large;
+      border-bottom: solid 8px $color_stone_blue;
+      align-items: baseline;
+
+      .index_page_header_name_container {
+        margin: 0 $margin_medium 0 $margin_small;
+        font-size: $font_size_extra_extra_large;
+        font-weight: 600;
+        color: $color_stone_blue;
+        align-self: flex-end;
+      }
+    }
+
+    .index_page_content_container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      &.grey {
-        background-color: $color_light_grey;
+      a {
+        text-decoration: none;
+      }
+
+      @include breakpoint(large) {
+        flex-direction: row;
+      }
+  
+      @include breakpoint(wide) {
+        flex-direction: row;
+      }
+
+      .index_page_profile_container {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(large) {
+          margin: 0 $margin_large;
+        }
+    
+        @include breakpoint(wide) {
+          margin: 0 $margin_large;
+        }
+
+        .index_page_image_container {
+          min-width: 300px;
+          max-width: 300px;
+          min-height: 300px;
+          max-height: 300px;
+          border-radius: 50%;
+          
+          img {
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+          }
+        }
+
+        .index_page_label_container {
+          margin: $margin_medium 0 0;
+          font-size: 2em;
+          font-weight: 600;
+          text-align: center;
+        }
       }
     }
   }

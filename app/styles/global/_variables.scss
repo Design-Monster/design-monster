@@ -6,6 +6,7 @@ $size_half_of_extra_large: 2.34375rem;
 $size_large: 3.125rem; //50px
 $size_extra_large: 4.6875rem; //75px
 $size_extra_extra_large: 6.25rem; //100px
+$size_wide: 12.5rem;  //200px
 
 //Colors
 $color_white: #ffffff;
@@ -39,6 +40,7 @@ $button_height_base_mini: 2;
 $button_padding_base: 0;
 $button_height_standard: $size_large;
 $button_width_standard: $size_extra_extra_large;
+$button_width_wide: $size_wide;
 
 //Margins
 $margin_extra_small: $size_extra_small; //base margin for spacing between edges
