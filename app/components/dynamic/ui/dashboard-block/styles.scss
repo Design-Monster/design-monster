@@ -1,7 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.component_dashboard_block_container {
+.dashboard_block_container {
   display: flex;
   flex-direction: column;
   margin: 0 0 $margin_large;
@@ -11,36 +11,20 @@
     text-decoration: none;
   }
 
-  .component_dashboard_block_title {
+  .dashboard_block_title_container {
     margin: 0 0 $margin_small;
     font-size: 2em;
   }
 
-  .component_dashboard_block_date {
+  .dashboard_block_date_container {
     margin: 0 0 $margin_small;
   }
 
-  .component_dashboard_block_description {
+  .dashboard_block_description_container {
     margin: 0 0 $margin_large;
   }
 
-  .component_dashboard_block_button {
-    width: $button_width_standard;
-    height: $button_height_standard;
+  .dashboard_block_button_container {
     margin: 0 0 $margin_large;
-    line-height: $size_large;
-    color: $color_stone_blue;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px $color_stone_blue;
-
-    &:hover {
-      color: $color_white;
-      cursor: pointer;
-      background-color: $color_stone_blue;
-      box-shadow: 0 5px 12px $color_stone_blue;
-    }
   }
 }

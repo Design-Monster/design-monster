@@ -1,16 +1,18 @@
-<div local-class="component_dashboard_block_container">
-  <div local-class="component_dashboard_block_title">
+<div local-class="dashboard_block_container">
+  <div local-class="dashboard_block_title_container">
     {{@title}}
   </div>
-  <div local-class="component_dashboard_block_date">
+  <div local-class="dashboard_block_date_container">
     {{@date}}
   </div>
-  <div local-class="component_dashboard_block_description">
+  <div local-class="dashboard_block_description_container">
     {{@description}}
   </div>
-  <LinkTo @route={{@buttonRoute}}>
-    <div local-class="component_dashboard_block_button" role="button">
-      {{@buttonLabel}}
-    </div>
-  </LinkTo>
+  <div local-class="dashboard_block_button_container">
+    <LinkTo @route={{@buttonRoute}}>
+      <Dynamic::Ui::Button 
+        @buttonLabel={{@buttonLabel}} 
+      />
+    </LinkTo>
+  </div>
 </div>

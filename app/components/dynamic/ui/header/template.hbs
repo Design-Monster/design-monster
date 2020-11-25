@@ -8,10 +8,10 @@
     </div>
   </div>
     <div local-class="header_button_container">
-      <LinkTo @route={{@headerButtonRoute}} local-class="nav_link" @tagName='div'>
-        <div local-class="header_button" role="button">
-            {{@headerButtonLabel}}
-        </div>
+      <LinkTo @route={{@headerButtonRoute}}>
+        <Dynamic::Ui::Button
+          @buttonLabel={{@headerButtonLabel}}
+        />
       </LinkTo>
     </div>
 </div>
