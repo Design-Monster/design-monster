@@ -1,7 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.blog_show_page_component_container {
+.blog_show_page_container {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -34,8 +34,74 @@
       justify-content: center;
       align-items: center;
 
-      &.grey {
-        background-color: $color_light_grey;
+      .article_container {
+        display: flex;
+        flex-direction: column;
+        margin: $margin_large $margin_large $margin_large $margin_small;
+
+        .article_title {
+          font-size: 2em;
+        }
+
+        .article_author {
+          margin: $margin_small 0 0;
+        }
+
+        .article_main_container {
+          margin: $margin_small 0 0;
+          font-size: 1.25em;
+
+          .article_paragraph_title {
+            margin: $margin_small 0 0;
+            font-size: 2em;
+            color: $color_dark_grey;
+          }
+
+          .article_paragraph_code_block_container {
+            display: flex;
+            min-width: 310px;
+            max-width: 310px;
+            min-height: $height_large;
+            margin: $margin_small 0 0;
+            color: $color_white;
+            background-color: $color_black;
+            align-items: center;
+        
+            @include breakpoint(medium) {
+              min-width: 500px;
+              max-width: 500px;
+            }
+        
+            @include breakpoint(large) {
+              min-width: 520px;
+              max-width: 520px;
+            }
+        
+            @include breakpoint(wide) {
+              min-width: 600px;
+              max-width: 600px;
+            }
+
+            .article_paragraph_code_block {
+              display: flex;
+              margin: 0 0 0 $margin_small;
+
+              span {
+                &.code_output {
+                  color: $color_yellow;
+                }
+
+                &.master_output {
+                  color: $color_green;
+                }
+
+                &.red_output {
+                  color: $color_red;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
