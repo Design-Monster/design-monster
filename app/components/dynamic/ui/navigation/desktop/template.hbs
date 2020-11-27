@@ -32,6 +32,7 @@
           </div>
         </LinkTo>
       </div>
+      {{#if @routeSlotThree}}
       <div local-class="nav_item_container">
         <LinkTo @route={{@routeSlotThree}} local-class="nav_link">
           <div local-class="nav_item">
@@ -44,6 +45,7 @@
           </div>
         </LinkTo>
       </div>
+      {{/if}}
       <div local-class="nav_item_container">
         <LinkTo @route={{@routeSlotFour}} local-class="nav_link">
           <div local-class="nav_item">
@@ -69,17 +71,10 @@
         </div>
       </a>
     </div>
-    {{!-- <div local-class="company_title_container"> --}}
-      {{!-- <LinkTo @route="index">
-        <div local-class="company_title">
-            DESIGN MONSTER
-        </div>
-      </LinkTo> --}}
-    {{!-- </div> --}}
     <div local-class="fine_print_container">
       <div local-class="built_by_container">
         <p>
-          designed & built by DESIGNMONSTER LLC
+          designed & built by <a href="https://www.designmonster.com">DESIGNMONSTER LLC</a>
         </p>
       </div>
       <div local-class="copyright_container">

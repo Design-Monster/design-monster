@@ -1,22 +1,21 @@
 import Component from '@glimmer/component';
 
-export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Component {
+export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Component {
   githubIcon = 'github-alt';
   githubPrefix = 'fab';
   githubSize = '2x';
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/RyanHeadShot.png';
-  aboutMeRoute = 'ryan.about';
-  portfolioRoute = 'ryan.portfolio';
-  blogRoute = 'ryan.blog';
-  resumeRoute = 'ryan.resume';
-  contactRoute = 'ryan.contact';
-  headerName = 'Ryan Roderick';
-  headerTitle = 'Web Developer';
+  avatarImage = '';
+  aboutMeRoute = 'amina.about';
+  portfolioRoute = 'amina.portfolio';
+  resumeRoute = 'amina.resume';
+  contactRoute = 'amina.contact';
+  headerName = 'Amina Roderick';
+  headerTitle = 'UX Designer';
   headerButtonLabel = 'Hire Me!';
-  headerButtonRoute = 'ryan.contact';
+  headerButtonRoute = 'amina.contact';
   projectOneProjectTitle = 'Project 1 Ember';
   projectOneProjectDescription = 'Description Goes Here!!';
   projectOneBlockOneImage = '/assets/images/RyanHeadShot.png';

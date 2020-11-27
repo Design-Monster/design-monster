@@ -1,4 +1,4 @@
-<div local-class="portfolio_page_content_row_header first">
+<div local-class="portfolio_page_content_row_header">
   <div local-class="portfolio_page_content_row_header_title">
     {{@projectTitle}}
   </div>
@@ -53,26 +53,30 @@
         {{@blockFourLabel}}
       </div>
     </div>
-    <div local-class="portfolio_page_content_block">
-      <div local-class="portfolio_page_content_block_icon_container">
-        <div local-class="portfolio_page_content_block_icon">
-          <img src="{{@iconFour}}" alt="icon">
+    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer" local-class="nav_link first">
+      <div local-class="portfolio_page_content_block">
+        <div local-class="portfolio_page_content_block_icon_container">
+          <div local-class="portfolio_page_content_block_icon">
+            <FaIcon @icon="github-alt" @prefix='fab' @size='3x' />
+          </div>
+        </div>
+        <div local-class="portfolio_page_content_block_label">
+          {{@blockFiveLabel}}
         </div>
       </div>
-      <div local-class="portfolio_page_content_block_label">
-        {{@blockFiveLabel}}
+    </a>       
+    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer">
+      <div local-class="portfolio_page_content_block">
+        <div local-class="portfolio_page_content_block_icon_container">
+        <div local-class="portfolio_page_content_block_text">
+          {{@blockSixText}}
+        </div>
+        </div>
+        <div local-class="portfolio_page_content_block_label">
+          {{@blockSixLabel}}
+        </div>
       </div>
-    </div>
-    <div local-class="portfolio_page_content_block">
-      <div local-class="portfolio_page_content_block_icon_container">
-      <div local-class="portfolio_page_content_block_text">
-        {{@blockSixText}}
-      </div>
-      </div>
-      <div local-class="portfolio_page_content_block_label">
-        {{@blockSixLabel}}
-      </div>
-    </div>
+    </a>
   </div>
   {{!-- <div local-class="arrow">
     >

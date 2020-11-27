@@ -51,7 +51,10 @@
         box-shadow: 0 5px 12px $color_stone_blue;
 
         .resume_page_resume {
-          margin: $margin_extra_large $margin_large;
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          margin: $margin_extra_large $margin_large $margin_large;
 
           &.first {
             box-shadow: 0 5px 12px -12px $color_stone_blue;
@@ -100,6 +103,21 @@
           .resume_page_resume_title_block {
             font-size: 2em;
             color: $color_dark_grey;
+
+            p {
+              
+              &.first {
+                margin-block-start: 0;
+              }
+            }
+
+            &.margin_bottom {
+              margin-bottom: 20px;
+            }
+
+            &.margin_top_and_bottom {
+              margin: 20px 0;
+            }
           }
 
           .resume_page_resume_sub_title_container {
@@ -127,8 +145,16 @@
 
           .resume_page_resume_text_block {
 
+            &.first {
+              margin: $margin_large 0 0;
+            }
+
             &.last {
               margin: 0 0 $margin_extra_large;
+            }
+
+            ul {
+              margin-block-start: 0;
             }
           }
         }
