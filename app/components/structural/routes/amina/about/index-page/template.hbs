@@ -1,0 +1,49 @@
+
+<div local-class="about_page_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="about_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
+    </section>
+  {{/if}}
+  <section local-class="about_page_body_container">
+    <div local-class="about_page_header_container">
+      <Dynamic::Ui::Header 
+        @headerName={{this.headerName}}
+        @headerTitle={{this.headerTitle}}
+        @headerButtonLabel={{this.headerButtonLabel}}
+        @headerButtonRoute={{this.contactRoute}}
+      />
+    </div>
+    <div local-class="about_page_content_container">
+      <div local-class="about_page_content_header">
+        Ux Designer
+      </div>
+      <div local-class="about_page_content">
+        <p>
+          Amina Roderick lives on the coast of Maine with her husband and two dogs. She works from home with coworkers and clients worldwide. As a user experience designer she enjoys being a powerful / dedicated / enthusiastic user advocate and voice for change. 
+        </p>
+        <p>
+          Formerly an industrial designer in ergonomic furniture and LED lighting, Amina is more than comfortable designing for technology while paying close attention to visual form. The union of this expertise results in creative, simple answers / solutions for complex questions / problems to benefit real people.
+        </p>
+        <p>
+          With over sixteen years of experience in design, Amina brings a mature perspective and wisdom born from the variety in her background. She has worked with three-person start-ups, mid-size family owned corporations, and billion-dollar public corporations. Amina focuses on new product development because she is at her best when her entrepreneurial spirit is engaged.
+        </p>
+        <p>
+          When not designing, Amina spends her time enjoying nature, spending time with friends, and traveling / having adventures near and far from home. Here we see the Roderick crew - everyone in their classic poses - Didymus being as awkward as possible, Lucy in motion, Ryan being a good sport wondering when the photo will be over, and Amina smiling at the moment / her friend behind the camera.
+        </p>
+      </div>      
+    </div>
+  </section>
+</div>

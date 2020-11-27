@@ -1,9 +1,5 @@
 .portfolio_page_content_row_header {
-  margin: $margin_small;
-
-  &.first {
-    margin-top: $margin_large;
-  }
+  margin: 0 $margin_small $margin_small;
 
   .portfolio_page_content_row_header_title {
     font-size: $font_size_large;
@@ -26,6 +22,10 @@
     overflow-x: scroll;
     align-items: center;
 
+    a {
+      text-decoration: none;
+    }
+
     .portfolio_page_content_block {
       display: flex;
       min-width: 300px;
@@ -47,12 +47,14 @@
         align-items: center;
 
         .portfolio_page_content_block_icon {
+          display: flex;
           min-width: $size_large;
           max-width: $size_large;
           min-height: $height_large;
           max-height: $height_large;
           margin: $margin_extra_small;
-          border: $border_two;
+          justify-content: center;
+          align-items: center;
 
           img {
             width: 100%;
@@ -89,12 +91,12 @@
     }
   }
 
-  .arrow {
-    width: 50px;
-    max-height: 305px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 305px;
-    border: $border_two;
-  }
+  // .arrow {
+  //   width: 50px;
+  //   max-height: 305px;
+  //   text-align: center;
+  //   vertical-align: middle;
+  //   line-height: 305px;
+  //   border: $border_two;
+  // }
 }

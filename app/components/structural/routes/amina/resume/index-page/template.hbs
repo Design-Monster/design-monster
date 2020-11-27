@@ -1,0 +1,352 @@
+
+<div local-class="resume_page_container">
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <section local-class="resume_page_side_bar_container">
+      <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneIcon={{this.githubIcon}}
+        @socialSlotOnePrefix={{this.githubPrefix}}
+        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoIcon={{this.linkedinIcon}}
+        @socialSlotTwoPrefix={{this.linkedinPrefix}}
+        @socialSlotTwoSize={{this.linkedinSize}}
+        @avatarImage={{this.avatarImage}}
+        @routeSlotOne={{this.aboutMeRoute}}
+        @routeSlotTwo={{this.portfolioRoute}}
+        @routeSlotFour={{this.resumeRoute}}
+        @routeSlotFive={{this.contactRoute}}
+        />
+    </section>
+  {{/if}}
+  <section local-class="resume_page_body_container">
+    <div local-class="resume_page_header_container">
+      <Dynamic::Ui::Header 
+        @headerName={{this.headerName}}
+        @headerTitle={{this.headerTitle}}
+        @headerButtonLabel={{this.headerButtonLabel}}
+        @headerButtonRoute={{this.contactRoute}}
+      />
+    </div>
+    <div local-class="resume_page_content_container">
+      <div local-class="resume_page_content_header">
+        <a href="/assets/files/amina-roderick-resume.pdf" download>
+          <Dynamic::Ui::Button
+            @buttonLabel="Download PDF"
+          />
+        </a>
+      </div>
+      <div local-class="resume_page_content">
+        <div local-class="resume_page_resume first">
+          <div local-class="resume_page_resume_header_container">
+            <div local-class="resume_page_resume_header_subject">
+              <div local-class="resume_page_resume_header_name">
+                Amina Roderick
+              </div>
+              <div local-class="resume_page_resume_header_title">
+                Senior User Experience Designer
+              </div>
+            </div>
+            <div local-class="resume_page_resume_header_contact">
+              <div local-class="resume_page_resume_header_email">
+                amina@DesignMonster.com
+              </div>
+              <div local-class="resume_page_resume_header_other">
+                www.DesignMonster.com
+              </div>
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block first">
+            <p><i>
+              I am a user-centered designer focusing on emerging ideas and technologies for over fifteen years. I believe that merging big picture goals with functional details is the best way to fulfill business objectives, delight users, and support brand experience.
+            </i></p>
+          </div>
+          <div local-class="resume_page_resume_title_block">
+            Design Skills
+          </div>
+          <div local-class="resume_page_text_block">
+            <ul>
+              <li>Well-grounded in a structured approach informed by time constraints, design parameters, and the demands of multiple projects</li>
+              <li>Demonstrated facility working independently, collaboratively, or in a supervisory role, during all phases of product development</li>
+              <li>Committed to a studied analysis, sustained by reclarification to maintain focus, culminating in a well articulated, simple design</li>
+              <li> Engaging leadership and discussions when running idea generation sessions and design reviews with multidisciplinary groups</li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_title_block margin_bottom">
+            Work Experience
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              User Experience Designer & Strategist, Co-owner <br />
+              <span local-class="dates_employed">2010 to Present</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              <i>Design Monster LLC</i>
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Camden, ME
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <br>
+            Responsible for bringing clients through the product development process by collecting requirements, understanding the target customer through user research, and designing for defined business goals
+            <ul>
+              <li>
+                Advocate for the user while developing a design strategy, based on user testing, usability best practices, and client interviews
+              </li>
+              <li>
+                Collaborate with stakeholders to evaluate product requirements resulting in smartly designed products, apps, and software
+              </li>
+              <li>
+                Overhaul UX & UI to streamline usability of product and reinforce the client's brand, e.g. The Dinner Daily
+              </li>
+              <li>
+                Conceptualize and wireframe new applications for startups, e.g. Yarns 
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              User Experience Design Manager <br />
+              <span local-class="dates_employed">2015 to 2019</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              <i>Dassault Systèmes | SolidWorks</i>
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Waltham, MA
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <br>
+            Responsible for designing excellent user experiences for web and installed 3D CAD applications with multidisciplinary teams
+            <ul>
+              <li>
+                Produced wireframes & mockups, performed user research, collaborated with developers and product managers
+              </li>
+              <li>
+                Carried out user testing and interviews to identify areas of design success and where further iterations required              
+              </li>
+              <li>
+                Conceived new UI triad design to provide better understanding for user model in space; patent pending
+              </li>
+              <li>
+                Designed a user assistance learning tool to teach new users complex workflows; patent awarded 
+              </li>
+              <li>
+                Managed complete overhaul of the user experience and workflows for Sheet Metal app within new platform UI guidelines
+              </li>
+              <li>
+                Presented three internal innovation awards for the Design Guidance feature and xShape application design
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Industrial Designer <br />
+              <span local-class="dates_employed">2011 to 2014</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Osram Sylvania 
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Danvers, MA
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <br>
+            Responsible for defining aesthetic direction and designing new line of indoor commercial LED lighting fixtures
+            <ul>
+              <li>
+                Facilitated interaction & collaboration among multidisciplinary staff
+              </li>
+              <li>
+                Conceived, co-authored & co-presented six-part design and lighting workshop for change management initiative
+              </li>
+              <li>
+                Awarded three patents for inventive lighting designs; two LFI Innovation awards and a platinum award from the Design Journal
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Industrial Designer <br />
+              <span local-class="dates_employed">2006 to 2010</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              mmckenna → Humanscale
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              New York, NY
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block">
+            <br>
+            Responsible for supporting Niels Diffrient’s ergonomic chair designs with 3D CAD models & photorealistic renderings; designing bleeding-edge LED lighting fixtures with modern aesthetics and manufacturability 
+            <ul>
+              <li>
+                Successfully designed three NYC trade show booths per year with mmckenna; awarded Prominent New Booth 
+              </li>
+              <li>
+                Launched Orchadia lighted sculpture, BettyLou lamp, & Element Task Light with distinguished press mentions and exhibits
+              </li>
+              <li>
+                Awarded patent for LED lighting design innovation at Humanscale; two Chicago Athenaeum awards & Best of NeoCon award
+              </li>
+            </ul>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Product Designer <br />
+              <span local-class="dates_employed">2006 to 2010</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Lifetime Brands
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Garden City, NY
+            </div>
+          </div>
+          <div local-class="resume_page_resume_text_block last">
+            <br>
+            Responsible for developing housewares concepts into functioning, manufacturable designs for mass production 
+            <ul>
+              <li>
+                Created 2D and 3D computer-generated renderings for proposed products 
+              </li>
+              <li>
+                Produced 2D drawings for price quotes & engineering production
+              </li>
+              <li>
+                Evaluated manufacturing samples for accuracy and acceptability to begin manufacturing
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div local-class="resume_page_resume second">
+          <div local-class="resume_page_resume_title_block margin_bottom">
+            Education
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Immersive Course in User Experience Design <br />
+              <span local-class="dates_employed">09/2015 to 11/2015</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              <i>General Assembly</i>
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Boston, MA
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Master’s in Industrial Design <br />
+              <span local-class="dates_employed">2002 to 2004</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Rochester Institute of Technology
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Rochester, NY
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Bachelor’s in English, Mathematics <br />
+              <span local-class="dates_employed">1995 to 1999</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              The College of Wooster
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              Wooster, OH
+            </div>
+          </div>
+          <div local-class="resume_page_resume_title_block margin_top_and_bottom">
+            Organizations
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Industrial Designers Society of America <br />
+              <span local-class="dates_employed">2018 to present </span>
+            </div>
+          </div>
+          <div local-class="resume_page_resume_title_block margin_top_and_bottom">
+            Patents
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Computer-Aided Interactive Learning <br />
+              <span local-class="dates_employed">April 2020</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              <i>Dassault Systèmes | SolidWorks</i>
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              10635461
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Shaped Indirect Luminaire <br />
+              <span local-class="dates_employed">December 2016</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Osram Sylvania 
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              9528683
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Linear Luminaire  <br />
+              <span local-class="dates_employed">April 2016</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Osram Sylvania 
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              D754902
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Virtual Surface Indirect Radiating Luminaire <br />
+              <span local-class="dates_employed">May 2015</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Osram Sylvania 
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              9022606
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              Lighting Apparatus and Method <br />
+              <span local-class="dates_employed">February 2014</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Humanscale
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              864694
+            </div>
+          </div>
+          <div local-class="resume_page_resume_sub_title_container">
+            <div local-class="resume_page_resume_sub_title_container_block_one">
+              LED Based Lamp Replacement  <br />
+              <span local-class="dates_employed">May 2013</span>
+            </div>
+            <div local-class="resume_page_resume_block_two">
+              Amina M. Chidiac
+            </div>
+            <div local-class="resume_page_resume_block_three">
+              8441192
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+</div>
