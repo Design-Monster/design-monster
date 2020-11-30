@@ -146,6 +146,7 @@ nav {
       margin: $margin_medium $margin_small;
       font-size: 0.5em;
       border-top: $border_two;
+      justify-content: flex-end;
 
       .built_by_container {
         margin: 0 0 0 $margin_small;      
