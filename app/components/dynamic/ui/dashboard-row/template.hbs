@@ -8,11 +8,14 @@
 </div>
 <div local-class="dashboard_row_container">
   <div local-class="dashboard_row">
+    {{#if @blockOneImage}}
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_image">
         <img src="{{@blockOneImage}}" alt="Project Cover" />
       </div>
     </div>
+    {{/if}}
+    {{#if @iconOne}}
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_icon_container">
         {{#if @iconOne}}
@@ -35,31 +38,33 @@
         {{@blockTwoLabel}}
       </div>
     </div>
+    {{/if}}
+    {{#if @blockThreeTextOne}}
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_text">
         {{@blockThreeTextOne}} <br />
         {{@blockThreeTextTwo}} <br />
-        {{@blockThreeTextThree}} <br />
-        {{@blockThreeTextFour}} <br />
-        {{@blockThreeTextFive}} <br />
+        {{@blockThreeTextThree}}
       </div>
       <div local-class="dashboard_block_label">
         {{@blockThreeLabel}}
       </div>
     </div>
+    {{/if}}
+    {{#if @blockFourTextOne}}
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_text">
         {{@blockFourTextOne}} <br />
         {{@blockFourTextTwo}} <br />
-        {{@blockFourTextThree}} <br />
-        {{@blockFourTextFour}} <br />
-        {{@blockFourTextFive}} <br />
+        {{@blockFourTextThree}}
       </div>
       <div local-class="dashboard_block_label">
         {{@blockFourLabel}}
       </div>
     </div>
-    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer" local-class="nav_link first">
+    {{/if}}
+    {{#if @projectGithubUrl}}
+    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer">
       <div local-class="dashboard_block">
         <div local-class="dashboard_block_icon_container">
           <div local-class="dashboard_block_icon">
@@ -70,8 +75,10 @@
           {{@blockFiveLabel}}
         </div>
       </div>
-    </a>       
-    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer">
+    </a> 
+    {{/if}}
+    {{#if @projectLiveSiteUrl}}     
+    <a href="{{@projectLiveSiteUrl}}" target="_blank" rel="noopener noreferrer">
       <div local-class="dashboard_block">
         <div local-class="dashboard_block_icon_container">
         <div local-class="dashboard_block_text">
@@ -83,6 +90,7 @@
         </div>
       </div>
     </a>
+    {{/if}}
   </div>
   {{!-- <div local-class="arrow">
     >
