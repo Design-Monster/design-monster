@@ -72,7 +72,7 @@ nav {
           margin: 0 0 0 $margin_small;
 
           .nav_item_icon {
-            margin: 0 $margin_extra_small 0 0;
+            margin: 0 $margin_small 0 0;
           }
 
           // .nav_item_text {
@@ -84,6 +84,7 @@ nav {
 
     .about_social_container {
       display: flex;
+      margin: 0 $margin_small;
 
       .nav_link {
         display: flex;
@@ -92,10 +93,6 @@ nav {
 
         &:visited {
           color: $color_black;
-        }
-
-        &.first {
-          margin: 0 $margin_small;
         }
       }
 

@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	min-height: 100%;
 	margin: 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 	@include breakpoint(large) {
 		overflow-y: hidden;
