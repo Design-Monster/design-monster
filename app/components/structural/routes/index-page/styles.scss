@@ -74,12 +74,6 @@
 
           :nth-child(1) {
             margin: 0;
-            box-shadow: none;
-
-            :nth-child(1) {
-              border: $border_one;
-              border-radius: $button_border_radius_primary;
-            }
           }
         }
       }
