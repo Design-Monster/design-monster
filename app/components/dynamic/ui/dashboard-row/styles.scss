@@ -40,8 +40,8 @@
       flex-direction: column;
       margin: $margin_extra_small $margin_medium $margin_extra_small 0;
       background-color: $color_white;
-      border: $border_two;
-      border-radius: $border_radius_small;
+      border: $border_three;
+      border-radius: $border_radius_primary;
       justify-content: center;
       align-items: center;
 
@@ -64,6 +64,7 @@
           img {
             width: 100%;
             height: auto;
+            border-radius: $border_radius_primary;
           }
         }
       }
@@ -85,6 +86,7 @@
           width: 100%;
           height: auto;
           max-height: 300px;
+          border-radius: $border_radius_primary;
         }
       }
 

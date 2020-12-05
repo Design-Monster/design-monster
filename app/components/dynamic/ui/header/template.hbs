@@ -1,17 +1,35 @@
 <div local-class="header_container">
   <div local-class="header_text_container">
-    <div local-class="header_name_container">
-      {{@headerName}}
-    </div>
+    {{#if (isRootUrl)}}
+      {{#if @headerNameFirst}}
+      <div local-class="header_name_container_indented">
+        <div local-class="bold">
+          {{@headerNameFirst}}
+        </div>
+        &nbsp;{{@headerNameLast}}
+      </div>
+      {{/if}}
+    {{else}}
+      {{#if @headerNameFirst}}
+      <div local-class="header_name_container">
+        <div local-class="bold">
+          {{@headerNameFirst}}
+        </div>
+        &nbsp;{{@headerNameLast}}      
+      </div>
+      {{/if}}
+    {{/if}}
+    {{#if @headerTitle}}
     <div local-class="header_title_container">
       {{@headerTitle}}
     </div>
+    {{/if}}
   </div>
+    {{#if @headerButtonRoute}}
     <div local-class="header_button_container">
       <LinkTo @route={{@headerButtonRoute}}>
-        <Dynamic::Ui::Button
-          @buttonLabel={{@headerButtonLabel}}
-        />
+        {{yield}}
       </LinkTo>
     </div>
+    {{/if}}
 </div>

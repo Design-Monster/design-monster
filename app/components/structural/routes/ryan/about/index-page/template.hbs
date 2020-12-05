@@ -3,9 +3,11 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="about_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
         @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoUrl={{this.linkedInUrl}}
         @socialSlotTwoIcon={{this.linkedinIcon}}
         @socialSlotTwoPrefix={{this.linkedinPrefix}}
         @socialSlotTwoSize={{this.linkedinSize}}
@@ -20,18 +22,23 @@
   {{/if}}
   <section local-class="about_page_body_container">
     <div local-class="about_page_header_container">
+    {{#if (or (media 'isLarge') (media 'isWide'))}}
       <Dynamic::Ui::Header 
-        @headerName={{this.headerName}}
+        @headerNameFirst={{this.headerNameFirst}}
+        @headerNameLast={{this.headerNameLast}}
         @headerTitle={{this.headerTitle}}
-        @headerButtonLabel={{this.headerButtonLabel}}
-        @headerButtonRoute={{this.contactRoute}}
-      />
+        @headerButtonRoute={{this.contactRoute}}>
+          <Dynamic::Ui::Buttons::Wide
+            @buttonLabel={{this.headerButtonLabel}} />
+      </Dynamic::Ui::Header>
+    {{/if}}
     </div>
     <div local-class="about_page_content_container">
       <div local-class="about_page_content_header">
         Full Stack Developer / Front End Developer
       </div>
       <div local-class="about_page_content">
+        <p>REWRITE TO BE MORE LIKE AMINA'S</p>
         <p>
           I am a Web Developer who loves Ember.js, especially the newest Octane Edition.  If you haven't checked it out because you thought "Eww Ember", I urge you to give it a try.  You'll be glad you did. Ember is versatile, it's scalable, and it's FUN! 
         </p>

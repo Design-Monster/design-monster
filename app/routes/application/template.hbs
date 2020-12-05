@@ -1,6 +1,7 @@
 <Utilities::SkipLink />
 
 {{#if (or (media 'isSmall') (media 'isMedium'))}}
+
   {{#if (isRootUrl)}}
     {{outlet}}
   {{else}}
@@ -8,6 +9,8 @@
       {{outlet}}
     </Dynamic::Ui::Navigation::Mobile>
   {{/if}}
+
 {{else}}
   {{outlet}}
 {{/if}}
+

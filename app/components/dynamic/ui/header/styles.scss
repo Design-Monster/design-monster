@@ -6,21 +6,36 @@
   min-height: $height_extra_extra_large;
   max-height: $height_extra_extra_large;
   flex: 1;
-  border-bottom: solid 8px $color_stone_blue;
+  border-bottom: $border_two;
   align-items: center;
   justify-content: space-between;
 
   .header_text_container {
     display: flex;
-    margin: 0 0 0 $margin_small;
     align-self: flex-end;
     align-items: baseline;
 
     .header_name_container {
-      margin: 0 $margin_medium 0 0;
+      display: flex;
+      margin: 0 $margin_medium 0 $margin_small;
       font-size: $font_size_extra_extra_large;
       font-weight: 600;
-      color: $color_stone_blue;
+      color: $font_color_primary;
+
+      .bold {
+        font-weight: 600;
+      }
+    }
+
+    .header_name_container_indented {
+      display: flex;
+      margin: 0 0 0 17.1875rem;
+      font-size: $font_size_extra_extra_large;
+      color: $font_color_primary;
+
+      .bold {
+        font-weight: 600;
+      }
     }
 
     .header_title_container {

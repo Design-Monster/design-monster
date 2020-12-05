@@ -3,9 +3,11 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="resume_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
         @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoUrl={{this.linkedInUrl}}
         @socialSlotTwoIcon={{this.linkedinIcon}}
         @socialSlotTwoPrefix={{this.linkedinPrefix}}
         @socialSlotTwoSize={{this.linkedinSize}}
@@ -20,17 +22,21 @@
   {{/if}}
   <section local-class="resume_page_body_container">
     <div local-class="resume_page_header_container">
+    {{#if (or (media 'isLarge') (media 'isWide'))}}
       <Dynamic::Ui::Header 
-        @headerName={{this.headerName}}
+        @headerNameFirst={{this.headerNameFirst}}
+        @headerNameLast={{this.headerNameLast}}
         @headerTitle={{this.headerTitle}}
-        @headerButtonLabel={{this.headerButtonLabel}}
-        @headerButtonRoute={{this.contactRoute}}
-      />
+        @headerButtonRoute={{this.contactRoute}}>
+          <Dynamic::Ui::Buttons::Wide
+            @buttonLabel={{this.headerButtonLabel}} />
+      </Dynamic::Ui::Header>
+    {{/if}}
     </div>
     <div local-class="resume_page_content_container">
       <div local-class="resume_page_content_header">
         <a href="/assets/files/ryan-roderick-resume.pdf" download>
-          <Dynamic::Ui::Button
+          <Dynamic::Ui::Buttons::Wide
             @buttonLabel="Download PDF"
           />
         </a>
