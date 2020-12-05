@@ -2,9 +2,7 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="portfolio_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
-        @socialSlotOneIcon={{this.githubIcon}}
-        @socialSlotOnePrefix={{this.githubPrefix}}
-        @socialSlotOneSize={{this.githubSize}}
+        @socialSlotTwoUrl={{this.linkedInUrl}}
         @socialSlotTwoIcon={{this.linkedinIcon}}
         @socialSlotTwoPrefix={{this.linkedinPrefix}}
         @socialSlotTwoSize={{this.linkedinSize}}
@@ -17,12 +15,18 @@
     </section>
   {{/if}}
   <section local-class="portfolio_page_body_container">
-    <Dynamic::Ui::Header 
-      @headerName={{this.headerName}}
-      @headerTitle={{this.headerTitle}}
-      @headerButtonLabel={{this.headerButtonLabel}}
-      @headerButtonRoute={{this.contactRoute}}
-    />
+    <div local-class="portfolio_page_header_container">
+    {{#if (or (media 'isLarge') (media 'isWide'))}}
+      <Dynamic::Ui::Header 
+        @headerNameFirst={{this.headerNameFirst}}
+        @headerNameLast={{this.headerNameLast}}
+        @headerTitle={{this.headerTitle}}
+        @headerButtonRoute={{this.contactRoute}}>
+          <Dynamic::Ui::Buttons::Wide
+            @buttonLabel={{this.headerButtonLabel}} />
+      </Dynamic::Ui::Header>
+    {{/if}}
+    </div>
     <div local-class="portfolio_page_dashboard_row_container first">
       <Dynamic::Ui::DashboardRow
         @projectTitle={{this.projectOneProjectTitle}}

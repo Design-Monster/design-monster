@@ -6,7 +6,7 @@ export default class isRootUrl extends Helper {
 
   compute() {
     let rootURL = this.router.rootURL;
-    let currentURL = this.router.currentURL
+    let currentURL = this.router.currentURL;
 
     if (currentURL === rootURL) {
       return true;

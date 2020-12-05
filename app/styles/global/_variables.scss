@@ -10,46 +10,36 @@ $size_wide: 12.5rem;  //200px
 
 //Colors
 $color_white: #ffffff;
-$color_almost_white: #fafafa;
+$color_blue_primary: #057bff;
+$color_blue_secondary: lighten($color_blue_primary, 10%);
 $color_light_grey: #f0f0f0;
 $color_dark_grey: darken($color_light_grey, 50%);
 $color_black: #000000;
-$color_orange: #ff4f00;
-$color_blue: #05386b;
-$color_royal_purple: #25274d;
-$color_purple: lighten($color_royal_purple, 10%);
-$color_stone_blue: #336b87;
-$color_pebble_blue: lighten($color_stone_blue, 50%);
 $color_yellow: #fffe80;
 $color_green: #68a823;
 $color_red: #f93b30;
 
 //Borders
-$border_one_color: $color_pebble_blue;
-$border_two_color: $color_light_grey;
-$border_one_thickness: 3px;
-$border_two_thickness: 1px;
-
-$border_one: solid $border_one_thickness $border_one_color;
-$border_two: solid $border_two_thickness $border_two_color;
+$border_one: solid 1px $color_blue_primary;
+$border_two: solid 8px $color_blue_secondary;
+$border_three: solid 1px $color_light_grey;
+$border_four: solid 3px $color_blue_primary;
 
 //Borders Radius
-$border_radius_small: 3px;
-$border_radius_medium: 8px;
+$border_radius_primary: 0.5em;
 
 //Buttons
 $button_height_primary: $size_large;
 $button_width_primary: $size_extra_extra_large;
 $button_width_wide: $size_wide;
 $button_background_color_primary: $color_white;
-$button_background_color_hover: $color_stone_blue;
-$button_font_color_primary: $color_blue;
+$button_background_color_hover: $color_blue_primary;
+$button_font_color_primary: $color_blue_primary;
 $button_font_color_hover: $color_white;
 $button_font_size_primary: 1em;
-$button_box_shadow_primary: 0 2px 12px $color_stone_blue;
-$button_box_shadow_hover: 0 5px 12px $color_stone_blue;
+$button_box_shadow_primary: 0 2px 12px $color_blue_primary;
+$button_box_shadow_hover: 0 5px 12px $color_blue_primary;
 $button_border_radius_primary: 0.5em;
-
 
 //Margins
 $margin_extra_small: $size_extra_small; //base margin for spacing between edges
@@ -78,3 +68,6 @@ $font_size_medium: 1.25em; //20px
 $font_size_large: 1.5em;  //24px
 $font_size_extra_large: 2em; //32px
 $font_size_extra_extra_large: 3em; //48px
+
+//font colors
+$font_color_primary: $color_blue_primary;

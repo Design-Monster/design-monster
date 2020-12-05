@@ -1,98 +1,105 @@
 <MobileMenuWrapper as |mmw|>
-  <nav>
-    <mmw.MobileMenu as |mm|>
+  <mmw.MobileMenu as |mm|>
+    <nav>
       <div local-class="menu_container">
-        <div local-class="title_container">
-          <div local-class="title">
-            <LinkTo @route="index">
-              Design Monster
-            </LinkTo>
+        <div local-class="about_container">
+          <div local-class="about_image_container">
+            <div local-class="about_image">
+              <img src={{@avatarImage}} alt="avatar" loading="eager" />
+            </div>
           </div>
         </div>
         <div local-class="navigation_container">
-          <mm.LinkTo @route={{@routeOne}}>
-            <div local-class="nav_item_container">
+          {{#if @routeSlotOne}}
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route={{@routeSlotOne}} local-class="nav_link">
               <div local-class="nav_item">
                 <div local-class="nav_item_icon">
-                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+                  <FaIcon @icon="user" @prefix="fas" />
                 </div>
                 <div local-class="nav_item_text">
-                  {{@routeLabelOne}}
+                  About Me
                 </div>
               </div>
+            </mm.LinkTo>
+          </div>
+          {{/if}}
+          {{#if @routeSlotTwo}}
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route={{@routeSlotTwo}} local-class="nav_link">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="code" @prefix="fas" />
+                </div>
+                <div local-class="nav_item_text">
+                  Portfolio
+                </div>
+              </div>
+            </mm.LinkTo>
+          </div>
+          {{/if}}
+          {{#if @routeSlotThree}}
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route={{@routeSlotThree}} local-class="nav_link">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="blog" @prefix="fas" />
+                </div>
+                <div local-class="nav_item_text">
+                  Blog
+                </div>
+              </div>
+            </mm.LinkTo>
+          </div>
+          {{/if}}
+          {{#if @routeSlotFour}}
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route={{@routeSlotFour}} local-class="nav_link">
+              <div local-class="nav_item">
+                <div local-class="nav_item_icon">
+                  <FaIcon @icon="envelope-open-text" @prefix="fas" />
+                </div>
+                <div local-class="nav_item_text">
+                  Resume
+                </div>
+              </div>
+            </mm.LinkTo>
+          </div>
+          {{/if}}
+        </div>
+        <div local-class="about_social_container">
+          <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link first">
+            <div local-class="about_social_icon">
+              <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
             </div>
-          </mm.LinkTo>
-          <mm.LinkTo @route={{@routeTwo}}>
-            <div local-class="nav_item_container">
-              <div local-class="nav_item">
-                <div local-class="nav_item_icon">
-                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-                </div>
-                <div local-class="nav_item_text">
-                  {{@routeLabelTwo}}
-                </div>
-              </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+            <div local-class="about_social_icon">
+              <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
             </div>
-          </mm.LinkTo>
-          <mm.LinkTo @route={{@routeThree}}>
-            <div local-class="nav_item_container">
-              <div local-class="nav_item">
-                <div local-class="nav_item_icon">
-                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-                </div>
-                <div local-class="nav_item_text">
-                  {{@routeLabelThree}}
-                </div>
-              </div>
-            </div>            
-          </mm.LinkTo>
-          <mm.LinkTo @route={{@routeFour}}>
-            <div local-class="nav_item_container">
-              <div local-class="nav_item">
-                <div local-class="nav_item_icon">
-                  <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-                </div>
-                <div local-class="nav_item_text">
-                  {{@routeLabelFour}}
-                </div>
-              </div>
-            </div>            
-          </mm.LinkTo>
+          </a>
         </div>
-        <div local-class="some_other_section">
-          some other section one <br>
-          you can add as many sections as you need
-        </div>
-        <div local-class="some_other_section">
-          some other section two <br>
-          and it will scroll automatically for you, based on the content
-        </div>
-        <div local-class="some_other_section">
-          some other section three
-        </div>
-        <div local-class="some_other_section">
-          some other section four
-        </div>
-        <div local-class="some_other_section">
-          some other section five
-        </div>
-        <div local-class="some_other_section">
-          some other section six
+        <div local-class="fine_print_container">
+          <div local-class="built_by_container">
+            <p>
+              designed & built by <LinkTo @route="index">DESIGNMONSTER LLC</LinkTo>
+            </p>
+          </div>
+          <div local-class="copyright_container">
+            <FaIcon @icon="copyright" @prefix="far" />
+            2020
+          </div>
         </div>
       </div>
-    </mmw.MobileMenu>
-    <mmw.Content>
-      <div local-class="header">
-        <div local-class="toggle_container">
-          <mmw.Toggle>
-            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-          </mmw.Toggle>
-        </div>
-        <div local-class="some_other_container">
-          This is where other stuff goes
-        </div>
-      </div>
-      {{yield}}
-    </mmw.Content>
-  </nav>
+    </nav>
+  </mmw.MobileMenu>
+  <mmw.Content>
+    <Dynamic::Ui::Header 
+      @headerName="Design Monster">
+        <mmw.Toggle>
+          <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button"/>
+        </mmw.Toggle>
+    </Dynamic::Ui::Header>
+    {{yield}}
+  </mmw.Content>
 </MobileMenuWrapper>

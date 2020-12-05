@@ -20,6 +20,7 @@
     max-width: 17.1875rem;
     flex-direction: column;
     overflow-y: scroll;
+    border-right: $border_three;
     justify-content: center;
   }
 
@@ -48,7 +49,7 @@
         flex-direction: column;
         margin: $margin_large $margin_large $margin_large $margin_small;
         font-size: 1.25em;
-        box-shadow: 0 5px 12px $color_stone_blue;
+        box-shadow: 0 5px 12px $color_blue_primary;
 
         .resume_page_resume {
           display: flex;
@@ -57,7 +58,7 @@
           margin: $margin_extra_large $margin_large $margin_large;
 
           &.first {
-            box-shadow: 0 5px 12px -12px $color_stone_blue;
+            box-shadow: 0 5px 12px -12px $color_blue_primary;
           }
 
           &.second {
@@ -90,11 +91,11 @@
 
               .resume_page_resume_header_email {
                 flex: 1;
-                color: $color_stone_blue;
+                color: $color_blue_primary;
               }
 
               .resume_page_resume_header_other {
-                color: $color_stone_blue;
+                color: $color_blue_primary;
                 text-align: end;
               }
             }
@@ -129,7 +130,7 @@
               flex: 2;
 
               .dates_employed {
-                color: $color_stone_blue;
+                color: $color_blue_primary;
               }
             }
 

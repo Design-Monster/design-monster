@@ -2,31 +2,58 @@
 <div local-class="index_page_container">
   <section local-class="index_page_body_container">
     <div local-class="index_page_header_container">
-      <div local-class="index_page_header_name_container">
-        Design Monster
-      </div>
+      <Dynamic::Ui::Header
+        @headerNameFirst={{this.headerNameFirst}}
+        @headerNameLast={{this.headerNameLast}}
+      />
     </div>
     <div local-class="index_page_content_container">
-      <LinkTo @route='amina'>
-        <div local-class="index_page_profile_container">
-          <div local-class="index_page_image_container">
-            <img src='assets/images/RyanHeadShot.png' alt="Amina">
+      <div local-class="index_page_action_container">
+        <LinkTo @route='amina'>
+          <div local-class="index_page_block_container">
+            <div local-class="index_page_block_text_container">
+            Collaborative Design <br />
+            Design for usability <br />
+            Design strategy <br />
+            UI & UX design
+            </div>
+            <div local-class="index_page_block_title_container">
+              User-Centered Design
+            </div>
           </div>
-          <div local-class="index_page_label_container">
-            Amina::Design & UX
+        </LinkTo>
+        <LinkTo @route='ryan'>
+          <div local-class="index_page_block_container">
+            <div local-class="index_page_block_text_container">
+            Frontend <br />
+            Backend <br />
+            Web development <br />
+            Project planning
+            </div>
+            <div local-class="index_page_block_title_container">
+              Deadline-Driven Development
+            </div>
           </div>
+        </LinkTo>
+        <div local-class="index_page_button_container">
+          <LinkTo @route={{@indexPageButtonRoute}}>
+            <Dynamic::Ui::Buttons::Wide
+              @buttonLabel={{this.buttonLabel}}
+            />
+          </LinkTo>
         </div>
-      </LinkTo>
-      <LinkTo @route='ryan'>
-        <div local-class="index_page_profile_container">
-          <div local-class="index_page_image_container">
-            <img src='assets/images/RyanHeadShot.png' alt="Ryan">
-          </div>
-          <div local-class="index_page_label_container">
-            Ryan::Develop
-          </div>
+      </div>
+      <div local-class="index_page_fine_print_container">
+        <div local-class="index_page_built_by_container">
+          <p>
+            designed & built by DESIGNMONSTER LLC
+          </p>
         </div>
-      </LinkTo>
+        <div local-class="index_page_copyright_container">
+          <FaIcon @icon="copyright" @prefix="far" />
+          2020
+        </div>
+      </div>
     </div>
   </section>
 </div>

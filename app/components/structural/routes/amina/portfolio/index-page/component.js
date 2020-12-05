@@ -1,9 +1,7 @@
 import Component from '@glimmer/component';
 
 export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Component {
-  githubIcon = 'github-alt';
-  githubPrefix = 'fab';
-  githubSize = '2x';
+  linkedInUrl = 'https://www.linkedin.com/in/achidiac/';
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
@@ -12,7 +10,8 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';
   contactRoute = 'amina.contact';
-  headerName = 'Amina Roderick';
+  headerNameFirst = 'Amina';
+  headerNameLast = 'Roderick';
   headerTitle = 'UX Designer';
   headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'amina.contact';
