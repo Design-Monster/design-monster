@@ -23,14 +23,14 @@
   <section local-class="blog_page_body_container">
     <div local-class="blog_page_header_container">
     {{#if (or (media 'isLarge') (media 'isWide'))}}
-      <Dynamic::Ui::Header 
+      <Dynamic::Ui::Headers::Secondary 
         @headerNameFirst={{this.headerNameFirst}}
         @headerNameLast={{this.headerNameLast}}
         @headerTitle={{this.headerTitle}}
         @headerButtonRoute={{this.contactRoute}}>
           <Dynamic::Ui::Buttons::Wide
             @buttonLabel={{this.headerButtonLabel}} />
-      </Dynamic::Ui::Header>
+      </Dynamic::Ui::Headers::Secondary>
     {{/if}}
     </div>
     <div local-class="blog_page_content_container">

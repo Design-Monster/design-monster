@@ -1,21 +1,21 @@
 <div local-class="header_container">
   <div local-class="header_text_container">
-    {{#if (isRootUrl)}}
-      {{#if @headerNameFirst}}
-      <div local-class="header_name_container_indented">
-        <div local-class="bold">
-          {{@headerNameFirst}}
+    {{#if @headerNameFirst}}
+      {{#if @headerPrimaryRoute}}
+      <LinkTo @route={{@headerPrimaryRoute}}>
+        <div local-class="header_name_container">
+          <div local-class="bold">
+              {{@headerNameFirst}}
+          </div>
+          &nbsp;{{@headerNameLast}}
         </div>
-        &nbsp;{{@headerNameLast}}
-      </div>
-      {{/if}}
-    {{else}}
-      {{#if @headerNameFirst}}
+      </LinkTo>
+      {{else}}
       <div local-class="header_name_container">
         <div local-class="bold">
           {{@headerNameFirst}}
         </div>
-        &nbsp;{{@headerNameLast}}      
+        &nbsp;{{@headerNameLast}}
       </div>
       {{/if}}
     {{/if}}

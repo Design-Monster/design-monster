@@ -2,7 +2,7 @@
 <div local-class="index_page_container">
   <section local-class="index_page_body_container">
     <div local-class="index_page_header_container">
-      <Dynamic::Ui::Header
+      <Dynamic::Ui::Headers::Primary
         @headerNameFirst={{this.headerNameFirst}}
         @headerNameLast={{this.headerNameLast}}
       />
@@ -36,7 +36,7 @@
           </div>
         </LinkTo>
         <div local-class="index_page_button_container">
-          <LinkTo @route={{@indexPageButtonRoute}}>
+          <LinkTo @route='contact'>
             <Dynamic::Ui::Buttons::Wide
               @buttonLabel={{this.buttonLabel}}
             />

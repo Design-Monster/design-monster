@@ -15,7 +15,7 @@ export default class StructuralRoutesRyanContactIndexPageComponent extends Compo
   blogRoute = 'ryan.blog';
   resumeRoute = 'ryan.resume';
   contactRoute = 'ryan.contact';
-  headerNameFirst = 'Ryan';
+  headerNameFirst = 'RYAN';
   headerNameLast = 'Roderick';
   headerTitle = 'Web Developer';
   headerButtonLabel = 'Hire Me!';
