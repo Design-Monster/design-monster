@@ -1,0 +1,46 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.header_container {
+  display: flex;
+  min-height: $height_extra_extra_large;
+  max-height: $height_extra_extra_large;
+  flex: 1;
+  border-bottom: $border_two;
+  align-items: center;
+  justify-content: space-between;
+
+  .header_text_container {
+    display: flex;
+    align-self: flex-end;
+    align-items: baseline;
+
+    a {
+      color: $font_color_primary;
+      text-decoration: none;
+
+      &:visited {
+        color: $font_color_primary;
+      }
+    }
+
+    .header_name_container {
+      display: flex;
+      margin: 0 0 0 17.1875rem;
+      font-size: $font_size_extra_extra_large;
+      color: $font_color_primary;
+
+      .bold {
+        font-weight: 600;
+      }
+    }
+
+    .header_title_container {
+      font-size: $font_size_extra_large;
+    }
+  }
+
+  .header_button_container {
+    margin: 0 $margin_large 0 0;
+  }
+}

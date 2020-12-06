@@ -5,14 +5,14 @@ export default class StructuralRoutesAminaIndexPageComponent extends Component {
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '';
+  avatarImage = '/assets/images/aminaheadshot.png';
   aboutMeRoute = 'amina.about';
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';
   contactRoute = 'amina.contact';
-  headerNameFirst = 'Amina';
+  headerNameFirst = 'AMINA';
   headerNameLast = 'Roderick';
-  headerTitle = 'UX Designer';
+  headerTitle = 'User Experience Designer';
   headerButtonLabel = 'Hire Me!';
   headerButtonRoute = 'amina.contact';
 }

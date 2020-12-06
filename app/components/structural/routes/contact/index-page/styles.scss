@@ -1,18 +1,18 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-.index_page_container {
+.contact_page_container {
   display: flex;
   min-width: 100vw;
   min-height: 100vh;
   flex: 1;
 
-  .index_page_body_container {
+  .contact_page_body_container {
     display: flex;
     flex: 1;
     flex-direction: column;
 
-    .index_page_header_container {
+    .contact_page_header_container {
       display: flex;
       min-height: $height_large;
       max-height: $height_large;
@@ -31,7 +31,7 @@
       }
     }
 
-    .index_page_content_container {
+    .contact_page_content_container {
       display: flex;
       flex: 1;
       flex-direction: column;
@@ -40,37 +40,43 @@
         text-decoration: none;
       }
 
-      .index_page_action_container {
+      .contact_page_action_container {
         display: flex;
+        flex-direction: column;
         margin: $margin_large 0 0 17.1875rem;
 
-        .index_page_block_container {
-          display: flex;
-          min-width: 300px;
-          max-width: 300px;
-          min-height: 300px;
-          max-height: 300px;
-          flex-direction: column;
-          margin: 0 $margin_large 0 0;
-          border: $border_three;
-          border-radius: $button_border_radius_primary;
+        .contact_page_text_container {
+          max-width: 75%;
+          margin: 0 0 $margin_large;
+          font-size: $font_size_large;
+          // border-bottom: $border_three;
 
-          .index_page_block_text_container {
-            flex: 1;
-            margin: $margin_large $margin_small 0;
-            font-size: $font_size_large;
-            color: $font_color_primary; 
-          }
-
-          .index_page_block_title_container {
-            margin: $margin_medium $margin_small;
-            color: $color_black;
+          .contact_page_text {
+            margin: 0 0 $margin_medium;
           }
         }
 
-        .index_page_button_container {
+        .contact_page_form_container {
           display: flex;
-          align-items: flex-end;
+          flex-direction: column;
+          margin: 0 0 $margin_medium;
+
+          .contact_page_form_text_container {
+            margin: 0 0 $margin_medium;
+            font-size: $font_size_large;
+          }
+
+          input {
+            min-width: 400px;
+            max-width: 400px;
+            min-height: 50px;
+            max-height: 50px;
+          }
+
+        }
+
+        .contact_page_button_container {
+          display: flex;
 
           :nth-child(1) {
             margin: 0;
@@ -78,7 +84,7 @@
         }
       }
 
-      .index_page_fine_print_container {
+      .contact_page_fine_print_container {
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -86,11 +92,11 @@
         font-size: 0.5em;
         justify-content: flex-end;
 
-        .index_page_built_by_container {
+        .contact_page_built_by_container {
           margin: 0 0 0 $margin_small;      
         }
 
-        .index_page_copyright_container {
+        .contact_page_copyright_container {
           margin: 0 0 0 $margin_small;      
         }
       }

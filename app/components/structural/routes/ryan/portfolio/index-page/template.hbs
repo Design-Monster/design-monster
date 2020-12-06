@@ -22,14 +22,14 @@
   <section local-class="portfolio_page_body_container">
     <div local-class="portfolio_page_header_container">
     {{#if (or (media 'isLarge') (media 'isWide'))}}
-      <Dynamic::Ui::Header 
+      <Dynamic::Ui::Headers::Secondary 
         @headerNameFirst={{this.headerNameFirst}}
         @headerNameLast={{this.headerNameLast}}
         @headerTitle={{this.headerTitle}}
         @headerButtonRoute={{this.contactRoute}}>
           <Dynamic::Ui::Buttons::Wide
             @buttonLabel={{this.headerButtonLabel}} />
-      </Dynamic::Ui::Header>
+      </Dynamic::Ui::Headers::Secondary>
     {{/if}}
     </div>
     <div local-class="portfolio_page_dashboard_row_container first">

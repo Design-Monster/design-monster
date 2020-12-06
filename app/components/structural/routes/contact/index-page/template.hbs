@@ -1,0 +1,48 @@
+
+<div local-class="contact_page_container">
+  <section local-class="contact_page_body_container">
+    <div local-class="contact_page_header_container">
+      <Dynamic::Ui::Headers::Primary
+        @headerNameFirst={{this.headerNameFirst}}
+        @headerPrimaryRoute={{this.landingPageRoute}}
+        @headerNameLast={{this.headerNameLast}}
+      />
+    </div>
+    <div local-class="contact_page_content_container">
+      <div local-class="contact_page_action_container">
+        <div local-class="contact_page_text_container">
+          <div local-class="contact_page_text">
+            amina@designmonster.com <br />
+            <p>or</p>
+            ryan@designmonster.com
+          </div>
+        </div>
+        {{!-- <div local-class="contact_page_form_container">
+          <div local-class="contact_page_form_text_container">
+            Enter your email address to begin a conversation.
+          </div>
+          <input />
+          
+        </div> --}}
+        {{!-- <div local-class="contact_page_button_container"> --}}
+          {{!-- <LinkTo @route='contact'> --}}
+            {{!-- <Dynamic::Ui::Buttons::Wide
+              @buttonLabel={{this.buttonLabel}}
+            /> --}}
+          {{!-- </LinkTo> --}}
+        {{!-- </div> --}}
+      </div>
+      <div local-class="contact_page_fine_print_container">
+        <div local-class="contact_page_built_by_container">
+          <p>
+            designed & built by DESIGNMONSTER LLC
+          </p>
+        </div>
+        <div local-class="contact_page_copyright_container">
+          <FaIcon @icon="copyright" @prefix="far" />
+          2020
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
