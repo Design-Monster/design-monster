@@ -73,7 +73,7 @@
         display: flex;
         flex: 1;
         margin: $margin_medium $margin_small $margin_small;
-        overflow: scroll;
+        overflow: auto;
       }
 
       .dashboard_block_image {

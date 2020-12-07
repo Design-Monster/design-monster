@@ -68,16 +68,20 @@
           {{/if}}
         </div>
         <div local-class="about_social_container">
-          <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
-            <div local-class="about_social_icon">
-              <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
-            <div local-class="about_social_icon">
-              <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
-            </div>
-          </a>
+          {{#if @socialSlotOneIcon}}
+            <a href="https://github.com/RpRoderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+              <div local-class="about_social_icon">
+                <FaIcon @icon={{@socialSlotOneIcon}} @prefix={{@socialSlotOnePrefix}} @size={{@socialSlotOneSize}} />
+              </div>
+            </a>
+          {{/if}}
+          {{#if @socialSlotTwoIcon}}
+            <a href="https://www.linkedin.com/in/ryan-roderick" target="_blank" rel="noopener noreferrer" local-class="nav_link">
+              <div local-class="about_social_icon">
+                <FaIcon @icon={{@socialSlotTwoIcon}} @prefix={{@socialSlotTwoPrefix}} @size={{@socialSlotTwoSize}} />
+              </div>
+            </a>
+          {{/if}}
         </div>
         <div local-class="fine_print_container">
           <div local-class="built_by_container">
@@ -94,12 +98,13 @@
     </nav>
   </mmw.MobileMenu>
   <mmw.Content>
-    <Dynamic::Ui::Headers::Secondary 
-      @headerName="Design Monster">
-        <mmw.Toggle>
-          <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button"/>
-        </mmw.Toggle>
-    </Dynamic::Ui::Headers::Secondary>>
+    <Dynamic::Ui::Header
+      @headerButtonRoute={{@headerButtonRoute}}
+      @buttonLabel={{@buttonLabel}}>
+      <mmw.Toggle>
+        <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button"/>
+      </mmw.Toggle>
+    </Dynamic::Ui::Header>
     {{yield}}
   </mmw.Content>
 </MobileMenuWrapper>

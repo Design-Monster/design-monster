@@ -1,0 +1,77 @@
+
+{{#if @sideBarMenu}}
+  <div local-class="header">
+    <div local-class="header_text_container">
+      {{#if @headerRoute}}
+        <LinkTo @route={{@headerRoute}}>
+          <div local-class="header_name_container">
+            <div local-class="bold">
+                {{@headerNameFirst}}
+            </div>
+            &nbsp;{{@headerNameLast}}
+          </div>
+        </LinkTo>
+      {{else}}
+      <div local-class="header_name_container">
+        <div local-class="bold">
+          {{@headerNameFirst}}
+        </div>
+        &nbsp;{{@headerNameLast}}
+      </div>
+      {{/if}}
+      {{#if @headerTitle}}
+      <div local-class="header_title_container">
+        {{@headerTitle}}
+      </div>
+      {{/if}}
+    </div>
+    {{#if @headerButtonRoute}}
+      <div local-class="header_button_container">
+        <LinkTo @route={{@headerButtonRoute}}>
+          <Dynamic::Ui::Buttons::Wide
+            @buttonLabel={{@buttonLabel}} />
+        </LinkTo>
+      </div>
+    {{/if}}
+  </div>
+{{else}}
+  <div local-class="header">
+    {{#if (or (media 'isSmall') (media 'isMedium'))}}
+      <div local-class="hamburger_button_container">
+        {{yield}}
+      </div>
+    {{/if}}
+    <div local-class="header_text_container">
+      {{#if @headerRoute}}
+        <LinkTo @route={{@headerRoute}}>
+          <div local-class="header_name_container indented">
+            <div local-class="bold">
+                {{@headerNameFirst}}
+            </div>
+            &nbsp;{{@headerNameLast}}
+          </div>
+        </LinkTo>
+      {{else}}
+      <div local-class="header_name_container indented">
+        <div local-class="bold">
+          {{@headerNameFirst}}
+        </div>
+        &nbsp;{{@headerNameLast}}
+      </div>
+      {{/if}}
+      {{#if @headerTitle}}
+      <div local-class="header_title_container">
+        {{@headerTitle}}
+      </div>
+      {{/if}}
+    </div>
+    {{#if @headerButtonRoute}}
+      <div local-class="header_button_container">
+        <LinkTo @route={{@headerButtonRoute}}>
+          <Dynamic::Ui::Buttons::Wide
+            @buttonLabel={{@buttonLabel}} />
+        </LinkTo>
+      </div>
+    {{/if}}
+  </div>
+{{/if}}
