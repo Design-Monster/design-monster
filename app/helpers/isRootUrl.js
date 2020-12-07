@@ -6,9 +6,10 @@ export default class isRootUrl extends Helper {
 
   compute() {
     let rootURL = this.router.rootURL;
+    let contactUrl = rootURL + 'contact';
     let currentURL = this.router.currentURL;
 
-    if (currentURL === rootURL) {
+    if (currentURL === rootURL || currentURL === contactUrl) {
       return true;
     }
   }

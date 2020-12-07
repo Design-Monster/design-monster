@@ -9,10 +9,10 @@ export default class StructuralRoutesAminaIndexPageComponent extends Component {
   aboutMeRoute = 'amina.about';
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';
-  contactRoute = 'amina.contact';
+  contactRoute = 'contact';
+  sideBarMenu = true;
   headerNameFirst = 'AMINA';
   headerNameLast = 'Roderick';
   headerTitle = 'User Experience Designer';
   headerButtonLabel = 'Hire Me!';
-  headerButtonRoute = 'amina.contact';
 }

@@ -19,8 +19,6 @@ Router.map(function() {
     });
     this.route('resume', function() {
     });
-    this.route('contact', function() {
-    });
   });
   this.route('amina', function() {
     this.route('about', function() {
@@ -28,8 +26,6 @@ Router.map(function() {
     this.route('portfolio', function() {
     });
     this.route('resume', function() {
-    });
-    this.route('contact', function() {
     });
   });
 });

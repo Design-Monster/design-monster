@@ -9,17 +9,17 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/RyanHeadShot.png';
+  avatarImage = '/assets/images/ryanheadshot.png';
   aboutMeRoute = 'ryan.about';
   portfolioRoute = 'ryan.portfolio';
   blogRoute = 'ryan.blog';
   resumeRoute = 'ryan.resume';
-  contactRoute = 'ryan.contact';
+  contactRoute = 'contact';
+  sideBarMenu = true;
   headerNameFirst = 'RYAN';
   headerNameLast = 'Roderick';
   headerTitle = 'Web Developer';
   headerButtonLabel = 'Hire Me!';
-  headerButtonRoute = 'ryan.contact';
   //project one
   projectOneProjectTitle = 'New England Marijuana Project - Ember Octane';
   projectOneProjectDescription = 'This is a large project that has an Ember front-end, a Rails backend, uses SQL, AWS S3 and was a lot of fun to build! It currently has V1 done, and V2 is in progress and includes an entire UI overhaul with new designs.  Luckily, I built it to be very changeable, and scalable.  This site and new version will be live by mid 2021.  It is a New England based, recreational marijuana informational site which will sell ad space and include articles, events, and guides for the recreational marijuana user in New England.  The cool thing about this site is that it is actually six sites in one.  Depending on which URL the user visits, it will display different data, loaded from the backend, but with only ONE front end.  When articles are added to the database, it automatically proagates down to ALL SIX SITES.  Very cool.';

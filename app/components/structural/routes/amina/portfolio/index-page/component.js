@@ -9,15 +9,15 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   aboutMeRoute = 'amina.about';
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';
-  contactRoute = 'amina.contact';
+  contactRoute = 'contact';
+  sideBarMenu = true;
   headerNameFirst = 'AMINA';
   headerNameLast = 'Roderick';
   headerTitle = 'User Experience Designer';
   headerButtonLabel = 'Hire Me!';
-  headerButtonRoute = 'amina.contact';
   projectOneProjectTitle = 'Project 1 Ember';
   projectOneProjectDescription = 'Description Goes Here!!';
-  projectOneBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectOneBlockOneImage = '/assets/images/ryanheadshot.png';
   projectOneIconOne = '';
   projectOneIconTwo = '';
   projectOneIconThree = '';
@@ -39,7 +39,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectOneBlockSixLabel = 'See it in Action';
   projectTwoProjectTitle = 'Project 2 Ember';
   projectTwoProjectDescription = 'Description Goes Here!!';
-  projectTwoBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectTwoBlockOneImage = '/assets/images/ryanheadshot.png';
   projectTwoIconOne = '';
   projectTwoIconTwo = '';
   projectTwoIconThree = '';
@@ -61,7 +61,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectTwoBlockSixLabel = 'See it in Action';
   projectThreeProjectTitle = 'Project 3 Ember';
   projectThreeProjectDescription = 'Description Goes Here!!';
-  projectThreeBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectThreeBlockOneImage = '/assets/images/ryanheadshot.png';
   projectThreeIconOne = '';
   projectThreeIconTwo = '';
   projectThreeIconThree = '';
@@ -83,7 +83,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectThreeBlockSixLabel = 'See it in Action';
   projectFourProjectTitle = 'Project 4 React';
   projectFourProjectDescription = 'Description Goes Here!!';
-  projectFourBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectFourBlockOneImage = '/assets/images/ryanheadshot.png';
   projectFourIconOne = '';
   projectFourIconTwo = '';
   projectFourIconThree = '';
@@ -105,7 +105,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFourBlockSixLabel = 'See it in Action';
   projectFiveProjectTitle = 'Project 5 React';
   projectFiveProjectDescription = 'Description Goes Here!!';
-  projectFiveBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectFiveBlockOneImage = '/assets/images/ryanheadshot.png';
   projectFiveIconOne = '';
   projectFiveIconTwo = '';
   projectFiveIconThree = '';
@@ -127,7 +127,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFiveBlockSixLabel = 'See it in Action';
   projectSixProjectTitle = 'Project 6 React';
   projectSixProjectDescription = 'Description Goes Here!!';
-  projectSixBlockOneImage = '/assets/images/RyanHeadShot.png';
+  projectSixBlockOneImage = '/assets/images/ryanheadshot.png';
   projectSixIconOne = '';
   projectSixIconTwo = '';
   projectSixIconThree = '';

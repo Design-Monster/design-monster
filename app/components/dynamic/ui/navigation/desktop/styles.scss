@@ -39,6 +39,7 @@ nav {
 
     .navigation_container {
       display: flex;
+      flex: 1;
       flex-direction: column;
       margin: 0 $margin_medium;
 
@@ -103,32 +104,8 @@ nav {
       }
     }
 
-    // .company_title_container {
-    //   display: flex;
-    //   height: $height_extra_large;
-    //   min-height: $height_extra_large;
-    //   justify-content: center;
-    //   align-items: center;
-
-    //   a {
-    //     color: $color_blue_primary;
-    //     text-decoration: none;
-
-    //     &visited {
-    //     color: $color_blue_primary;
-    //     }
-    //   }
-
-    //   // .company_title {
-    //   //   font-size: 1.5em;
-    //   //   color: $color_blue_primary;
-    //   //   text-align: center;
-    //   // }
-    // }
-
     .fine_print_container {
       display: flex;
-      flex: 1;
       flex-direction: column;
       margin: $margin_medium $margin_small;
       font-size: 0.5em;

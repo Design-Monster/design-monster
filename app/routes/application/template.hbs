@@ -1,15 +1,43 @@
 <Utilities::SkipLink />
-
 {{#if (or (media 'isSmall') (media 'isMedium'))}}
-
   {{#if (isRootUrl)}}
     {{outlet}}
-  {{else}}
-    <Dynamic::Ui::Navigation::Mobile>
-      {{outlet}}
+  {{else if (isRyanUrl)}}
+    <Dynamic::Ui::Navigation::Mobile
+      @socialSlotOneUrl={{this.ryanGithubUrl}}
+      @socialSlotOneIcon={{this.ryanGithubIcon}}
+      @socialSlotOnePrefix={{this.ryanGithubPrefix}}
+      @socialSlotOneSize={{this.ryanGithubSize}}
+      @socialSlotTwoUrl={{this.ryanLinkedInUrl}}
+      @socialSlotTwoIcon={{this.ryanLinkedinIcon}}
+      @socialSlotTwoPrefix={{this.ryanLinkedinPrefix}}
+      @socialSlotTwoSize={{this.ryanLinkedinSize}}
+      @avatarImage={{this.ryanAvatarImage}}
+      @routeSlotOne={{this.ryanAboutMeRoute}}
+      @routeSlotTwo={{this.ryanPortfolioRoute}}
+      @routeSlotThree={{this.ryanBlogRoute}}
+      @routeSlotFour={{this.ryanResumeRoute}}
+      @headerButtonRoute={{this.contactRoute}}
+      @buttonLabel={{this.buttonLabel}}>
+        {{outlet}}
     </Dynamic::Ui::Navigation::Mobile>
+  {{else if (isAminaUrl)}}
+    <Dynamic::Ui::Navigation::Mobile
+      @socialSlotTwoUrl={{this.aminaLinkedInUrl}}
+      @socialSlotTwoIcon={{this.aminaLinkedinIcon}}
+      @socialSlotTwoPrefix={{this.aminaLinkedinPrefix}}
+      @socialSlotTwoSize={{this.aminaLinkedinSize}}
+      @avatarImage={{this.aminaAvatarImage}}
+      @routeSlotOne={{this.aminaAboutMeRoute}}
+      @routeSlotTwo={{this.aminaPortfolioRoute}}
+      @routeSlotFour={{this.aminaResumeRoute}}
+      @headerButtonRoute={{this.contactRoute}}
+      @buttonLabel={{this.buttonLabel}}>
+        {{outlet}}
+    </Dynamic::Ui::Navigation::Mobile>
+  {{else}}
+    {{outlet}}
   {{/if}}
-
 {{else}}
   {{outlet}}
 {{/if}}
