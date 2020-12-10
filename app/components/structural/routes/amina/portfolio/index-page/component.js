@@ -17,7 +17,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   headerButtonLabel = 'Hire Me!';
   projectOneProjectTitle = 'Project 1 Ember';
   projectOneProjectDescription = 'Description Goes Here!!';
-  projectOneBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectOneBlockOneImage = '/assets/images/headshotryan.png';
   projectOneIconOne = '';
   projectOneIconTwo = '';
   projectOneIconThree = '';
@@ -39,7 +39,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectOneBlockSixLabel = 'See it in Action';
   projectTwoProjectTitle = 'Project 2 Ember';
   projectTwoProjectDescription = 'Description Goes Here!!';
-  projectTwoBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectTwoBlockOneImage = '/assets/images/headshotryan.png';
   projectTwoIconOne = '';
   projectTwoIconTwo = '';
   projectTwoIconThree = '';
@@ -61,7 +61,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectTwoBlockSixLabel = 'See it in Action';
   projectThreeProjectTitle = 'Project 3 Ember';
   projectThreeProjectDescription = 'Description Goes Here!!';
-  projectThreeBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectThreeBlockOneImage = '/assets/images/headshotryan.png';
   projectThreeIconOne = '';
   projectThreeIconTwo = '';
   projectThreeIconThree = '';
@@ -83,7 +83,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectThreeBlockSixLabel = 'See it in Action';
   projectFourProjectTitle = 'Project 4 React';
   projectFourProjectDescription = 'Description Goes Here!!';
-  projectFourBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectFourBlockOneImage = '/assets/images/headshotryan.png';
   projectFourIconOne = '';
   projectFourIconTwo = '';
   projectFourIconThree = '';
@@ -105,7 +105,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFourBlockSixLabel = 'See it in Action';
   projectFiveProjectTitle = 'Project 5 React';
   projectFiveProjectDescription = 'Description Goes Here!!';
-  projectFiveBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectFiveBlockOneImage = '/assets/images/headshotryan.png';
   projectFiveIconOne = '';
   projectFiveIconTwo = '';
   projectFiveIconThree = '';
@@ -127,7 +127,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFiveBlockSixLabel = 'See it in Action';
   projectSixProjectTitle = 'Project 6 React';
   projectSixProjectDescription = 'Description Goes Here!!';
-  projectSixBlockOneImage = '/assets/images/ryanheadshot.png';
+  projectSixBlockOneImage = '/assets/images/headshotryan.png';
   projectSixIconOne = '';
   projectSixIconTwo = '';
   projectSixIconThree = '';

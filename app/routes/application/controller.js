@@ -12,7 +12,7 @@ export default class ApplicationController extends Controller {
   ryanLinkedinIcon = 'linkedin';
   ryanLinkedinPrefix = 'fab';
   ryanLinkedinSize = '2x';
-  ryanAvatarImage = '/assets/images/ryanheadshot.png';
+  ryanAvatarImage = '/assets/images/headshotryan.png';
   ryanAboutMeRoute = 'ryan.about';
   ryanPortfolioRoute = 'ryan.portfolio';
   ryanBlogRoute = 'ryan.blog';
