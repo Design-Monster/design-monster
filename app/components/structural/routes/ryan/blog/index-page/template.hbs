@@ -21,17 +21,17 @@
     </section>
   {{/if}}
   <section local-class="blog_page_body_container">
-    <div local-class="blog_page_header_container">
     {{#if (or (media 'isLarge') (media 'isWide'))}}
-      <Dynamic::Ui::Header 
-        @headerNameFirst={{this.headerNameFirst}}
-        @headerNameLast={{this.headerNameLast}}
-        @headerTitle={{this.headerTitle}}
-        @headerButtonRoute={{this.contactRoute}}
-        @sideBarMenu={{this.sideBarMenu}}
-        @buttonLabel={{this.headerButtonLabel}} />
+      <div local-class="blog_page_header_container">
+        <Dynamic::Ui::Header 
+          @headerNameFirst={{this.headerNameFirst}}
+          @headerNameLast={{this.headerNameLast}}
+          @headerTitle={{this.headerTitle}}
+          @headerButtonRoute={{this.contactRoute}}
+          @sideBarMenu={{this.sideBarMenu}}
+          @buttonLabel={{this.headerButtonLabel}} />
+      </div>
     {{/if}}
-    </div>
     <div local-class="blog_page_content_container">
       <div local-class="blog_page_dashboard_block_container">
         <Dynamic::Ui::DashboardBlock

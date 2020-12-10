@@ -32,7 +32,19 @@
     overflow-y: scroll;
 
     .resume_page_header_container {
-      margin: 0 0 $margin_large;
+      display: flex;
+
+      @include breakpoint(large) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+
+      @include breakpoint(wide) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
     }
 
     .resume_page_content_container {
@@ -41,7 +53,22 @@
 
       .resume_page_content_header {
         display: flex;
-        margin: 0 $margin_small;
+        justify-content: center;
+
+        @include breakpoint(medium) {
+          margin: 0 $margin_small;
+          justify-content: flex-start;
+        }
+
+        @include breakpoint(large) {
+          margin: 0 $margin_small;
+          justify-content: flex-start;
+        }
+
+        @include breakpoint(wide) {
+          margin: 0 $margin_small;
+          justify-content: flex-start;
+        }
       }
 
       .resume_page_content {
@@ -50,6 +77,10 @@
         margin: $margin_large $margin_large $margin_large $margin_small;
         font-size: 1.25em;
         box-shadow: 0 0 2px $color_blue_primary;
+
+        @include breakpoint(medium) {
+          margin: $margin_large $margin_small;
+        }
 
         .resume_page_resume {
           margin: $margin_extra_large $margin_large;
@@ -73,12 +104,26 @@
 
               .resume_page_resume_header_name {
                 flex: 1;
-                font-size: 2em;
+        
+                @include breakpoint(large) {
+                  font-size: $font_size_large;
+                }
+        
+                @include breakpoint(wide) {
+                  font-size: $font_size_extra_large;
+                }
               }
 
               .resume_page_resume_header_title {
-                font-size: 2em;
                 text-align: end;
+
+                @include breakpoint(large) {
+                  font-size: $font_size_large;
+                }
+        
+                @include breakpoint(wide) {
+                  font-size: $font_size_extra_large;
+                }
               }
             }
 
@@ -89,17 +134,41 @@
               .resume_page_resume_header_email {
                 flex: 1;
                 color: $color_blue_primary;
+
+                @include breakpoint(medium) {
+                  font-size: $font_size_small;
+                }
+        
+                @include breakpoint(large) {
+                  font-size: $font_size_small;
+                }
+        
+                @include breakpoint(wide) {
+                  font-size: $font_size_regular;
+                }
               }
 
               .resume_page_resume_header_other {
                 color: $color_blue_primary;
                 text-align: end;
+
+                @include breakpoint(medium) {
+                  font-size: $font_size_small;
+                }
+        
+                @include breakpoint(large) {
+                  font-size: $font_size_small;
+                }
+        
+                @include breakpoint(wide) {
+                  font-size: $font_size_regular;
+                }
               }
             }
           }
 
           .resume_page_resume_title_block {
-            font-size: 2em;
+            font-size: $font_size_extra_large;
             color: $color_dark_grey;
           }
 

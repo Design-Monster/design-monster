@@ -14,13 +14,28 @@
 
 .dashboard_row_container {
   display: flex;
-  margin: 0 $margin_large 0 0;
+
+  @include breakpoint(large) {
+    margin: 0 $margin_large 0 0;
+  }
+
+  @include breakpoint(wide) {
+    margin: 0 $margin_large 0 0;
+  }
 
   .dashboard_row {
     display: flex;
-    margin: $margin_small;
+    margin: $margin_extra_small;
     overflow-x: scroll;
     align-items: center;
+
+    @include breakpoint(large) {
+      margin: $margin_small;
+    }
+  
+    @include breakpoint(wide) {
+      margin: $margin_small;
+    }
 
     a {
       color: $color_black;
