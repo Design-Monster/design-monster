@@ -31,11 +31,31 @@
     flex-direction: column;
     overflow-y: scroll;
 
-    .portfolio_page_dashboard_row_container {
-      margin: 0 0 $margin_large;
+    .portfolio_page_header_container {
+      display: flex;
 
-      &.first {
-        margin: $margin_large 0;
+      @include breakpoint(large) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+
+      @include breakpoint(wide) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+    }
+
+    .portfolio_page_dashboard_row_container {
+      margin: 0 0 $margin_small;
+
+      @include breakpoint(large) {
+        margin: 0 0 $margin_large;
+      }
+
+      @include breakpoint(wide) {
+        margin: 0 0 $margin_large;
       }
     }
   }

@@ -31,6 +31,22 @@
     flex-direction: column;
     overflow-y: scroll;
 
+    .blog_show_page_header_container {
+      display: flex;
+
+      @include breakpoint(large) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+
+      @include breakpoint(wide) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+    }
+
     .blog_show_page_content_container {
       justify-content: center;
       align-items: center;
@@ -38,7 +54,15 @@
       .article_container {
         display: flex;
         flex-direction: column;
-        margin: $margin_large $margin_large $margin_large $margin_small;
+        margin: $margin_small;
+
+        @include breakpoint(large) {
+          margin: 0 $margin_large $margin_large $margin_small;
+        }
+    
+        @include breakpoint(wide) {
+          margin: 0 $margin_large $margin_large $margin_small;
+        }
 
         .article_title {
           font-size: 2em;
@@ -60,11 +84,12 @@
 
           .article_paragraph_code_block_container {
             display: flex;
-            min-width: 310px;
-            max-width: 310px;
+            min-width: 300px;
+            max-width: 300px;
             min-height: $height_large;
             margin: $margin_small 0 0;
             color: $color_white;
+            word-break: break-all;
             background-color: $color_black;
             align-items: center;
         
@@ -85,7 +110,7 @@
 
             .article_paragraph_code_block {
               display: flex;
-              margin: 0 0 0 $margin_small;
+              margin: 0 $margin_small;
 
               span {
                 &.code_output {

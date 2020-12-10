@@ -3,22 +3,10 @@
 
 .header {
   display: flex;
-  min-height: $height_extra_large;
-  max-height: $height_extra_large;
   flex: 1;
   border-bottom: $border_two;
   align-items: center;
   justify-content: space-between;
-
-  @include breakpoint(large) {
-    min-height: $height_extra_extra_large;
-    max-height: $height_extra_extra_large;
-  }
-
-  @include breakpoint(wide) {
-    min-height: $height_extra_extra_large;
-    max-height: $height_extra_extra_large;
-  }
 
   .hamburger_button_container {
     margin: 0 0 0 $margin_small;
@@ -40,25 +28,27 @@
 
     .header_name_container {
       display: flex;
-      font-size: $font_size_extra_extra_large;
+      margin: 0 $margin_small 0 0;
       color: $font_color_primary;
 
       @include breakpoint(large) {
         margin: 0 $margin_medium 0 $margin_small;
+        font-size: $font_size_extra_large;
       }
     
       @include breakpoint(wide) {
         margin: 0 $margin_medium 0 $margin_small;
+        font-size: $font_size_extra_extra_large;
       }
 
       &.indented {
 
         @include breakpoint(large) {
-          margin: 0 0 0 17.1875rem;
+          margin: 0 0 0 9.375rem;
         }
       
         @include breakpoint(wide) {
-          margin: 0 0 0 17.1875rem;
+          margin: 0 0 0 14.0625rem;
         }
       }
 

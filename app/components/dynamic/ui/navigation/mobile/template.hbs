@@ -98,13 +98,15 @@
     </nav>
   </mmw.MobileMenu>
   <mmw.Content>
-    <Dynamic::Ui::Header
-      @headerButtonRoute={{@headerButtonRoute}}
-      @buttonLabel={{@buttonLabel}}>
-      <mmw.Toggle>
-        <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button"/>
-      </mmw.Toggle>
-    </Dynamic::Ui::Header>
+    <div local-class="mobile_header_container">
+      <Dynamic::Ui::Header
+        @headerButtonRoute={{@headerButtonRoute}}
+        @buttonLabel={{@buttonLabel}}>
+        <mmw.Toggle>
+          <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button" />
+        </mmw.Toggle>
+      </Dynamic::Ui::Header>
+    </div>
     {{yield}}
   </mmw.Content>
 </MobileMenuWrapper>

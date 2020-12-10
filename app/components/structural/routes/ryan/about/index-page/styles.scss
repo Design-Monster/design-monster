@@ -32,7 +32,19 @@
     overflow-y: scroll;
 
     .about_page_header_container {
-      margin: 0 0 $margin_large;
+      display: flex;
+
+      @include breakpoint(large) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
+
+      @include breakpoint(wide) {
+        min-height: $height_extra_extra_large;
+        max-height: $height_extra_extra_large;
+        margin: 0 0 $margin_large;
+      }
     }
 
     .about_page_content_container {

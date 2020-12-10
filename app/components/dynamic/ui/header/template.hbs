@@ -19,10 +19,12 @@
         &nbsp;{{@headerNameLast}}
       </div>
       {{/if}}
-      {{#if @headerTitle}}
-      <div local-class="header_title_container">
-        {{@headerTitle}}
-      </div>
+      {{#if (media 'isWide')}}
+        {{#if @headerTitle}}
+          <div local-class="header_title_container">
+            {{@headerTitle}}
+          </div>
+        {{/if}}
       {{/if}}
     </div>
     {{#if @headerButtonRoute}}
@@ -59,10 +61,12 @@
         &nbsp;{{@headerNameLast}}
       </div>
       {{/if}}
-      {{#if @headerTitle}}
-      <div local-class="header_title_container">
-        {{@headerTitle}}
-      </div>
+      {{#if (media 'isWide')}}
+        {{#if @headerTitle}}
+          <div local-class="header_title_container">
+            {{@headerTitle}}
+          </div>
+        {{/if}}
       {{/if}}
     </div>
     {{#if @headerButtonRoute}}
