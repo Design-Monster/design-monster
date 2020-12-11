@@ -10,7 +10,7 @@ export default class StructuralRoutesRyanIndexPageComponent extends Component {
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/headshotryan.png';
+  avatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   aboutMeRoute = 'ryan.about';
   portfolioRoute = 'ryan.portfolio';
   blogRoute = 'ryan.blog';

@@ -27,6 +27,8 @@
     display: flex;
     margin: $margin_extra_small;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* Important for iOS devices */
+    scroll-snap-type: x mandatory;
     align-items: center;
 
     @include breakpoint(large) {
@@ -59,6 +61,7 @@
       border-radius: $border_radius_primary;
       justify-content: center;
       align-items: center;
+      scroll-snap-align: start;
 
       .dashboard_block_icon_container {
         display: flex;

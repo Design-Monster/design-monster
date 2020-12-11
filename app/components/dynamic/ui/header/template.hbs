@@ -4,12 +4,12 @@
     <div local-class="header_text_container">
       {{#if @headerRoute}}
         <LinkTo @route={{@headerRoute}}>
-          <div local-class="header_name_container">
+          <heading local-class="header_name_container">
             <div local-class="bold">
                 {{@headerNameFirst}}
             </div>
             &nbsp;{{@headerNameLast}}
-          </div>
+          </heading>
         </LinkTo>
       {{else}}
       <div local-class="header_name_container">

@@ -9,7 +9,7 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/headshotryan.png';
+  avatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   aboutMeRoute = 'ryan.about';
   portfolioRoute = 'ryan.portfolio';
   blogRoute = 'ryan.blog';
@@ -23,10 +23,10 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   //project one
   projectOneProjectTitle = 'New England Marijuana Project - Ember Octane';
   projectOneProjectDescription = 'This is a large project that has an Ember front-end, a Rails backend, uses SQL, AWS S3 and was a lot of fun to build! It currently has V1 done, and V2 is in progress and includes an entire UI overhaul with new designs.  Luckily, I built it to be very changeable, and scalable.  This site and new version will be live by mid 2021.  It is a New England based, recreational marijuana informational site which will sell ad space and include articles, events, and guides for the recreational marijuana user in New England.  The cool thing about this site is that it is actually six sites in one.  Depending on which URL the user visits, it will display different data, loaded from the backend, but with only ONE front end.  When articles are added to the database, it automatically proagates down to ALL SIX SITES.  Very cool.';
-  projectOneBlockOneImage = '/assets/images/nempthumbnail.png';
-  projectOneIconOne = '/assets/images/embericon.png';
-  projectOneIconTwo = '/assets/images/railsicon.png';
-  projectOneIconThree = '/assets/images/sqlicon.png';
+  projectOneBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/nempthumbnail.png';
+  projectOneIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/embericon.png';
+  projectOneIconTwo = 'https://designmonster.s3.us-east-2.amazonaws.com/railsicon.png';
+  projectOneIconThree = 'https://designmonster.s3.us-east-2.amazonaws.com/sqlicon.png';
   projectOneBlockTwoLabel = 'Stack';
   projectOneBlockThreeTextOne = '1 - I planned this out to be a very large site, and had not built something of this size and complexity before.';
   projectOneBlockThreeTextTwo = '2 - It needed to show six seemingly different sites, but from one single frontend app.';
@@ -39,9 +39,9 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   //project two
   projectTwoProjectTitle = 'Ember Octane Boilerplate - Ember Octane';
   projectTwoProjectDescription = 'I\'ve set up a very nice boilerplate with all the needed add-ons, and a folder structure that splits components into reusable, layout, or utility types.  It uses css-modules with scss, and includes all relevant bases files, such as a variables sheet with some presets and some basic components, such as  skip-link and a button.';
-  projectTwoBlockOneImage = '/assets/images/emberboilerplatethumbnail.png';
-  projectTwoIconOne = '/assets/images/embericon.png';
-  projectTwoIconTwo = '/assets/images/scssicon.svg';
+  projectTwoBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/emberboilerplatethumbnail.png';
+  projectTwoIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/embericon.png';
+  projectTwoIconTwo = 'https://designmonster.s3.us-east-2.amazonaws.com/scssicon.svg';
   projectTwoBlockTwoLabel = 'Stack';
   projectTwoBlockThreeTextOne = '1 - It needed to be generic enough so that the project would be usable by anyone, but complex enough so that it was worth using in the first place.';
   projectTwoBlockThreeTextTwo = '2 - I wanted to have my own folder structure in routes to keep all files in one folder.  Ember did not allow this.';
@@ -57,7 +57,7 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   projectThreeProjectTitle = 'Sleepy Forest Maple - React';
   projectThreeProjectDescription = 'This was a nice, basic website that was needed for a small company to showcase their products. They wanted to start with the simplest layout, with the ability to scale it up easily as they grew.';
   projectThreeBlockOneImage = '/assets/images/';
-  projectThreeIconOne = '/assets/images/embericon.png';
+  projectThreeIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/embericon.png';
   projectThreeIconTwo = '';
   projectThreeIconThree = '';
   projectThreeBlockTwoLabel = 'Stack';
@@ -78,9 +78,9 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   //project four
   projectFourProjectTitle = 'React Boilerplate - React';
   projectFourProjectDescription = 'As I began learning React, I realized that setting up a new project each time could be annoying. For one thing, everyone in React seemed to have a different opinion of how the app should be set up.  I have honed my Ember setup over the years and really liked it, so I set up a React Boilerplate the exact same way.  Now, whether I\'m writing a React app or an Ember app, I can easily settle in to the code because I\'ve set up my folder structure and component hierarchy the same on either, while practicing best practices for each.';
-  projectFourBlockOneImage = '/assets/images/reactboilerplatethumbnail.png';
-  projectFourIconOne = '/assets/images/reacticon.png';
-  projectFourIconTwo = '/assets/images/scssicon.svg';
+  projectFourBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/reactboilerplatethumbnail.png';
+  projectFourIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/reacticon.png';
+  projectFourIconTwo = 'https://designmonster.s3.us-east-2.amazonaws.com/scssicon.svg';
   projectFourBlockTwoLabel = 'Stack';
   projectFourBlockThreeTextOne = '1 - I wanted anyone, including myself, to open it and understand where they were and how to proceed.';
   projectFourBlockThreeTextTwo = '2 - I wanted responsiveness out of the box.';
@@ -95,8 +95,8 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   //project five
   projectFiveProjectTitle = 'Markdown Previewer - React';
   projectFiveProjectDescription = 'This was actually a project for FreeCodeCamp, but I decided that I wanted to bring it from a simple CodePen over to a real-world app, so that I would understand the process of creating a React app from scratch.  This was actually a fun one to build and I learned a lot from building it.';
-  projectFiveBlockOneImage = '/assets/images/markdownthumbnail.png';
-  projectFiveIconOne = '/assets/images/reacticon.png';
+  projectFiveBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/markdownthumbnail.png';
+  projectFiveIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/reacticon.png';
   projectFiveBlockTwoLabel = 'Stack';
   projectFiveBlockThreeTextOne = '1 - I had never built a real world React app before.';
   projectFiveBlockThreeTextTwo = '2 - I wanted to add a \'copy\' button with functionality to make the app more user friendly.';
@@ -114,10 +114,10 @@ export default class StructuralRoutesRyanPortfolioIndexPageComponent extends Com
   //project six
   projectSixProjectTitle = 'Tic Tac Toe - JS';
   projectSixProjectDescription = 'I put this one up here because it\'s my FIRST ever project.  It is a mish-mashed, splattered, pile of code.  It\'s slow and lags and kind of ugly, but somehow I got it to work.  With help.  Lot\'s of help.  I leave it up here because it is a solid reminder of progress.  This took me weeks and felt like a lead weight hanging from a string over my head wherever I went. It was an amazing feeling though when it was built and working.';
-  projectSixBlockOneImage = '/assets/images/tttthumbnail.png';
-  projectSixIconOne = '/assets/images/jqueryicon.png';
-  projectSixIconTwo = '/assets/images/jsonicon.svg';
-  projectSixIconThree = '/assets/images/javascripticon.svg';
+  projectSixBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/tttthumbnail.png';
+  projectSixIconOne = 'https://designmonster.s3.us-east-2.amazonaws.com/jqueryicon.png';
+  projectSixIconTwo = 'https://designmonster.s3.us-east-2.amazonaws.com/jsonicon.svg';
+  projectSixIconThree = 'https://designmonster.s3.us-east-2.amazonaws.com/javascripticon.svg';
   projectSixBlockTwoLabel = 'Stack';
   projectSixBlockThreeTextOne = '1 - I had never built anything in code before.';
   projectSixBlockThreeTextTwo = '2 - It needed functionality that I had no idea how to build.';
