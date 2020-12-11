@@ -5,7 +5,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/aminaheadshot.png';
+  avatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/aminaheadshot.png';
   aboutMeRoute = 'amina.about';
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';
@@ -17,7 +17,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   headerButtonLabel = 'Hire Me!';
   projectOneProjectTitle = 'Project 1 Ember';
   projectOneProjectDescription = 'Description Goes Here!!';
-  projectOneBlockOneImage = '/assets/images/headshotryan.png';
+  projectOneBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectOneIconOne = '';
   projectOneIconTwo = '';
   projectOneIconThree = '';
@@ -39,7 +39,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectOneBlockSixLabel = 'See it in Action';
   projectTwoProjectTitle = 'Project 2 Ember';
   projectTwoProjectDescription = 'Description Goes Here!!';
-  projectTwoBlockOneImage = '/assets/images/headshotryan.png';
+  projectTwoBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectTwoIconOne = '';
   projectTwoIconTwo = '';
   projectTwoIconThree = '';
@@ -61,7 +61,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectTwoBlockSixLabel = 'See it in Action';
   projectThreeProjectTitle = 'Project 3 Ember';
   projectThreeProjectDescription = 'Description Goes Here!!';
-  projectThreeBlockOneImage = '/assets/images/headshotryan.png';
+  projectThreeBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectThreeIconOne = '';
   projectThreeIconTwo = '';
   projectThreeIconThree = '';
@@ -83,7 +83,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectThreeBlockSixLabel = 'See it in Action';
   projectFourProjectTitle = 'Project 4 React';
   projectFourProjectDescription = 'Description Goes Here!!';
-  projectFourBlockOneImage = '/assets/images/headshotryan.png';
+  projectFourBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectFourIconOne = '';
   projectFourIconTwo = '';
   projectFourIconThree = '';
@@ -105,7 +105,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFourBlockSixLabel = 'See it in Action';
   projectFiveProjectTitle = 'Project 5 React';
   projectFiveProjectDescription = 'Description Goes Here!!';
-  projectFiveBlockOneImage = '/assets/images/headshotryan.png';
+  projectFiveBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectFiveIconOne = '';
   projectFiveIconTwo = '';
   projectFiveIconThree = '';
@@ -127,7 +127,7 @@ export default class StructuralRoutesAminaPortfolioIndexPageComponent extends Co
   projectFiveBlockSixLabel = 'See it in Action';
   projectSixProjectTitle = 'Project 6 React';
   projectSixProjectDescription = 'Description Goes Here!!';
-  projectSixBlockOneImage = '/assets/images/headshotryan.png';
+  projectSixBlockOneImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   projectSixIconOne = '';
   projectSixIconTwo = '';
   projectSixIconThree = '';

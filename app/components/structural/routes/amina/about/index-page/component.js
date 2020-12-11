@@ -5,7 +5,7 @@ export default class StructuralRoutesAminaIndexPageComponent extends Component {
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';
   linkedinSize = '2x';
-  avatarImage = '/assets/images/aminaheadshot.png';
+  avatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/aminaheadshot.png';
   aboutMeRoute = 'amina.about';
   portfolioRoute = 'amina.portfolio';
   resumeRoute = 'amina.resume';

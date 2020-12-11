@@ -12,7 +12,7 @@ export default class ApplicationController extends Controller {
   ryanLinkedinIcon = 'linkedin';
   ryanLinkedinPrefix = 'fab';
   ryanLinkedinSize = '2x';
-  ryanAvatarImage = '/assets/images/headshotryan.png';
+  ryanAvatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/headshotryan.png';
   ryanAboutMeRoute = 'ryan.about';
   ryanPortfolioRoute = 'ryan.portfolio';
   ryanBlogRoute = 'ryan.blog';
@@ -22,7 +22,7 @@ export default class ApplicationController extends Controller {
   aminaLinkedinIcon = 'linkedin';
   aminaLinkedinPrefix = 'fab';
   aminaLinkedinSize = '2x';
-  aminaAvatarImage = '/assets/images/aminaheadshot.png';
+  aminaAvatarImage = 'https://designmonster.s3.us-east-2.amazonaws.com/aminaheadshot.png';
   aminaAboutMeRoute = 'amina.about';
   aminaPortfolioRoute = 'amina.portfolio';
   aminaResumeRoute = 'amina.resume';
