@@ -2,13 +2,15 @@
 @import 'global/breakpoints';
 
 nav {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
 
   .menu_container {
     display: flex;
-    min-height: 100vh;
-    max-height: 100vh;
     flex: 1;
     flex-direction: column;
+    overflow-y: scroll;
 
     .about_container {
       display: flex;
