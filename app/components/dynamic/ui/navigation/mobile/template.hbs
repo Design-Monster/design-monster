@@ -102,9 +102,11 @@
       <Dynamic::Ui::Header
         @headerButtonRoute={{@headerButtonRoute}}
         @buttonLabel={{@buttonLabel}}>
-        <mmw.Toggle>
-          <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button" />
-        </mmw.Toggle>
+        <div local-class="button">
+          <mmw.Toggle>
+            <FaIcon @icon="bars" @prefix="fas" @size='2x' type="button" />
+          </mmw.Toggle>
+        </div>
       </Dynamic::Ui::Header>
     </div>
     {{yield}}

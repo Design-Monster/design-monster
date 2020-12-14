@@ -47,15 +47,19 @@
       }
     }
 
-    .portfolio_page_dashboard_row_container {
-      margin: 0 0 $margin_small;
+    .portfolio_page_content_container {
+      margin: $margin_extra_large 0 0;
 
-      @include breakpoint(large) {
-        margin: 0 0 $margin_large;
-      }
+      .portfolio_page_dashboard_row_container {
+        margin: 0 0 $margin_small;
 
-      @include breakpoint(wide) {
-        margin: 0 0 $margin_large;
+        @include breakpoint(large) {
+          margin: 0 0 $margin_large;
+        }
+
+        @include breakpoint(wide) {
+          margin: 0 0 $margin_large;
+        }
       }
     }
   }
