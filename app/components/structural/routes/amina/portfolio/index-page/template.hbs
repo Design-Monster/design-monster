@@ -2,6 +2,9 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="portfolio_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
+        @scrollToSectionOne={{this.scrollToSectionOne}}
         @socialSlotTwoUrl={{this.linkedInUrl}}
         @socialSlotTwoIcon={{this.linkedinIcon}}
         @socialSlotTwoPrefix={{this.linkedinPrefix}}
@@ -27,161 +30,378 @@
       </div>
     {{/if}}
     <div local-class="portfolio_page_content_container">
-      <div local-class="portfolio_page_dashboard_row_container first">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectOneProjectTitle}}
-          @projectDescription={{this.projectOneProjectDescription}}
-          @blockOneImage={{this.projectOneBlockOneImage}}
-          @iconOne={{this.projectOneIconOne}}
-          @iconTwo={{this.projectOneIconTwo}}
-          @iconThree={{this.projectOneIconThree}}
-          @blockTwoLabel={{this.projectOneBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectOneBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectOneBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectOneBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectOneBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectOneBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectOneBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectOneBlockFourTextThree}}
-          @blockFourTextFour={{this.projectOneBlockFourTextFour}}
-          @blockFourTextFive={{this.projectOneBlockFourTextFive}}
-          @blockFourLabel={{this.projectOneBlockFourLabel}}
-          @projectGithubUrl={{this.projectOneGithubUrl}}
-          @blockFiveText={{this.projectOneBlockFiveText}}
-          @blockFiveLabel={{this.projectOneBlockFiveLabel}}
-          @blockSixText={{this.projectOneBlockSixText}}
-          @blockSixLabel={{this.projectOneBlockSixLabel}}
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
+          @blockOneLink={{this.blockOneLink}}
+          @blockOneTextOneLeft={{this.blockOneTextOneLeft}}
+          @blockOneTextTwoLeft={{this.blockOneTextTwoLeft}}
+          @blockOneLabelLeft={{this.blockOneLabelLeft}}
+          @blockTwoTextOneLeft={{this.blockTwoTextOneLeft}}
+          @blockTwoTextTwoLeft={{this.blockTwoTextTwoLeft}}
+          @blockTwoLabelLeft={{this.blockTwoLabelLeft}}
+          @blockThreeTextOneLeft={{this.blockThreeTextOneLeft}}
+          @blockThreeTextTwoLeft={{this.blockThreeTextTwoLeft}}
+          @blockThreeLabelLeft={{this.blockThreeLabelLeft}}
+          @blockFourTextOneLeft={{this.blockFourTextOneLeft}}
+          @blockFourTextTwoLeft={{this.blockFourTextTwoLeft}}
+          @blockFourLabelLeft={{this.blockFourLabelLeft}}
+          @blockFiveTextOneLeft={{this.blockFiveTextOneLeft}}
+          @blockFiveTextTwoLeft={{this.blockFiveTextTwoLeft}}
+          @blockFiveLabelLeft={{this.blockFiveLabelLeft}}
+          @blockSixTextOneLeft={{this.blockSixTextOneLeft}}
+          @blockSixTextTwoLeft={{this.blockSixTextTwoLeft}}
+          @blockSixLabelLeft={{this.blockSixLabelLeft}}
         />
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectTwoProjectTitle}}
-          @projectDescription={{this.projectTwoProjectDescription}}
-          @blockOneImage={{this.projectTwoBlockOneImage}}
-          @iconOne={{this.projectTwoIconOne}}
-          @iconTwo={{this.projectTwoIconTwo}}
-          @iconThree={{this.projectTwoIconThree}}
-          @blockTwoLabel={{this.projectTwoBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectTwoBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectTwoBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectTwoBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectTwoBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectTwoBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectTwoBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectTwoBlockFourTextThree}}
-          @blockFourTextFour={{this.projectTwoBlockFourTextFour}}
-          @blockFourTextFive={{this.projectTwoBlockFourTextFive}}
-          @blockFourLabel={{this.projectTwoBlockFourLabel}}
-          @projectGithubUrl={{this.projectTwoGithubUrl}}
-          @blockFiveText={{this.projectTwoBlockFiveText}}
-          @blockFiveLabel={{this.projectTwoBlockFiveLabel}}
-          @blockSixText={{this.projectTwoBlockSixText}}
-          @blockSixLabel={{this.projectTwoBlockSixLabel}}
-        />
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionOne">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          Design for Usability & Complex workflows
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          Design Guidance simulation tool and interactive Learning Assistant
+        </div>
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectThreeProjectTitle}}
-          @projectDescription={{this.projectThreeProjectDescription}}
-          @blockOneImage={{this.projectThreeBlockOneImage}}
-          @iconOne={{this.projectThreeIconOne}}
-          @iconTwo={{this.projectThreeIconTwo}}
-          @iconThree={{this.projectThreeIconThree}}
-          @blockTwoLabel={{this.projectThreeBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectThreeBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectThreeBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectThreeBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectThreeBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectThreeBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectThreeBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectThreeBlockFourTextThree}}
-          @blockFourTextFour={{this.projectThreeBlockFourTextFour}}
-          @blockFourTextFive={{this.projectThreeBlockFourTextFive}}
-          @blockFourLabel={{this.projectThreeBlockFourLabel}}
-          @projectGithubUrl={{this.projectThreeGithubUrl}}
-          @blockFiveText={{this.projectThreeBlockFiveText}}
-          @blockFiveLabel={{this.projectThreeBlockFiveLabel}}
-          @blockSixText={{this.projectThreeBlockSixText}}
-          @blockSixLabel={{this.projectThreeBlockSixLabel}}
-        />
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">New technology is a wonderful offering to users,
+            unless they have no idea what it is. In this case,
+            it was a feature called Design Guidance, which
+            is a type of simulation tool that tells the user
+            what shape is best considering their material and
+            strength parameters.</p>
+            <p>I needed to come up with a way to make learning
+            fun while being not boring or tedious, and with a
+            design that set itself apart from the typical, tired
+            wizard that was the crux of software for so long.</p>
+            <p>The concepts of running even a rudimentary
+            simulation were unfamiliar to the intended users.
+            Coupled with the new technology Design Guidance
+            offered - being developed and delivered by some
+            of the smartest, most literal, technically advanced
+            engineers - the feature was a challenge to use.</p>
+            <p>Considering the feature was meant to make product
+            design more accessible, it was not headed in the
+            right direction. The project was passed off to me in
+            the hopes that I could turn it around.</p>
+            <p>Solidworks has many wizards of varying success for
+            this type of technically advanced feature. The web
+            application needed an element of fun and usability
+            and a wizard didn’t seem to fit. In addition, it seemed
+            the feature could be designed to be simple enough
+            for the user to learn. The question was how would
+            that happen.</p>
+            <p>As the designer for the feature I was in control of the
+            usability of all dialogs and thought that if a learning
+            tool could “teach” a new user that would satisfy both
+            the users needs and the platforms needs.
+            With the help of product definition experts and
+            developers, we defined a tool to carry the user
+            through these complex workflows.</p>
+            <p>This novel functionality received a patent in 2020
+            and internal innovation awards.</p>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockFive}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockSix}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockOne}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockTwo}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockThree}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockFour}}">
+          </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockFive}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockSix}}">
+            </div>
+          {{/if}}
+        </div>
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectFourProjectTitle}}
-          @projectDescription={{this.projectFourProjectDescription}}
-          @blockOneImage={{this.projectFourBlockOneImage}}
-          @iconOne={{this.projectFourIconOne}}
-          @iconTwo={{this.projectFourIconTwo}}
-          @iconThree={{this.projectFourIconThree}}
-          @blockTwoLabel={{this.projectFourBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectFourBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectFourBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectFourBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectFourBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectFourBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectFourBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectFourBlockFourTextThree}}
-          @blockFourTextFour={{this.projectFourBlockFourTextFour}}
-          @blockFourTextFive={{this.projectFourBlockFourTextFive}}
-          @blockFourLabel={{this.projectFourBlockFourLabel}}
-          @projectGithubUrl={{this.projectFourGithubUrl}}
-          @blockFiveText={{this.projectFourBlockFiveText}}
-          @blockFiveLabel={{this.projectFourBlockFiveLabel}}
-          @blockSixText={{this.projectFourBlockSixText}}
-          @blockSixLabel={{this.projectFourBlockSixLabel}}
-        />
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionTwo">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          Collaboration & Leadership
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          Concept user interface for MAC cosmetics kiosk
+        </div>
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectFiveProjectTitle}}
-          @projectDescription={{this.projectFiveProjectDescription}}
-          @blockOneImage={{this.projectFiveBlockOneImage}}
-          @iconOne={{this.projectFiveIconOne}}
-          @iconTwo={{this.projectFiveIconTwo}}
-          @iconThree={{this.projectFiveIconThree}}
-          @blockTwoLabel={{this.projectFiveBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectFiveBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectFiveBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectFiveBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectFiveBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectFiveBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectFiveBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectFiveBlockFourTextThree}}
-          @blockFourTextFour={{this.projectFiveBlockFourTextFour}}
-          @blockFourTextFive={{this.projectFiveBlockFourTextFive}}
-          @blockFourLabel={{this.projectFiveBlockFourLabel}}
-          @projectGithubUrl={{this.projectFiveGithubUrl}}
-          @blockFiveText={{this.projectFiveBlockFiveText}}
-          @blockFiveLabel={{this.projectFiveBlockFiveLabel}}
-          @blockSixText={{this.projectFiveBlockSixText}}
-          @blockSixLabel={{this.projectFiveBlockSixLabel}}
-        />
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">When I transitioned to user experience, I began by taking an immersive course at General Assembly. It was a great experience for me, especially since I came from a background of designing physical products and had extensive knowledge of design theory. All the UX principles made perfect sense to me and I was able to focus on UX specific tools, terminology, and methods.</p>
+            <p>To my surprise, there were very few people with design background in the class. There was one graphic designer and one project manager, but that was pretty much it for design-aware classmates.</p>
+            <p>When it was time to do a group project, I quickly became the design lead in my group. I had a former program manager from the healthcare industry, a QA tester, and a kid who worked in a bike shop. They were eager to learn and we were able to collaborate well - each person bringing their own ideas and perspective.</p>
+            <p>The project we were given five days to complete was to design a kiosk. We were given no other specific parameters. Through general discussion of the groups’ ideas and our time restraints, we landed on designing a self-service make-up kiosk with skin color matching ability.</p>
+            <p>Although pressed for time, working with an inexperienced team, and unfamiliar with design for the make-up industry - we all made a quick study and finished with a polished digital presentation, prototype and verbal presentation.</p>
+            <p>Our project was ranked highest among the other groups in class as judged by a panel of UX professionals.</p>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwelve}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockFourteen}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockSeven}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockEight}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockNine}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockTen}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockEleven}}">
+          </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwelve}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockFourteen}}">
+            </div>
+          {{/if}}
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockFifteen}}">
+          </div>
+        </div>
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
-          @projectTitle={{this.projectSixProjectTitle}}
-          @projectDescription={{this.projectSixProjectDescription}}
-          @blockOneImage={{this.projectSixBlockOneImage}}
-          @iconOne={{this.projectSixIconOne}}
-          @iconTwo={{this.projectSixIconTwo}}
-          @iconThree={{this.projectSixIconThree}}
-          @blockTwoLabel={{this.projectSixBlockTwoLabel}}
-          @blockThreeTextOne={{this.projectSixBlockThreeTextOne}}
-          @blockThreeTextTwo={{this.projectSixBlockThreeTextTwo}}
-          @blockThreeTextThree={{this.projectSixBlockThreeTextThree}}
-          @blockThreeLabel={{this.projectSixBlockThreeLabel}}  
-          @blockFourTextOne={{this.projectSixBlockFourTextOne}}
-          @blockFourTextTwo={{this.projectSixBlockFourTextTwo}}
-          @blockFourTextThree={{this.projectSixBlockFourTextThree}}
-          @blockFourTextFour={{this.projectSixBlockFourTextFour}}
-          @blockFourTextFive={{this.projectSixBlockFourTextFive}}
-          @blockFourLabel={{this.projectSixBlockFourLabel}}
-          @projectGithubUrl={{this.projectSixGithubUrl}}
-          @blockFiveText={{this.projectSixBlockFiveText}}
-          @blockFiveLabel={{this.projectSixBlockFiveLabel}}
-          @blockSixText={{this.projectSixBlockSixText}}
-          @blockSixLabel={{this.projectSixBlockSixLabel}}
-        />
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionThree">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          Unifying the virtual & physical experiences
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          Triad for 3D CAD application
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">My first UX job was working on xDesign, a browser-based CAD application from SolidWorks. I was asked to begin work on the triad, and given few parameters except that it had to live in one of the available corners. I was essentially thrown into the deep end of UX! I asked myself, “If I were a triad, how would I look?” It started as an airplane and developed into a cube with an object within to describe to the user where they are in the endless 3D space.</p>
+            <p>Many of my co-workers were skeptical, asking “Why is that chair there?” I had a strong sense that this would be liked by the users though - I had spent many years modeling in 3D and understood the problem I was trying to solve. I knew the user.</p>
+            <p>The concept was first championed by Dassault Systemes Documentation Group. And, it turned out, the users loved it!</p>
+            <p>The concept was picked up by a senior UX designer for the legacy product.</p>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockEighteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockNineteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwenty}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockSixteen}}">
+          </div>
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockSeventeen}}">
+          </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockEighteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockNineteen}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwenty}}">
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionFour">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          UI / UX design overhaul
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          The Dinner Daily, meal planning web app
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">The Dinner Daily was an exciting project for me. Though I had switched to UX from product design and worked for Dassault as a successful User Experience Design Manager, this would be the first full overhaul of a site that I had done. I love working with clients to figure out what their requirements are while championing the needs of the user.</p>
+            <p>The company needed to satisfy their existing customer base while positioning themselves for rapid growth. The new designs needed to accommodate those goals, and the company had outgrown its old, outdated Wordpress site. They decided on a progressive web app and had identified Google Material Design as their platform.</p>
+            <p>I conducted virtual working meetings with the startup team: the founder, marketing folks and engineering. We talked through their goals, learned lessons, and opened questions. I reviewed their available customer data and conducted user interviews to understand the big picture.</p>
+            <p>I began with a rough first pass of app concepts, adjusted those to grayscale wireframes. And finally color wireframes with clickable prototype. In the end, I supplied the client with a lengthy document defining their user experience guidelines, design language, and strategy for future development.</p>
+            <p>They’ve launched the initial web app and continue to develop several of the more complex experiences that require more development time. Recently accepted into a MASS Challenge cohort, I expect they will further develop their vision of manageable weeknight meals.</p>
+            <p>View launched meal planning app how-to video <a href="https://thedinnerdaily.com/cms/wp-content/uploads/2020/05/Dinner-Daily-App-Demo-for-Blog-V2.mp4">HERE</a>.</p>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyFive}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockTwentyOne}}">
+          </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyThree}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyFour}}">
+            </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyFive}}">
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionFive">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          Entrepreneurship & Start to finish project management
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          Industrial design for LED Lighting
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">The BettyLou lamp was the first LED lighting project that I worked on. I took a simple concept that my boss had come up with, along with the rough prototype he had built in the workshop, and created a table top lamp like he never imagined.</p>
+            <p>After attempts to create an ‘artisan’ lamp, I located a vendor in Taiwan with expertise in LED lighting so that the light could be mass produced.. We worked together to define the light path, creating an atmospheric glow inspired by candle light.</p>
+            <p>The BettyLou was distinguished with awards, press mentions, and museum exhibits.</p>
+            <p>As a small design firm, I had more responsibilities than the average product designer. In addition to design and sourcing, I also designed the trade show booth and packaging with my boss and one other co-worker.</p>
+            <p>The Element Task Light started with an LED. Sparked by great vendor relations and newly available technology - we designed the first truly effective LED task light of its kind.</p>
+            <p>Commercially successful, The Element was highlighted in the press and won several awards - the line was later expanded to three alternative models.</p>
+            <p>And, most importantly, The Element is prominently displayed in the lab of Dr. Banner and Tony Stark throughout The Avengers series. Take a look, you’ll see it on almost every desk.</p>
+            <p>My responsibilities included:</p>
+            <ul>
+              <li>crafting the light path with the opto-mechanical engineers in Taiwan</li>
+              <li>heatsink research and form development</li>
+              <li>seeking out and selecting parts, colors & materials</li>
+              <li>photo-realistic renderings (using the CAD tool Alias)</li>
+              <li>art direction for the wordless instructions</li>
+              <li>overall project management</li>
+            </ul>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyOne}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyTwo}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyThree}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockTwentySix}}">
+          </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentySeven}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyEight}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockTwentyNine}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirty}}">
+            </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyOne}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyTwo}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyThree}}">
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section_header" id="sectionSix">
+        <div local-class="portfolio_page_portfolio_section_header_main">
+          Visual communication & Educating the user
+        </div>
+        <div local-class="portfolio_page_portfolio_section_header_sub">
+          Photo-realistic renderings, User instructions, and Professional development workshop
+        </div>
+      </div>
+      <div local-class="portfolio_page_portfolio_section">
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_text">
+            <p local-class="first">The BettyLou lamp was a first of its kind - a one watt re-chargeable table top LED light. In 2008 when it was available for sale, consumers needed some education about the new type of product.</p>
+            <p>As a small firm, we wanted to ready for international sales without needing to translate language.</p>
+            <p>To convey the function and user instructions, we set out to show how the product worked. The result was a light-path illustration overlaid on a photo-realistic rendering and image based instructions.</p>
+          </div>
+          {{#if (or (media 'isWide'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtySeven}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyEight}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyNine}}">
+            </div>
+          {{/if}}
+        </div>
+        <div local-class="portfolio_page_portfolio_section_block">
+          <div local-class="portfolio_page_portfolio_section_image">
+            <img src="{{this.imageBlockThirtyFour}}">
+          </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyFive}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtySix}}">
+            </div>
+          {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtySeven}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyEight}}">
+            </div>
+            <div local-class="portfolio_page_portfolio_section_image">
+              <img src="{{this.imageBlockThirtyNine}}">
+            </div>
+          {{/if}}
+        </div>
       </div>
     </div>
   </section>

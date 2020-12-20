@@ -1,18 +1,205 @@
-<div local-class="dashboard_block_container">
-  <div local-class="dashboard_block_title_container">
-    {{@title}}
-  </div>
-  <div local-class="dashboard_block_date_container">
-    {{@date}}
-  </div>
-  <div local-class="dashboard_block_description_container">
-    {{@description}}
-  </div>
-  <div local-class="dashboard_block_button_container">
-    <LinkTo @route={{@buttonRoute}}>
-      <Dynamic::Ui::Buttons::Wide 
-        @buttonLabel={{@buttonLabel}} 
-      />
-    </LinkTo>
-  </div>
+<div local-class="dashboard_block_header">
+  {{#if @projectTitle}}
+    <div local-class="dashboard_block_header_title">
+      {{@projectTitle}}
+    </div>
+  {{/if}}
+  {{#if @projectDescription}}
+    <div local-class="dashboard_block_header_description">
+      {{@projectDescription}}
+    </div>
+  {{/if}}
+</div>
+<div local-class="dashboard_blocks_container">
+  {{#if @blockOneImage}}
+    <div local-class="dashboard_block">
+      <div local-class="dashboard_block_image">
+        <img src="{{@blockOneImage}}" alt="Project Cover" />
+      </div>
+    </div>
+  {{/if}}
+  {{#if (or @blockOneTextOne @blockOneTextOneLeft)}}
+        <div local-class="dashboard_block" {{on "click" this.scrollToSectionOne}}>
+          {{#if @blockOneTextOne}}
+            <div local-class="dashboard_block_text">
+              {{@blockOneTextOne}}<br />
+              {{@blockOneTextTwo}}<br />
+              {{@blockOneTextThree}}<br />
+            </div>
+          {{/if}}
+          {{#if @blockOneTextOneLeft}}
+            <div local-class="dashboard_block_text left">
+              {{@blockOneTextOneLeft}}<br />
+              {{@blockOneTextTwoLeft}}<br />
+              {{@blockOneTextThreeLeft}}<br />
+            </div>
+          {{/if}}
+          {{#if @blockOneLabel}}
+            <div local-class="dashboard_block_label">
+              {{@blockOneLabel}}
+            </div>
+          {{/if}}
+          {{#if @blockOneLabelLeft}}
+            <div local-class="dashboard_block_label_left">
+              {{@blockOneLabelLeft}}
+            </div>
+          {{/if}}
+        </div>
+  {{/if}}
+  {{#if (or @iconOne @blockTwoTextOneLeft)}}
+    <div local-class="dashboard_block" {{on "click" this.scrollToSectionTwo}}>
+      {{#if @iconOne}}
+        <div local-class="dashboard_block_icon_container">
+          {{#if @iconOne}}
+            <div local-class="dashboard_block_icon">
+              <img src="{{@iconOne}}" alt="icon">
+            </div>
+          {{/if}}
+          {{#if @iconTwo}}
+          <div local-class="dashboard_block_icon">
+            <img src="{{@iconTwo}}" alt="icon">
+          </div>
+          {{/if}}
+          {{#if @iconThree}}
+          <div local-class="dashboard_block_icon">
+            <img src="{{@iconThree}}" alt="icon">
+          </div>
+          {{/if}}
+        </div>
+      {{/if}}
+      {{#if @blockTwoTextOneLeft}}
+        <div local-class="dashboard_block_text left">
+          {{@blockTwoTextOneLeft}}<br />
+          {{@blockTwoTextTwoLeft}}<br />
+          {{@blockTwoTextThreeLeft}}<br />
+        </div>
+      {{/if}}
+      {{#if @blockTwoLabel}}
+        <div local-class="dashboard_block_label">
+          {{@blockTwoLabel}}
+        </div>
+      {{/if}}
+      {{#if @blockTwoLabelLeft}}
+        <div local-class="dashboard_block_label_left">
+          {{@blockTwoLabelLeft}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+  {{#if (or @blockThreeTextOne @blockThreeTextOneLeft)}}
+    <div local-class="dashboard_block" {{on "click" this.scrollToSectionThree}}>
+      {{#if @blockThreeTextOne}}
+        <div local-class="dashboard_block_text">
+          {{@blockThreeTextOne}}<br />
+          {{@blockThreeTextTwo}}<br />
+          {{@blockThreeTextThree}}<br />
+        </div>
+      {{/if}}
+      {{#if @blockThreeTextOneLeft}}
+        <div local-class="dashboard_block_text left">
+          {{@blockThreeTextOneLeft}}<br />
+          {{@blockThreeTextTwoLeft}}<br />
+          {{@blockThreeTextThreeLeft}}<br />
+        </div>
+      {{/if}}
+      {{#if @blockThreeLabel}}
+        <div local-class="dashboard_block_label">
+          {{@blockThreeLabel}}
+        </div>
+      {{/if}}
+      {{#if @blockThreeLabelLeft}}
+        <div local-class="dashboard_block_label_left">
+          {{@blockThreeLabelLeft}}
+        </div>
+      {{/if}}
+    </div>
+    {{/if}}
+    {{#if (or @blockFourTextOne @blockFourTextOneLeft)}}
+    <div local-class="dashboard_block" {{on "click" this.scrollToSectionFour}}>
+      {{#if @blockFourTextOne}}
+        <div local-class="dashboard_block_text">
+          {{@blockFourTextOne}}<br />
+          {{@blockFourTextTwo}}<br />
+          {{@blockFourTextThree}}<br />
+        </div>
+      {{/if}}
+      {{#if @blockFourTextOneLeft}}
+        <div local-class="dashboard_block_text left">
+          {{@blockFourTextOneLeft}}<br />
+          {{@blockFourTextTwoLeft}}<br />
+          {{@blockFourTextThreeLeft}}<br />
+        </div>
+      {{/if}}
+      {{#if @blockFourLabel}}
+        <div local-class="dashboard_block_label">
+          {{@blockFourLabel}}
+        </div>
+      {{/if}}
+      {{#if @blockFourLabelLeft}}
+        <div local-class="dashboard_block_label_left">
+          {{@blockFourLabelLeft}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+  {{#if (or @projectGithubUrl @blockFiveTextOneLeft)}}
+    <div local-class="dashboard_block" {{on "click" this.scrollToSectionFive}}>
+      {{#if @projectGithubUrl}}
+        <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer">
+          <div local-class="dashboard_block_icon_container">
+            <div local-class="dashboard_block_icon">
+              <FaIcon @icon="github-alt" @prefix='fab' @size='3x' />
+            </div>
+          </div>
+        </a>
+      {{/if}}
+      {{#if @blockFiveTextOneLeft}}
+        <div local-class="dashboard_block_text left">
+          {{@blockFiveTextOneLeft}}<br />
+          {{@blockFiveTextTwoLeft}}<br />
+          {{@blockFiveTextThreeLeft}}<br />
+        </div>
+      {{/if}} 
+      {{#if @blockFiveLabel}}
+        <div local-class="dashboard_block_label">
+          {{@blockFiveLabel}}
+        </div>
+      {{/if}}
+      {{#if @blockFiveLabelLeft}}
+        <div local-class="dashboard_block_label_left">
+          {{@blockFiveLabelLeft}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+  {{#if (or @projectLiveSiteUrl @blockSixTextOneLeft)}}     
+    <div local-class="dashboard_block" {{on "click" this.scrollToSectionSix}}>
+      {{#if @projectLiveSiteUrl}}     
+        <a href="{{@projectLiveSiteUrl}}" target="_blank" rel="noopener noreferrer">
+          <div local-class="dashboard_block_icon_container">
+            <div local-class="dashboard_block_text">
+              {{@blockSixText}}
+            </div>
+          </div>
+        </a>
+      {{/if}}
+      {{#if @blockSixTextOneLeft}}
+        <div local-class="dashboard_block_text left">
+          {{@blockSixTextOneLeft}}<br />
+          {{@blockSixTextTwoLeft}}<br />
+          {{@blockSixTextThreeLeft}}<br />
+        </div>
+      {{/if}} 
+      {{#if @blockSixLabel}}
+        <div local-class="dashboard_block_label">
+          {{@blockSixLabel}}
+        </div>
+      {{/if}}
+      {{#if @blockSixLabelLeft}}
+        <div local-class="dashboard_block_label_left">
+          {{@blockSixLabelLeft}}
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
 </div>

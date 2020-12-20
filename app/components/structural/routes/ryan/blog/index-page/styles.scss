@@ -52,6 +52,14 @@
       justify-content: center;
       align-items: center;
 
+      @include breakpoint(large) {
+        margin: 0;
+      }
+
+      @include breakpoint(wide) {
+        margin: 0;
+      }
+
       .blog_page_dashboard_block_container {
         margin: 0 $margin_large 0 $margin_small;
       }

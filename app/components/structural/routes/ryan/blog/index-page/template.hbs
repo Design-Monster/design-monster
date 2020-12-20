@@ -3,6 +3,8 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="blog_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
         @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -34,7 +36,7 @@
     {{/if}}
     <div local-class="blog_page_content_container">
       <div local-class="blog_page_dashboard_block_container">
-        <Dynamic::Ui::DashboardBlock
+        <Dynamic::Ui::DashboardBlog
           @title={{this.emmTitle}}
           @date={{this.emmDate}}
           @description={{this.emmDescription}}
@@ -43,7 +45,7 @@
         />
       </div>
       <div local-class="blog_page_dashboard_block_container">
-        <Dynamic::Ui::DashboardBlock
+        <Dynamic::Ui::DashboardBlog
           @title={{this.gfbTitle}}
           @date={{this.emmDate}}
           @description={{this.gfbDescription}}

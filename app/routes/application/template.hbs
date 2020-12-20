@@ -4,6 +4,8 @@
     {{outlet}}
   {{else if (isRyanUrl)}}
     <Dynamic::Ui::Navigation::Mobile
+      @routeSlotTwoIcon={{this.ryanRouteSlotTwoIcon}}
+      @routeSlotTwoIconPrefix={{this.ryanRouteSlotTwoIconPrefix}}
       @socialSlotOneUrl={{this.ryanGithubUrl}}
       @socialSlotOneIcon={{this.ryanGithubIcon}}
       @socialSlotOnePrefix={{this.ryanGithubPrefix}}
@@ -23,6 +25,8 @@
     </Dynamic::Ui::Navigation::Mobile>
   {{else if (isAminaUrl)}}
     <Dynamic::Ui::Navigation::Mobile
+      @routeSlotTwoIcon={{this.aminaRouteSlotTwoIcon}}
+      @routeSlotTwoIconPrefix={{this.aminaRouteSlotTwoIconPrefix}}
       @socialSlotTwoUrl={{this.aminaLinkedInUrl}}
       @socialSlotTwoIcon={{this.aminaLinkedinIcon}}
       @socialSlotTwoPrefix={{this.aminaLinkedinPrefix}}

@@ -48,9 +48,19 @@
     }
 
     .portfolio_page_content_container {
+      display: flex;
+      flex-direction: column;
       margin: $margin_extra_large 0 0;
 
-      .portfolio_page_dashboard_row_container {
+      @include breakpoint(large) {
+        margin: 0;
+      }
+
+      @include breakpoint(wide) {
+        margin: 0;
+      }
+
+      .portfolio_page_dashboard_container {
         margin: 0 0 $margin_small;
 
         @include breakpoint(large) {

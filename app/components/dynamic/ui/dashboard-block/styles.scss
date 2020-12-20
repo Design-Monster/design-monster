@@ -1,30 +1,180 @@
-@import 'global/variables';
-@import 'global/breakpoints';
+.dashboard_block_header {
+  margin: 0 $margin_small $margin_small;
 
-.dashboard_block_container {
+  @include breakpoint(wide) {
+    max-width: 1000px;
+  }
+
+  .dashboard_block_header_title {
+    font-size: $font_size_large;
+    font-weight: 600;
+  }
+
+  .dashboard_block_header_description {
+    margin: $margin_small $margin_small 0 0;
+    font-size: $font_size_regular;
+  }
+}
+
+.dashboard_blocks_container {
   display: flex;
   flex-direction: column;
-  margin: 0 0 $margin_large;
-  border-bottom: $border_three;
+  margin: $margin_small;
+  align-items: center;
+
+  @include breakpoint(medium) {
+    display: grid;
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 200px;
+    column-gap: $margin_small;
+    row-gap: $margin_small;
+  }
+
+  @include breakpoint(large) {
+    display: grid;
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 200px;
+    column-gap: $margin_small;
+    row-gap: $margin_small;
+  }
+
+  @include breakpoint(wide) {
+    display: grid;
+    flex-direction: unset;
+    align-items: unset;
+    grid-template-columns: 275px 275px 275px;
+    grid-auto-rows: 275px;
+    column-gap: $margin_medium;
+    row-gap: $margin_medium;
+  }
 
   a {
+    display: flex;
+    flex: 1;
+    color: $color_black;
     text-decoration: none;
+
+    &:visited {
+      color: $color_black;
+    }
   }
 
-  .dashboard_block_title_container {
-    margin: 0 0 $margin_small;
-    font-size: 2em;
-  }
+  .dashboard_block {
+    display: flex;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    flex-direction: column;
+    margin: $margin_extra_small;
+    background-color: $color_white;
+    border: $border_one;
+    border-radius: $border_radius_primary;
+    justify-content: center;
+  
+    @include breakpoint(medium) {
+      margin: 0;
+    }
 
-  .dashboard_block_date_container {
-    margin: 0 0 $margin_small;
-  }
+    @include breakpoint(large) {
+      margin: 0;
+    }
 
-  .dashboard_block_description_container {
-    margin: 0 0 $margin_large;
-  }
+    @include breakpoint(wide) {
+      min-width: 275px;
+      max-width: 275px;
+      min-height: 275px;
+      max-height: 275px;
+      margin: 0;
+    }
 
-  .dashboard_block_button_container {
-    margin: 0 0 $margin_large;
+    .dashboard_block_image {
+      display: flex;
+      flex: 1;
+      margin: $margin_extra_small;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        border-radius: $border_radius_primary;
+
+        @include breakpoint(large) {
+          max-height: 300px;
+        }
+      
+        @include breakpoint(wide) {
+          max-height: 300px;
+        }
+      }
+    }
+
+    .dashboard_block_icon_container {
+      display: flex;
+      flex: 1;
+      margin: $margin_extra_small;
+      text-align: center;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+
+      .dashboard_block_icon {
+        display: flex;
+        min-width: $size_large;
+        max-width: $size_large;
+        min-height: $height_large;
+        max-height: $height_large;
+        margin: $margin_extra_small;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: $border_radius_primary;
+        }
+      }
+    }
+
+    .dashboard_block_text {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin: $margin_small;
+      overflow: auto;
+      color: $color_blue_primary;
+
+      &.left {
+        margin-top: $margin_large;
+      }
+
+      p {
+        margin-right: 10px;
+        font-weight: 800;
+      }
+    }
+
+    .dashboard_block_label {
+      display: flex;
+      margin: $margin_extra_small;
+      font-size: $font_size_large;
+      font-weight: 600;
+      color: $color_dark_grey;
+      align-self: center;
+    }
+
+    .dashboard_block_label_left {
+      margin: $margin_extra_small $margin_small $margin_small;
+      font-weight: 600;
+      color: $color_dark_grey;
+    }
   }
 }

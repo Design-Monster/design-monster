@@ -17,6 +17,8 @@ export default class ApplicationController extends Controller {
   ryanPortfolioRoute = 'ryan.portfolio';
   ryanBlogRoute = 'ryan.blog';
   ryanResumeRoute = 'ryan.resume';
+  ryanRouteSlotTwoIcon = 'code';
+  ryanRouteSlotTwoIconPrefix = 'fa';
   //amina
   aminaLinkedInUrl = 'https://www.linkedin.com/in/achidiac/';
   aminaLinkedinIcon = 'linkedin';
@@ -26,4 +28,7 @@ export default class ApplicationController extends Controller {
   aminaAboutMeRoute = 'amina.about';
   aminaPortfolioRoute = 'amina.portfolio';
   aminaResumeRoute = 'amina.resume';
+  aminaRouteSlotTwoIcon = 'images';
+  aminaRouteSlotTwoIconPrefix = 'fas';
+
 }
