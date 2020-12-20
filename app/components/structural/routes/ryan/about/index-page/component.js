@@ -21,4 +21,6 @@ export default class StructuralRoutesRyanIndexPageComponent extends Component {
   headerNameLast = 'Roderick';
   headerTitle = 'Web Developer';
   headerButtonLabel = 'Hire Me!';
+  routeSlotTwoIcon = 'code';
+  routeSlotTwoIconPrefix = 'fa';
 }

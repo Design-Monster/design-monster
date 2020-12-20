@@ -39,4 +39,6 @@ export default class StructuralRoutesRyanBlogEmberMobileMenuComponent extends Co
   codePathFourteen = '{{else}}';
   codePathFifteen = '{{/if}}';
   codeThree = '* master';
+  routeSlotTwoIcon = 'code';
+  routeSlotTwoIconPrefix = 'fa';
 }

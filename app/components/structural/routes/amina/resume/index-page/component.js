@@ -1,6 +1,8 @@
 import Component from '@glimmer/component';
 
 export default class StructuralRoutesAminaResumeIndexPageComponent extends Component {
+  routeSlotTwoIcon = 'images';
+  routeSlotTwoIconPrefix = 'fas';
   linkedInUrl = 'https://www.linkedin.com/in/achidiac/';
   linkedinIcon = 'linkedin';
   linkedinPrefix = 'fab';

@@ -30,4 +30,6 @@ export default class StructuralRoutesRyanBlogIndexPageComponent extends Componen
   gfbDescription = 'We all Struggle With GIT, especially when you\'re just starting out.  We\'ve laid out some basic git commands that all beginners should know.'
   gfbButtonRoute = 'ryan.blog.git-for-beginners';
   gfbButtonLabel = 'Read More';
+  routeSlotTwoIcon = 'code';
+  routeSlotTwoIconPrefix = 'fa';
 }

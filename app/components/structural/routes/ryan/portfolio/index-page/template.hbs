@@ -2,6 +2,8 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="portfolio_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
         @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -32,8 +34,8 @@
       </div>
     {{/if}}
     <div local-class="portfolio_page_content_container">
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectOneProjectTitle}}
           @projectDescription={{this.projectOneProjectDescription}}
           @blockOneImage={{this.projectOneBlockOneImage}}
@@ -51,8 +53,8 @@
           @blockFourLabel={{this.projectOneBlockFourLabel}}
         />
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectTwoProjectTitle}}
           @projectDescription={{this.projectTwoProjectDescription}}
           @blockOneImage={{this.projectTwoBlockOneImage}}
@@ -74,8 +76,8 @@
           @blockSixLabel={{this.projectTwoBlockSixLabel}}
         />
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      {{!-- <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectThreeProjectTitle}}
           @projectDescription={{this.projectThreeProjectDescription}}
           @blockOneImage={{this.projectThreeBlockOneImage}}
@@ -96,9 +98,9 @@
           @blockSixText={{this.projectThreeBlockSixText}}
           @blockSixLabel={{this.projectThreeBlockSixLabel}}
         />
-      </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      </div> --}}
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectFourProjectTitle}}
           @projectDescription={{this.projectFourProjectDescription}}
           @blockOneImage={{this.projectFourBlockOneImage}}
@@ -118,8 +120,8 @@
           @blockFiveLabel={{this.projectFourBlockFiveLabel}}
         />
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectFiveProjectTitle}}
           @projectDescription={{this.projectFiveProjectDescription}}
           @blockOneImage={{this.projectFiveBlockOneImage}}
@@ -142,8 +144,8 @@
           @blockSixLabel={{this.projectFiveBlockSixLabel}}
         />
       </div>
-      <div local-class="portfolio_page_dashboard_row_container">
-        <Dynamic::Ui::DashboardRow
+      <div local-class="portfolio_page_dashboard_container">
+        <Dynamic::Ui::DashboardBlock
           @projectTitle={{this.projectSixProjectTitle}}
           @projectDescription={{this.projectSixProjectDescription}}
           @blockOneImage={{this.projectSixBlockOneImage}}

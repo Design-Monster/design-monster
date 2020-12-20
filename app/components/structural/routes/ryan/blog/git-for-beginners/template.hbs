@@ -2,6 +2,8 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="blog_show_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
         @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}

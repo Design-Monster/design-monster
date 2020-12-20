@@ -2,6 +2,8 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="blog_show_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
         @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -34,13 +36,13 @@
     <div local-class="blog_show_page_content_container">
       <div local-class="article_container">
         <div local-class="article_title">
-          ember-mobile-menu Setup
+          Ember-Mobile-Menu For Beginners
         </div>
         <div local-class="article_author">
           Written By: Ryan Roderick & Matthew Roderick
         </div>
         <div local-class="article_author">
-          Created By: Nick Schot
+          Add-on Created By: Nick Schot
         </div>
         <div local-class="article_author">
           Find it <a href="https://nickschot.github.io/ember-mobile-menu/">HERE</a>
@@ -71,7 +73,7 @@
             2nd Attempt:
           </div>
           <p>
-            So after contacting the developer via discord, we troubleshot some things, and he told us that having it in all our routes separately was not the correct way to use this add-on. As a beginner, this was not immediately clear to us in the documentation. We had understood that we needed it "high up in the DOM", as per his instructions, but we did not understand what that meant exactly. So what is "high in the Dom"?';
+            So after contacting the developer via discord, we troubleshot some things, and he told us that having it in all our routes separately was not the correct way to use this add-on. As a beginner, this was not immediately clear to us in the documentation. We had understood that we needed it "high in the DOM", as per his instructions, but we did not understand what that meant exactly. So what is "high in the Dom"?
           </p>
           <p>
             Again, we are Junior Developers. We knew the term, but try googling it. Not much that is useful comes up, and our understanding of it was lacking, therefore our understanding of the documentation for mobile-menu was incorrect.

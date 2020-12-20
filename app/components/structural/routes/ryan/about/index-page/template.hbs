@@ -3,6 +3,8 @@
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <section local-class="about_page_side_bar_container">
       <Dynamic::Ui::Navigation::Desktop
+        @routeSlotTwoIcon={{this.routeSlotTwoIcon}}
+        @routeSlotTwoIconPrefix={{this.routeSlotTwoIconPrefix}}
         @socialSlotOneUrl={{this.githubUrl}}
         @socialSlotOneIcon={{this.githubIcon}}
         @socialSlotOnePrefix={{this.githubPrefix}}
@@ -33,33 +35,26 @@
       </div>
     {{/if}}
     <div local-class="about_page_content_container">
-      <div local-class="about_page_content_header">
-        Web Developer
-      </div>
-      <div local-class="about_page_content">
-        <p>REWRITE TO BE MORE LIKE AMINA'S</p>
-        <p>
-          I am a Web Developer who loves Ember.js, especially the newest Octane Edition.  If you haven't checked it out because you thought "Eww Ember", I urge you to give it a try.  You'll be glad you did. Ember is versatile, it's scalable, and it's FUN! 
-        </p>
-        <p>
-          I have also recently built several projects in React.js. which, I have to say, is not bad either.  It solidified a few concepts that Ember.js embraces, such as passing data DOWN to children, and having it start from the higher component.  I was doing those things in Ember.js, but I'm not sure I understood them completely until I began learning React.js. So in that way, understanding React.js made me abetter Ember.js developer.  I am also just beginning a Vue.js project now, which I like so far. I'm betting that it makes me a better Ember.js developer AND a better React.js developer.  I'll let you know.
-        </p>
-        <p>
-          I spend the rest of my time diving deeper into things like Flex and Grid, JavaScript, and backend technologies. I read everything that I come across.  I have spent 3+ years teaching myself how to code and I've built dozens of side projects in that time, some of which I showcase on the Portfolio section of this site. I've earned several of FreeCodeCamp's Certifications and plan on working my way through all of them. And I've also completed an internship with a great company called TenLegs (now called Bluespace - find them on LinkedIn). I am actively looking for an entry-level position with a great team!
-        </p>
-        <p>
-          I've also been mentoring my brother, Matt, of <a href="https://roderickdevelopers.com">Roderick Developers</a>.  He's a fast learner and you should check out his portfolio.  Like me, he started in a completely different field but dedicated every free minute to learning how to code.  When you have parental responsibalities, work, and are running the gauntlet of 2020, learning how to code from scratch is HARD.  He's kicking ass though.  The thought of teaching someone else seemed really, <i>really</i>, REALLY overwhelming to me at first, but I have since come to the realization that all new developers should become mentors to someone.  It gets you over the imposter syndrome quickly.  And I swear it kicked me into a high gear.  When you HAVE to answer questions without hesitation about best practices, editor setup, git, it makes you a better developer.  It just does.  I hope to continue this role in the future as I have found it very rewarding.
-        </p>
-      </div>
-      <div local-class="about_page_content_header">
-        What I'm Doing Now
-      </div>
+      {{#if (or (media 'isSmall') (media 'isMedium') (media 'isLarge'))}}
+        <div local-class="about_page_content_header">
+          Web Developer
+        </div>
+      {{/if}}
       <div local-class="about_page_content">
         <p>
-          I am very comfortable with Ember.js.  I'm also fairly comfortable with Rails and SQL.  So, I thought it was time to break out of that comfort zone and expand my stack skills.  Currently I am teaching myself React.js.  I have a custom file structure that I've honed over the years with Ember.js, and I really like the way it's set up, so I decided to build a React.js boilerplate that matches my Ember.js boilerplate, figuring that I could learn the ins and outs of React.js as I did.  You can check out both in the Portfolio section of this site, if you're interested.  Both are free to clone and use. As I said above, I'm also learning Vue.js.  I should have three projects knocked out soon.      
+          Ryan is a Web Developer who loves Ember.js, especially the newest Octane Edition.  If you haven't checked it out because you thought "Eww Ember", he urges you to give it a try.  You'll be glad you did. 
         </p>
         <p>
-          Please check out my site, built with Ember Octane.  If I'm a good fit , reach out!  If I'm an ok fit, reach out!  I work well with others, listen well and take instruction well, push back when needed, say "I don't know" when neccessary, and love to learn.  That's my favorite thing about coding, you never stop learning. 
+          Although he loves Ember, he has recently built several projects in React.js and has begun learning Vue.js as well.  He specializes in frontend but is not afraid to dive into backend work and has experience with Rails, SQL, and AWS.  He loves flexbox and grid, scss, and javascript.
+        </p>
+        <p>
+          He has spent the last four years teaching himself how to code and he's built dozens of side projects in that time, some of which are showcased on the Portfolio section of this site. He has earned several of FreeCodeCamp's Certifications and plans on working his way through all of them. He has also completed an internship with a great company called TenLegs (now called Bluespace - find them on LinkedIn!). He is now actively looking for an entry-level position with a great team.
+        </p>
+        <p>
+          He has also been mentoring his brother, Matt, of <a href="https://roderickdevelopers.com">Roderick Developers</a>.  Like Ryan, Matt started in a completely different field but dedicated every free minute to learning how to code.  Ryan has found this experience to be extremely rewarding and he hopes to continue this role in the future.
+        </p>      
+        <p>
+          Ryan works well with others, listens well and takes instruction well, pushes back when needed, says "I don't know" when necessary, and loves to learn. 
         </p>
       </div>       
     </div>

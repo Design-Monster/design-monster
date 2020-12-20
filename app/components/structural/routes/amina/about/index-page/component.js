@@ -15,4 +15,6 @@ export default class StructuralRoutesAminaIndexPageComponent extends Component {
   headerNameLast = 'Roderick';
   headerTitle = 'User Experience Designer';
   headerButtonLabel = 'Hire Me!';
+  routeSlotTwoIcon = 'images';
+  routeSlotTwoIconPrefix = 'fas';
 }
